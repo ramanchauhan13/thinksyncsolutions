@@ -51,7 +51,7 @@ const Footer = () => {
         </div>
         
         <div className="pt-8 border-t border-gray-800 text-center text-gray-400 text-sm">
-          <p>&copy; 2024 Team Nexus. All rights reserved. Built with React & Tailwind CSS.</p>
+          <p>&copy; 2025 Team ThinkSync Solutions . All rights reserved. Built with Next.</p>
         </div>
       </div>
     </footer>
