@@ -1,6 +1,7 @@
 import foodhubImg from '@/assets/foodhub.jpg'
 import erpImg from '@/assets/erp.jpg'
 import ngoImg from '@/assets/ngo.jpg'
+import blogImg from '@/assets/blog.jpg'
 
 export const teamMembers = [
   {
@@ -72,8 +73,17 @@ export const projects = [
   tech: ["React", "Node.js", "Express.js", "MongoDB", "Vite"],
   stats: "100+ Donations | 2 User Roles",
   link: "https://github.com/UmeshSingh2000/NGO"
+},
+{
+  id: 4,
+  title: "Potatotrails",
+  category: "Personal Blogging Platform",
+  description: "A full-featured MERN-based blog website where users can read and share articles. Includes user authentication, rich text editor, categories, and admin controls for content moderation.",
+  image: blogImg,
+  tech: ["React", "Node.js", "Express.js", "MongoDB", "Vite"],
+  stats: "50+ Posts | 2 User Roles (Admin, Reader)",
+  link: "https://potatotrails.vercel.app/"
 }
-  // ... other projects
 ];
 
 export const services = [

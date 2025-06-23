@@ -1,8 +1,21 @@
+import { useEffect, useState } from 'react';
 import { ChevronRight } from 'lucide-react';
 
 const HeroSection = ({ glitchEffect, scrollToSection }) => {
+  const [dots, setDots] = useState([]);
+
+  useEffect(() => {
+    const newDots = Array.from({ length: 20 }).map(() => ({
+      left: `${Math.random() * 100}%`,
+      top: `${Math.random() * 100}%`,
+      animationDelay: `${Math.random() * 3}s`,
+    }));
+    setDots(newDots);
+  }, []);
+
   return (
     <section id="hero" className="min-h-screen pt-10 flex items-center justify-center relative">
+      {/* Background Grid */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-900/10 via-purple-900/10 to-green-900/10"></div>
         <div className="grid grid-cols-12 h-full">
@@ -16,6 +29,7 @@ const HeroSection = ({ glitchEffect, scrollToSection }) => {
         </div>
       </div>
 
+      {/* Main Content */}
       <div className="container mx-auto px-6 text-center relative z-10">
         <div className="mb-8">
           <h1 className={`text-6xl md:text-8xl font-black mb-6 ${glitchEffect ? 'animate-pulse' : ''}`}>
@@ -49,16 +63,16 @@ const HeroSection = ({ glitchEffect, scrollToSection }) => {
         </div>
       </div>
 
-      {/* Floating Elements */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {[...Array(20)].map((_, i) => (
+      {/* Fixed: Floating Dots */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
+        {dots.map((dot, i) => (
           <div
             key={i}
             className="absolute w-1 h-1 bg-cyan-400 rounded-full animate-ping"
             style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-              animationDelay: `${Math.random() * 3}s`
+              left: dot.left,
+              top: dot.top,
+              animationDelay: dot.animationDelay,
             }}
           ></div>
         ))}

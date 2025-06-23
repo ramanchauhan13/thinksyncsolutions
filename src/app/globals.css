@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Custom animations */
 @keyframes pulse {
   0%, 100% { opacity: 1; }

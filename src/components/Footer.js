@@ -17,29 +17,29 @@ const Footer = () => {
           <div>
             <h4 className="text-white font-semibold mb-4">Services</h4>
             <ul className="space-y-2 text-sm text-gray-400">
-              <li><a href="#" className="hover:text-cyan-400 transition-colors duration-300">Web Development</a></li>
-              <li><a href="#" className="hover:text-cyan-400 transition-colors duration-300">UI/UX Design</a></li>
-              <li><a href="#" className="hover:text-cyan-400 transition-colors duration-300">Performance Optimization</a></li>
-              <li><a href="#" className="hover:text-cyan-400 transition-colors duration-300">Security Solutions</a></li>
+              <li><a href="#services" className="hover:text-cyan-400 transition-colors duration-300">Web Development</a></li>
+              <li><a href="#services" className="hover:text-cyan-400 transition-colors duration-300">UI/UX Design</a></li>
+              <li><a href="#services" className="hover:text-cyan-400 transition-colors duration-300">Performance Optimization</a></li>
+              <li><a href="#services" className="hover:text-cyan-400 transition-colors duration-300">Security Solutions</a></li>
             </ul>
           </div>
           
           <div>
             <h4 className="text-white font-semibold mb-4">Company</h4>
             <ul className="space-y-2 text-sm text-gray-400">
-              <li><a href="#" className="hover:text-cyan-400 transition-colors duration-300">About Us</a></li>
-              <li><a href="#" className="hover:text-cyan-400 transition-colors duration-300">Our Team</a></li>
+              <li><a href="#about" className="hover:text-cyan-400 transition-colors duration-300">About Us</a></li>
+              <li><a href="#team" className="hover:text-cyan-400 transition-colors duration-300">Our Team</a></li>
               <li><a href="#" className="hover:text-cyan-400 transition-colors duration-300">Careers</a></li>
-              <li><a href="#" className="hover:text-cyan-400 transition-colors duration-300">Contact</a></li>
+              <li><a href="#contact" className="hover:text-cyan-400 transition-colors duration-300">Contact</a></li>
             </ul>
           </div>
           
           <div>
             <h4 className="text-white font-semibold mb-4">Connect</h4>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">
+              {/* <a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">
                 <Github size={20} />
-              </a>
+              </a> */}
               <a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">
                 <Linkedin size={20} />
               </a>
@@ -51,7 +51,7 @@ const Footer = () => {
         </div>
         
         <div className="pt-8 border-t border-gray-800 text-center text-gray-400 text-sm">
-          <p>&copy; 2025 Team ThinkSync Solutions . All rights reserved. Built with Next.</p>
+          <p>&copy; {new Date().getFullYear()} Team ThinkSync Solutions . All rights reserved.</p>
         </div>
       </div>
     </footer>
