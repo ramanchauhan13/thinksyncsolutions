@@ -6,7 +6,7 @@ const ContactSection = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-5xl font-bold mb-6 bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
-            Let's Build Something Amazing
+            Let&rsquo;s Build Something Amazing
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Ready to transform your vision into digital reality? Get in touch with us.

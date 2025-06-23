@@ -10,7 +10,7 @@ const AboutSection = () => {
             About Team ThinkSync
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            We are a collective of digital architects, pushing the boundaries of what's possible in web development.
+            We are a collective of digital architects, pushing the boundaries of what&rsquo;s possible in web development.
           </p>
         </div>
 

@@ -29,7 +29,7 @@ const HeroSection = ({ glitchEffect, scrollToSection }) => {
         </div>
         
         <p className="text-xl md:text-3xl text-gray-300 max-w-4xl mx-auto leading-relaxed mb-12">
-          We craft digital experiences that transcend the ordinary, building tomorrow's web today with cutting-edge technology and visionary design.
+          We craft digital experiences that transcend the ordinary, building tomorrow&rsquo;s web today with cutting-edge technology and visionary design.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-6 justify-center">
