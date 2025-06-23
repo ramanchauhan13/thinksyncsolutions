@@ -6,12 +6,18 @@ import { useRouter } from 'next/navigation';
 const ThankYouPage = () => {
   const router = useRouter();
 
-  useEffect(() => {
+useEffect(() => {
     const timer = setTimeout(() => {
+      // Redirect to home
       router.push('/');
-    }, 3000); // 2-second redirect
 
-    return () => clearTimeout(timer); // Cleanup on unmount
+      // Force reload after short delay to allow navigation
+      setTimeout(() => {
+        window.location.href = '/'; // hard reload to reset layout/responsiveness
+      }, 100);
+    }, 3000); // 3-second wait before redirect
+
+    return () => clearTimeout(timer);
   }, [router]);
 
   return (
