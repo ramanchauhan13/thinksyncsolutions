@@ -57,7 +57,7 @@ const ProjectsSection = () => {
                     <Star className="inline w-4 h-4 mr-1" />
                     {project.stats}
                   </div>
-                  <a href={project.link} className="text-cyan-400 hover:text-white transition-colors duration-300">
+                  <a href={project.link} className="text-cyan-400 hover:text-white transition-colors duration-300" target="_blank">
                     <ExternalLink size={18} />
                   </a>
                 </div>

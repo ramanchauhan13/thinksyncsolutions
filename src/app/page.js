@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react';
-import CursorTrail from '@/components/CursorTrail';
+// import CursorTrail from '@/components/CursorTrail';
 import Navigation from '@/components/Navigation';
 import HeroSection from '@/components/HeroSection';
 import AboutSection from '@/components/AboutSection';
@@ -19,14 +19,14 @@ export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrollY, setScrollY] = useState(0);
   const [glitchEffect, setGlitchEffect] = useState(false);
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  // const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
-    const handleMouseMove = (e) => setMousePosition({ x: e.clientX, y: e.clientY });
+    // const handleMouseMove = (e) => setMousePosition({ x: e.clientX, y: e.clientY });
     
     window.addEventListener('scroll', handleScroll);
-    window.addEventListener('mousemove', handleMouseMove);
+    // window.addEventListener('mousemove', handleMouseMove);
     
     const glitchInterval = setInterval(() => {
       setGlitchEffect(true);
@@ -35,7 +35,7 @@ export default function Home() {
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
-      window.removeEventListener('mousemove', handleMouseMove);
+      // window.removeEventListener('mousemove', handleMouseMove);
       clearInterval(glitchInterval);
     };
   }, []);
@@ -52,7 +52,7 @@ export default function Home() {
 
   return (
       <div className="min-h-screen bg-black text-white relative overflow-hidden">
-      <CursorTrail mousePosition={mousePosition} />
+      {/* <CursorTrail mousePosition={mousePosition} /> */}
       
       <Navigation 
         currentSection={currentSection} 
