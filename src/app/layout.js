@@ -1,5 +1,4 @@
 import "./globals.css";
-import Head from 'next/head';
 export const metadata = {
   title: 'THINKSYNC SOLUTIONS',
   description: 'Cutting-edge digital experiences',
@@ -11,9 +10,6 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-        <Head>
-        <link rel="icon" href="/logo.png" />
-      </Head>
       <body className="min-h-screen bg-black text-white relative ">
         {children}
       </body>
