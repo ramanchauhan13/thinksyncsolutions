@@ -7,8 +7,8 @@ const ProjectsSection = () => {
   const [hoveredProject, setHoveredProject] = useState(null);
 
   return (
-    <section id="projects" className="py-20 relative">
-      <div className="container mx-auto px-6">
+    <section  id="projects" className="py-20 relative">
+      <div data-aos="fade-down" data-aos-duration="500" className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-5xl font-bold mb-6 bg-gradient-to-r from-green-400 to-emerald-500 bg-clip-text text-transparent">
             Featured Projects
@@ -18,7 +18,7 @@ const ProjectsSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div data-aos="fade-up" data-aos-duration="500" className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => (
             <div
               key={project.id}

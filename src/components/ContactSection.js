@@ -81,7 +81,7 @@ const ContactSection = () => {
               <input
                 type="hidden"
                 name="_next"
-                value="https://thinksyncsolutions.vercel.app/thank-you"
+                value="https://www.thinksync.solutions/thank-you"
               />
               <div className="grid md:grid-cols-2 gap-6">
                 <div>

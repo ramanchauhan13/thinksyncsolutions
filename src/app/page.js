@@ -1,6 +1,8 @@
 'use client'
 
 import { useState, useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Import AOS styles
 // import CursorTrail from '@/components/CursorTrail';
 import Navigation from '@/components/Navigation';
 import HeroSection from '@/components/HeroSection';
@@ -21,7 +23,12 @@ export default function Home() {
   const [glitchEffect, setGlitchEffect] = useState(false);
   // const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
+
   useEffect(() => {
+     AOS.init({
+      // once: true,
+    });
+
     const handleScroll = () => setScrollY(window.scrollY);
     // const handleMouseMove = (e) => setMousePosition({ x: e.clientX, y: e.clientY });
     

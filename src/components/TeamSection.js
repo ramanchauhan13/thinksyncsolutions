@@ -4,7 +4,7 @@ import { teamMembers } from './data';
 const TeamSection = () => {
   return (
     <section id="team" className="py-20 relative">
-      <div className="container mx-auto px-6">
+      <div data-aos="fade-down" data-aos-duration="500" className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-5xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
             Meet The Team
@@ -14,7 +14,7 @@ const TeamSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div data-aos="fade-up" data-aos-duration="500" className="grid md:grid-cols-3 gap-8">
           {teamMembers.map((member) => {
             const IconComponent = member.icon;
             return (

@@ -1,4 +1,6 @@
 import { Menu, X } from 'lucide-react';
+import logo from '../assets/logo.jpg';
+import Image from "next/image";
 
 const navigationItems = [
   { id: 'hero', label: 'Home' },
@@ -12,12 +14,25 @@ const navigationItems = [
 const Navigation = ({ currentSection, isMenuOpen, setIsMenuOpen, scrollToSection }) => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-40 bg-black/80 backdrop-blur-xl border-b border-gray-800">
-      <div className="container mx-auto px-6 py-4">
+      <div  data-aos="fade-down" data-aos-duration="500" className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <div className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
-            THINKSYNC SOLUTIONS
-          </div>
           
+          {/* Logo and Brand Name */}
+          <div className="flex items-center space-x-3">
+  
+
+             <Image
+  src={logo}
+  alt="ThinkSync Logo"
+  width={40}
+  height={40}
+  className="rounded-full object-cover"
+/>
+            <div className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+              THINKSYNC SOLUTIONS
+            </div>
+          </div>
+
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
             {navigationItems.map((item) => (
