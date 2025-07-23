@@ -31,7 +31,7 @@ const HeroSection = ({ glitchEffect, scrollToSection }) => {
 
       {/* Main Content */}
       <div className="container mx-auto px-6 text-center relative z-10">
-        <div className="mb-8">
+        <div data-aos="fade-right" data-aos-duration="500" className="mb-8">
           <h1 className={`text-6xl md:text-8xl font-black mb-6 ${glitchEffect ? 'animate-pulse' : ''}`}>
             <span className="bg-gradient-to-r from-cyan-400 via-purple-500 to-green-400 bg-clip-text text-transparent">
               THE FUTURE
@@ -42,11 +42,11 @@ const HeroSection = ({ glitchEffect, scrollToSection }) => {
           <div className="h-2 bg-gradient-to-r from-cyan-400 via-purple-500 to-green-400 mx-auto max-w-md rounded-full"></div>
         </div>
         
-        <p className="text-xl md:text-3xl text-gray-300 max-w-4xl mx-auto leading-relaxed mb-12">
+        <p data-aos="fade-right" data-aos-duration="500" className="text-xl md:text-3xl text-gray-300 max-w-4xl mx-auto leading-relaxed mb-12">
           We craft digital experiences that transcend the ordinary, building tomorrow&rsquo;s web today with cutting-edge technology and visionary design.
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-6 justify-center">
+        <div data-aos="fade-left" data-aos-duration="500" data-aos-anchor-placement="top-bottom" className="flex flex-col sm:flex-row gap-6 justify-center">
           <button 
             onClick={() => scrollToSection('projects')}
             className="group px-8 py-4 bg-gradient-to-r from-cyan-600 to-purple-600 rounded-full font-semibold text-white transform hover:scale-105 transition-all duration-300 hover:shadow-2xl hover:shadow-purple-500/25"

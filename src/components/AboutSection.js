@@ -4,7 +4,7 @@ import { stats } from './data';
 const AboutSection = () => {
   return (
     <section id="about" className="py-20 relative">
-      <div data-aos="fade-down" data-aos-duration="500" className="container mx-auto px-6">
+      <div data-aos="fade-down" data-aos-duration="500" data-aos-anchor-placement="top-bottom" className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-5xl py-2 font-bold mb-4 bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
             About Team ThinkSync

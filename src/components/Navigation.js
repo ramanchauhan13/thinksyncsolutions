@@ -14,7 +14,7 @@ const navigationItems = [
 const Navigation = ({ currentSection, isMenuOpen, setIsMenuOpen, scrollToSection }) => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-40 bg-black/80 backdrop-blur-xl border-b border-gray-800">
-      <div  data-aos="fade-down" data-aos-duration="500" className="container mx-auto px-6 py-4">
+      <div data-aos="fade-down" data-aos-duration="500" className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           
           {/* Logo and Brand Name */}
