@@ -1,4 +1,26 @@
 // import { Briefcase, Users, Award, Shield } from 'lucide-react';
+import {
+  Star,
+  Headphones,
+  Rocket,
+  Code,
+  ShieldCheck,
+  Briefcase,
+  Server,
+  Cpu,
+} from "lucide-react";
+
+const iconMap = {
+  Star,
+  Headphones,
+  Rocket,
+  Code,
+  ShieldCheck,
+  Briefcase,
+  Server,
+  Cpu,
+};
+
 import { stats } from './data';
 
 const AboutSection = () => {
@@ -16,7 +38,7 @@ const AboutSection = () => {
 
         <div data-aos="fade-up" data-aos-duration="500"  className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           {stats.map((stat, index) => {
-            const IconComponent = stat.icon;
+            const IconComponent = iconMap[stat.icon];
             return (
               <div key={index} className="text-center p-6 rounded-2xl bg-gray-900/30 backdrop-blur-xl border border-gray-800">
                 <IconComponent className="w-12 h-12 mx-auto mb-4 text-cyan-400" />

@@ -1,5 +1,9 @@
-import { Github, Linkedin, Twitter } from 'lucide-react';
+import { Github, Linkedin, Code, Twitter } from 'lucide-react';
 import { teamMembers } from './data';
+
+const iconMap = {
+  Code,
+};
 
 const TeamSection = () => {
   return (
@@ -16,7 +20,7 @@ const TeamSection = () => {
 
         <div data-aos="fade-up" data-aos-duration="500" className="grid md:grid-cols-3 gap-8">
           {teamMembers.map((member) => {
-            const IconComponent = member.icon;
+            const IconComponent =  iconMap[member.icon];
             return (
               <div
                 key={member.id}

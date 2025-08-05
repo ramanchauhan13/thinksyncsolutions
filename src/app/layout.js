@@ -2,9 +2,10 @@ import './globals.css';
 import Script from 'next/script';
 
 export const metadata = {
-  title: 'Thinsync Solutions | Best Web Development Company in Moradabad',
+   metadataBase: new URL("https://thinksync.solutions"),
+  title: 'Thinksync Solutions | Best Web Development Company in Moradabad',
   description:
-    'Thinsync Solutions is a top web development company in Moradabad. We build custom ERP portals, modern websites, and software solutions for businesses.',
+    'Thinksync Solutions is a top web development company in Moradabad. We build custom ERP portals, modern websites, and software solutions for businesses.',
   keywords: [
     'ThinkSync Solutions',
     'Web Development Moradabad',
@@ -31,11 +32,12 @@ export const metadata = {
     icon: '/favicon.ico',
   },
   openGraph: {
-    title: 'Thinsync Solutions | Web Development & ERP Company',
+    title: 'Thinksync Solutions | Web Development & ERP Company',
     description:
-      'Thinsync Solutions is a trusted IT company in Moradabad offering web development, ERP software, and business IT solutions across India.',
-    url: 'https://thinsyn.solutions',
-    siteName: 'Thinsync Solutions',
+      'Thinksync Solutions is a trusted IT company in Moradabad offering web development, ERP software, and business IT solutions across India.',
+    images:["/logo.png"],
+    url: 'https://thinsync.solutions',
+    siteName: 'Thinksync Solutions',
     type: 'website',
     locale: 'en_IN',
   },
