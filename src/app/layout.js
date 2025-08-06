@@ -29,14 +29,21 @@ export const metadata = {
     'Professional UI UX Design India'
   ].join(', '),
   icons: {
-    icon: '/favicon.ico',
+    icon: '/logo.jpg',
   },
   openGraph: {
     title: 'Thinksync Solutions | Web Development & ERP Company',
     description:
       'Thinksync Solutions is a trusted IT company in Moradabad offering web development, ERP software, and business IT solutions across India.',
-    images:["/logo.png"],
-    url: 'https://thinsync.solutions',
+    images:[
+      {
+        url: "/logo.jpg",
+        width: 1200,
+        height:630,
+        alt: "ThinkSync Solutions"
+      }
+    ],
+    url: 'https://thinksync.solutions',
     siteName: 'Thinksync Solutions',
     type: 'website',
     locale: 'en_IN',
@@ -48,7 +55,15 @@ export default function RootLayout({ children }) {
     <html lang="en">
   <head>
     <meta name="keywords" content={metadata.keywords} />
-    {/* Local Business Schema for Google */}
+    <meta name="keywords" content={metadata.keywords} />
+  <meta property="og:title" content="Thinksync Solutions | Web Development & ERP Company" />
+  <meta property="og:description" content="Thinksync Solutions is a trusted IT company in Moradabad offering web development, ERP software, and business IT solutions across India." />
+  <meta property="og:image" content="https://thinksync.solutions/logo.jpg" />
+  <meta property="og:url" content="https://thinksync.solutions" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Thinksync Solutions" />
+  <meta property="og:locale" content="en_IN" />
+  
     <Script
       id="local-business-schema"
       type="application/ld+json"
@@ -56,11 +71,11 @@ export default function RootLayout({ children }) {
         __html: JSON.stringify({
           '@context': 'https://schema.org',
           '@type': 'LocalBusiness',
-          name: 'Thinsync Solutions',
-          image: 'https://thinsync.solutions/logo.png',
-          url: 'https://thinsync.solutions',
+          name: 'Thinksync Solutions',
+          image: 'https://thinksync.solutions/logo.jpg',
+          url: 'https://thinksync.solutions',
           telephone: '+91-8979937257',
-          email: 'team.thinsync.solutions@gmail.com',
+          email: 'team.thinksync.solutions@gmail.com',
           address: {
             '@type': 'PostalAddress',
             streetAddress: 'Himgiri Colony, Near Basera',
@@ -70,7 +85,7 @@ export default function RootLayout({ children }) {
             addressCountry: 'IN',
           },
           description:
-            'Thinsync Solutions is the best web development and IT solutions company in Moradabad. We specialize in ERP portals, business websites, and modern software solutions.',
+            'Thinksync Solutions is the best web development and IT solutions company in Moradabad. We specialize in ERP portals, business websites, and modern software solutions.',
           areaServed: 'Moradabad',
           priceRange: '$$',
         }),

@@ -1,5 +1,5 @@
 import { Menu, X } from 'lucide-react';
-import logo from '../assets/logo.jpg';
+import logo from '../../public/logo.jpg';
 import Image from "next/image";
 
 const navigationItems = [
@@ -21,12 +21,12 @@ const Navigation = ({ currentSection, isMenuOpen, setIsMenuOpen, scrollToSection
           <div className="flex items-center space-x-3">
   
 
-             <Image
+  <Image
   src={logo}
   alt="ThinkSync Solutions Logo"
   width={40}
   height={40}
-  className="rounded-full object-cover"
+  className="rounded-full h-10 bg-white object-contain"
 />
             <div className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
               THINKSYNC SOLUTIONS
