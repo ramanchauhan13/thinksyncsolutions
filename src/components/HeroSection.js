@@ -16,7 +16,7 @@ const HeroSection = ({ glitchEffect, scrollToSection }) => {
   return (
     <section
       id="hero"
-      className="min-h-screen pt-15 flex items-center justify-center relative overflow-hidden"
+      className="min-h-screen pt-8 lg:pt-15 flex items-center justify-center relative overflow-hidden"
     >
       {/* Background Image */}
       <div
