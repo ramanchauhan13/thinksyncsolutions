@@ -154,12 +154,12 @@ export const stats = [
   { number: "100%", label: "Commitment to Quality", icon: "Star" },
   { number: "24/7", label: "Developer Support", icon: "Headphones" },
   { number: "∞", label: "Scalable Ideas", icon: "Rocket" },
-  { number: "50K+", label: "Lines of Code", icon: "Code" },
+  { number: "100K+", label: "Lines of Code", icon: "Code" },
 { number: "99.9%", label: "Uptime Guarantee", icon: "ShieldCheck" },
-{ number: "5+", label: "Projects Completed", icon: "Briefcase" },
- { number: "5+", label: "Projects Deployed", icon: "Server" },
+{ number: "50+", label: "Projects Completed", icon: "Briefcase" },
+ { number: "50+", label: "Projects Deployed", icon: "Server" },
 //    { number: "3+", label: "Team Members", icon: "Users" },
-   { number: "5+", label: "Tech Stacks Used", icon: "Cpu" },
+   { number: "15+", label: "Tech Stacks Used", icon: "Cpu" },
 ];
 
 export const navigationItems = [
