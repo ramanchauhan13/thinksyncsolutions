@@ -48,7 +48,7 @@ const HeroSection = ({ glitchEffect, scrollToSection }) => {
       <div className="container mx-auto px-6 text-center relative z-10">
         <div data-aos="fade-right" data-aos-duration="500" className="mb-8">
           <h1
-            className={`text-6xl md:text-8xl font-black mb-6 ${
+            className={`text-4xl md:text-7xl font-black mb-6 ${
               glitchEffect ? 'animate-pulse' : ''
             }`}
           >
