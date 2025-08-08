@@ -2,6 +2,8 @@ import foodhubImg from '@/assets/foodhub.jpg'
 import erpImg from '@/assets/erp.jpg'
 import ngoImg from '@/assets/ngo.jpg'
 import blogImg from '@/assets/blog.jpg'
+import dzineImg from '@/assets/dzine.jpg'
+import hebocImg from '@/assets/heboc.jpg'
 
 export const teamMembers = [
   {
@@ -83,7 +85,28 @@ export const projects = [
   tech: ["React", "Node.js", "Express.js", "MongoDB", "Vite"],
   stats: "50+ Posts | 2 User Roles (Admin, Reader)",
   link: "https://potatotrails.vercel.app/"
+},
+{
+  id: 5,
+  title: "Dzine Tech Solution",
+  category: "Computer Coaching Website",
+  description: "A modern MERN-based website for a computer coaching institute. Offers detailed course listings, student enrollment, admin dashboard for managing batches and inquiries, and a clean, responsive UI. Designed to streamline student engagement and course management.",
+  image: dzineImg, // Replace with your actual image variable or path
+  tech: ["React", "Node.js", "Express.js", "MongoDB", "Vite"],
+  stats: "3 User Roles (Admin, Instructor, Student)",
+  link: "https://dzinetechsolutions.vercel.app/" // Replace with actual link if hosted
+},
+{
+  id: 6,
+  title: "Heboc Events",
+  category: "Event Management Website",
+  description: "A dynamic MERN-based website for an event management company. Showcases services, featured events, and client testimonials. Includes an admin dashboard to manage bookings, event listings, and team inquiries. Built for smooth client interaction and service visibility.",
+  image: hebocImg, // Replace with your actual image variable or path
+  tech: ["React", "Node.js", "Express.js", "MongoDB", "Vite"],
+  // stats: "20+ Events | 3 User Roles (Admin, Client, Team)",
+  link: "https://hebocevents.in/" // Replace with actual link if hosted
 }
+
 ];
 
 export const services = [
