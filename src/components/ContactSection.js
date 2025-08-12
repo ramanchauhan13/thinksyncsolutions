@@ -27,7 +27,7 @@ const ContactSection = () => {
                     href="mailto:thinksyncsolutions@gmail.com"
                     className="hover:text-cyan-400"
                   >
-                    thinksyncsolutions@gmail.com
+                    team.thinksync.solutions@gmail.com
                   </a>
                 </p>
               </div>
@@ -68,7 +68,7 @@ const ContactSection = () => {
               </div>
               <div>
                 <h4 className="text-lg font-semibold text-white">Location</h4>
-                <p className="text-gray-400">Moradabad</p>
+                <p className="text-gray-400">Himgiri Colony, Moradabad</p>
               </div>
             </div>
 

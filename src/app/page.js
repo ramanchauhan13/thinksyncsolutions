@@ -69,8 +69,8 @@ export default function Home() {
       />
       
       <HeroSection glitchEffect={glitchEffect} scrollToSection={scrollToSection} />
-      <AboutSection />
       <ServicesSection />
+      <AboutSection />
       <ProjectsSection />
       <TeamSection />
       <ContactSection />

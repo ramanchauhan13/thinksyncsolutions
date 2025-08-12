@@ -40,9 +40,9 @@ const AboutSection = () => {
           {stats.map((stat, index) => {
             const IconComponent = iconMap[stat.icon];
             return (
-              <div key={index} className="text-center p-6 rounded-2xl bg-gray-900/30 backdrop-blur-xl border border-gray-800">
+              <div key={index} className="text-center p-6 rounded-2xl bg-gray-900/30 backdrop-blur-xl border border-gray-800  hover:border-cyan-400 hover:rotate-4 transition-transform duration-500">
                 <IconComponent className="w-12 h-12 mx-auto mb-4 text-cyan-400" />
-                <div className="text-4xl font-bold text-white mb-2">{stat.number}</div>
+                <div className="text-4xl font-extrabold text-white mb-2">{stat.number}</div>
                 <div className="text-gray-400">{stat.label}</div>
               </div>
             );
