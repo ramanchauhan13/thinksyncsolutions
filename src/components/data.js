@@ -5,6 +5,10 @@ import blogImg from '@/assets/blog.jpg'
 import dzineImg from '@/assets/dzine.jpg'
 import hebocImg from '@/assets/heboc.jpg'
 
+import raman from '../assets/raman.jpg'
+import umesh from '../assets/umesh.jpg'
+import vaibhav from '../assets/vaibhav1.png'
+
 export const teamMembers = [
   {
     id: 1,
@@ -13,6 +17,7 @@ export const teamMembers = [
     specialty: "MERN Stack & Scalable Systems",
     description: "Expert in building scalable MERN stack applications with seamless user interfaces and robust backend APIs.",
     icon: "Code",
+    image: raman,
     color: "from-indigo-400 to-purple-600",
     bgColor: "bg-gradient-to-br from-indigo-900/20 to-purple-900/20",
     skills: ["React", "Node.js", "React Native", "Next.js", "MongoDB"],
@@ -25,6 +30,7 @@ export const teamMembers = [
     specialty: "TypeScript & Modern Web Engineering",
     description: "Delivers high-performance full-stack solutions with a focus on TypeScript and modern web development practices.",
     icon: "Code",
+    image: umesh,
     color: "from-green-400 to-emerald-600",
     bgColor: "bg-gradient-to-br from-green-900/20 to-emerald-900/20",
     skills: ["React", "Node.js", "TypeScript", "Next.js", "MongoDb"],
@@ -37,6 +43,7 @@ export const teamMembers = [
     specialty: "Cross-Platform App Development",
     description: "Specializes in building responsive mobile-first web and native apps using React, React Native, and MongoDB.",
     icon: "Code",
+    image: vaibhav,
     color: "from-orange-400 to-yellow-500",
     bgColor: "bg-gradient-to-br from-orange-900/20 to-yellow-900/20",
     skills: ["React", "Node.js", "React-Native", "Next.js", "MongoDb"],
