@@ -24,7 +24,7 @@ const ContactSection = () => {
                 <h4 className="text-lg font-semibold text-white">Email</h4>
                 <p className="text-gray-400">
                   <a
-                    href="mailto:thinksyncsolutions@gmail.com"
+                    href="mailto:team.thinksync.solutions@gmail.com"
                     className="hover:text-cyan-400"
                   >
                     team.thinksync.solutions@gmail.com
