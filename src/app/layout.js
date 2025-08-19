@@ -29,7 +29,7 @@ export const metadata = {
     'Professional UI UX Design India'
   ].join(', '),
   icons: {
-    icon: '/logo.jpg',
+    icon: '/logo.png',
   },
   openGraph: {
     title: 'Thinksync Solutions | Web Development & ERP Company',
@@ -37,7 +37,7 @@ export const metadata = {
       'Thinksync Solutions is a trusted IT company in Moradabad offering web development, ERP software, and business IT solutions across India.',
     images:[
       {
-        url: "/logo.jpg",
+        url: "/logo.png",
         width: 1200,
         height:630,
         alt: "ThinkSync Solutions"
@@ -58,7 +58,7 @@ export default function RootLayout({ children }) {
     <meta name="keywords" content={metadata.keywords} />
   <meta property="og:title" content="Thinksync Solutions | Web Development & ERP Company" />
   <meta property="og:description" content="Thinksync Solutions is a trusted IT company in Moradabad offering web development, ERP software, and business IT solutions across India." />
-  <meta property="og:image" content="https://thinksync.solutions/logo.jpg" />
+  <meta property="og:image" content="https://thinksync.solutions/logo.png" />
   <meta property="og:url" content="https://thinksync.solutions" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Thinksync Solutions" />
@@ -72,7 +72,7 @@ export default function RootLayout({ children }) {
           '@context': 'https://schema.org',
           '@type': 'LocalBusiness',
           name: 'Thinksync Solutions',
-          image: 'https://thinksync.solutions/logo.jpg',
+          image: 'https://thinksync.solutions/logo.png',
           url: 'https://thinksync.solutions',
           telephone: '+91-8979937257',
           email: 'team.thinksync.solutions@gmail.com',

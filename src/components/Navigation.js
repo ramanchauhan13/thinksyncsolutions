@@ -1,5 +1,5 @@
 import { Menu, X } from "lucide-react";
-import logo from "../../public/logo.jpg";
+import logo from "../../public/logo.png";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -36,9 +36,9 @@ const Navigation = ({
             <Image
               src={logo}
               alt="ThinkSync Solutions Logo"
-              width={40}
-              height={40}
-              className="rounded-full h-10 bg-white object-contain"
+              width={50}
+              height={50}
+              className="rounded-full h-10 object-contain"
             />
             <div className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
               THINKSYNC SOLUTIONS
