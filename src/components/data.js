@@ -157,7 +157,6 @@ export const services = [
 
 
 export const stats = [
-  
   { number: "100%", label: "Commitment to Quality", icon: "Star" },
   { number: "24/7", label: "Developer Support", icon: "Headphones" },
   { number: "∞", label: "Scalable Ideas", icon: "Rocket" },
