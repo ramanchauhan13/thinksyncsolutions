@@ -104,7 +104,7 @@ const ContactSection = () => {
                 e.target.submit(); // manually submit after alert
               }}
               className="space-y-6"
-              action="https://formsubmit.co/a33783d29c80203e2e4834f0acb6e567"
+              action="https://formsubmit.co/70b9e09e5315e3868137b61b6d9f088e"
               method="POST"
             >
               <input type="hidden" name="_captcha" value="false" />
