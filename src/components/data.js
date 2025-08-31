@@ -162,8 +162,8 @@ export const stats = [
   { number: "∞", label: "Scalable Ideas", icon: "Rocket" },
   { number: "100K+", label: "Lines of Code", icon: "Code" },
 { number: "99.9%", label: "Uptime Guarantee", icon: "ShieldCheck" },
-{ number: "5+", label: "Projects Completed", icon: "Briefcase" },
- { number: "5+", label: "Projects Deployed", icon: "Server" },
+{ number: "50+", label: "Projects Completed", icon: "Briefcase" },
+ { number: "50+", label: "Projects Deployed", icon: "Server" },
 //    { number: "3+", label: "Team Members", icon: "Users" },
    { number: "15+", label: "Tech Stacks Used", icon: "Cpu" },
 ];

@@ -33,3 +33,18 @@ html {
   background: #0284c7;
 }
 
+#nprogress {
+  pointer-events: none;
+}
+
+#nprogress .bar {
+  background: linear-gradient(to right, blue,darkblue,gray);
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px; /* change to 1px for ultra-thin */
+  transition: opacity 0.2s ease-out; /* smooth fade */
+}
+

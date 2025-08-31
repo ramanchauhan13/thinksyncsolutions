@@ -30,7 +30,7 @@ const ServicesSection = () => {
 
         {/* Section Heading Main */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-500 via-blue-700 to-gray-400 bg-clip-text text-transparent">
             Our Services
           </h2>
           <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
@@ -59,7 +59,7 @@ const ServicesSection = () => {
                 </div>
 
                 {/* Title */}
-                <h3 className="text-xl md:text-2xl font-semibold mb-3 text-white group-hover:text-purple-400 transition-colors">
+                <h3 className="text-xl md:text-2xl font-semibold mb-3 text-white group-hover:text-blue-500 transition-colors">
                   {service.title}
                 </h3>
 

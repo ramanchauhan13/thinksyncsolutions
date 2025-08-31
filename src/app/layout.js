@@ -1,5 +1,8 @@
+import Navigation from '@/components/Navigation';
 import './globals.css';
 import Script from 'next/script';
+import Footer from '@/components/Footer';
+import RouteLoader from '@/components/RouteLoader';
 
 export const metadata = {
    metadataBase: new URL("https://thinksync.solutions"),
@@ -54,7 +57,7 @@ const GA_MEASUREMENT_ID = "G-D08JKVQK80";
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" >
   <head>
     <meta name="keywords" content={metadata.keywords} />
     <meta name="keywords" content={metadata.keywords} />
@@ -111,7 +114,12 @@ export default function RootLayout({ children }) {
         </Script>
   </head>
       <body className="min-h-screen bg-black text-white relative">
-        {children}
+        <RouteLoader />
+      
+          <Navigation/>
+          {children}
+        <Footer />
+        
       </body>
     </html>
   );

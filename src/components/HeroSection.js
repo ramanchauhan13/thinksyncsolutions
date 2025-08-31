@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { ChevronRight } from 'lucide-react';
+import Link from 'next/link';
 
 const HeroSection = ({ glitchEffect, scrollToSection }) => {
   const [dots, setDots] = useState([]);
@@ -52,13 +53,13 @@ const HeroSection = ({ glitchEffect, scrollToSection }) => {
               glitchEffect ? 'animate-pulse' : ''
             }`}
           >
-            <span className="bg-gradient-to-r from-cyan-400 via-purple-500 to-green-400 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r  from-blue-600 via-blue-800 to-gray-400 bg-clip-text text-transparent">
               IT SOFTWARE
             </span>
             <br />
-            <span className="text-white">TECH & SOLUTIONS</span>
+            <span className="text-gray-300">TECH & SOLUTIONS</span>
           </h1>
-          <div className="h-2 bg-gradient-to-r from-cyan-400 via-purple-500 to-green-400 mx-auto max-w-md rounded-full"></div>
+          <div className="h-2 bg-gradient-to-r from-blue-600 via-blue-800 to-gray-400 mx-auto max-w-md rounded-full"></div>
         </div>
 
         <p
@@ -77,13 +78,13 @@ const HeroSection = ({ glitchEffect, scrollToSection }) => {
           data-aos-anchor-placement="top-bottom"
           className="flex flex-col sm:flex-row gap-6 justify-center"
         >
-          <button
-            onClick={() => scrollToSection('projects')}
-            className="group px-8 py-4 bg-gradient-to-r from-cyan-600 to-purple-600 rounded-full font-semibold text-white transform hover:scale-105 transition-all duration-300 hover:shadow-2xl hover:shadow-purple-500/25"
+          <Link
+            href="/projects"
+            className="group px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-800 rounded-full font-semibold text-white transform hover:scale-105 hover:bg-gradient-to-r hover:from-blue-700 hover:to-blue-900 transition-all duration-300 cursor-pointer"
           >
             View Our Work
             <ChevronRight className="inline ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
-          </button>
+          </Link>
           <button
             onClick={() => scrollToSection('contact')}
             className="px-8 py-4 border-2 border-gray-600 rounded-full font-semibold text-gray-300 hover:border-cyan-400 hover:text-cyan-400 transition-all duration-300"

@@ -6,14 +6,12 @@ import 'aos/dist/aos.css'; // Import AOS styles
 // import CursorTrail from '@/components/CursorTrail';
 import Navigation from '@/components/Navigation';
 import HeroSection from '@/components/HeroSection';
-import AboutSection from '@/components/AboutSection';
 import ServicesSection from '@/components/ServicesSection';
-import ProjectsSection from '@/components/ProjectsSection';
-import TeamSection from '@/components/TeamSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
 import ScrollToTop from '@/components/ScrollToTop';
 import CornerAccents from '@/components/CornerAccents';
+import WhyChooseUs from '@/components/WhyChooseUs';
 
 
 export default function Home() {
@@ -61,20 +59,20 @@ export default function Home() {
       <div className="min-h-screen bg-black text-white relative overflow-hidden">
       {/* <CursorTrail mousePosition={mousePosition} /> */}
       
-      <Navigation 
+      {/* <Navigation 
         currentSection={currentSection} 
         isMenuOpen={isMenuOpen} 
         setIsMenuOpen={setIsMenuOpen} 
         scrollToSection={scrollToSection} 
-      />
+      /> */}
       
       <HeroSection glitchEffect={glitchEffect} scrollToSection={scrollToSection} />
       <ServicesSection />
-      <AboutSection />
-      <ProjectsSection />
-      <TeamSection />
+      <WhyChooseUs />
+      {/* <ProjectsSection /> */}
+      {/* <TeamSection /> */}
       <ContactSection />
-      <Footer />
+      {/* <Footer /> */}
       
       <ScrollToTop scrollY={scrollY} />
       <CornerAccents />
