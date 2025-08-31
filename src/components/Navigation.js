@@ -40,7 +40,7 @@ const Navigation = ({
               height={50}
               className="rounded-full h-10 object-contain"
             />
-            <div className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+            <div className="text-2xl font-bold bg-gradient-to-r from-blue-500 via-blue-700 to-blue-300 bg-clip-text text-transparent">
               THINKSYNC SOLUTIONS
             </div>
           </div>
