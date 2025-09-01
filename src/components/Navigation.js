@@ -35,9 +35,9 @@ const Navigation = () => {
               alt="ThinkSync Solutions Logo"
               width={50}
               height={50}
-              className="object-contain w-8 h-8 sm:w-10 sm:h-10"
+              className="object-contain w-10 h-10 sm:w-10 sm:h-10"
             />
-            <div className="text-lg lg:text-2xl font-bold bg-gradient-to-r from-blue-600 via-blue-800 to-blue-400 bg-clip-text text-transparent">
+            <div className="text-xl lg:text-2xl font-bold bg-gradient-to-r from-blue-600 via-blue-800 to-blue-400 bg-clip-text text-transparent">
               THINKSYNC SOLUTIONS
             </div>
           </Link>
