@@ -29,15 +29,15 @@ const Navigation = () => {
       >
         <div className="flex items-center justify-between">
           {/* Logo and Brand Name */}
-          <Link href="/" className="flex items-center space-x-4">
+          <Link href="/" className="flex items-center space-x-2 lg:space-x-3">
             <Image
               src={logo}
               alt="ThinkSync Solutions Logo"
               width={50}
               height={50}
-              className="object-contain"
+              className="object-contain w-8 h-8 sm:w-10 sm:h-10"
             />
-            <div className="text-2xl font-bold bg-gradient-to-r from-blue-600 via-blue-800 to-blue-400 bg-clip-text text-transparent">
+            <div className="text-lg lg:text-2xl font-bold bg-gradient-to-r from-blue-600 via-blue-800 to-blue-400 bg-clip-text text-transparent">
               THINKSYNC SOLUTIONS
             </div>
           </Link>
