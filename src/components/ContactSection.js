@@ -84,7 +84,7 @@ const ContactSection = () => {
           </div>
 
           {/* Contact Form */}
-          <div className="p-8 rounded-xl bg-gray-900/70 border border-gray-800 order-1 md:order-2">
+          <div className="p-8 rounded-xl bg-gray-900/30 backdrop-blur-xs border border-gray-800 order-1 md:order-2">
             <form
               action="https://formsubmit.co/70b9e09e5315e3868137b61b6d9f088e"
               method="POST"

@@ -58,7 +58,7 @@ const WhyChooseUs = () => {
             return (
               <div
                 key={index}
-                className="relative text-center p-8 rounded-xl bg-gray-900/60 backdrop-blur-sm border border-gray-800 transition-all duration-300 hover:border-cyan-400"
+                className="relative text-center p-8 rounded-xl bg-gray-900/30 backdrop-blur-xs border border-gray-700 transition-all duration-300 hover:border-blue-600"
               >
                 {/* Icon */}
                 <IconComponent className="w-10 h-10 mx-auto mb-4 text-cyan-400" />

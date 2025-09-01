@@ -42,7 +42,7 @@ export default function AboutPage() {
         ].map(({ icon: Icon, title, desc, color }, i) => (
           <div
             key={i}
-            className="group relative p-8 rounded-2xl border border-gray-800 bg-gray-900/30 backdrop-blur-xl transition-all duration-500 hover:border-gray-600 hover:scale-105"
+            className="group relative p-8 rounded-2xl border border-gray-800 bg-gray-900/30 backdrop-blur-sm transition-all duration-500 hover:border-gray-600 hover:scale-105"
           >
             <div
               className={`absolute inset-0 bg-gradient-to-r ${color} opacity-0 group-hover:opacity-10 transition-opacity duration-500 rounded-2xl`}

@@ -28,11 +28,11 @@ const TestimonialsSection = () => {
         </div>
 
         {/* Testimonials Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 ">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="group p-8 rounded-2xl bg-gray-900/30 backdrop-blur-xl border border-gray-800 hover:border-gray-600 transition-all duration-500 hover:scale-105"
+              className="group p-8 rounded-2xl bg-gray-900/30 backdrop-blur-xs border border-gray-800 hover:border-gray-600 transition-all duration-500 hover:scale-105"
             >
               {/* Quote Icon */}
               <div className="mb-6">
