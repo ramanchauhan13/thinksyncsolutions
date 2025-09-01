@@ -2,14 +2,20 @@ import { Mail, Phone, MapPin } from "lucide-react";
 
 const ContactSection = () => {
   return (
-    <section id="contact" className="py-20 relative">
-      <div className="container mx-auto px-6">
+    <section
+      id="contact"
+      className="py-20 relative bg-[url('/back.png')] bg-cover bg-center"
+    >
+      {/* Dark overlay */}
+      <div className="absolute inset-0"></div>
+
+      <div className="relative container mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold pb-2 mb-4 bg-gradient-to-r from-blue-500 via-blue-700 to-gray-400 bg-clip-text text-transparent">
             Let&rsquo;s Build Something Amazing
           </h2>
-          <p className="text-lg text-gray-400 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-300 max-w-2xl mx-auto">
             Ready to transform your vision into digital reality? Get in touch
             with us.
           </p>
@@ -26,7 +32,7 @@ const ContactSection = () => {
                 <h4 className="text-lg font-semibold text-white">Email</h4>
                 <a
                   href="mailto:team.thinksync.solutions@gmail.com"
-                  className="text-gray-400 hover:text-cyan-400 transition-colors"
+                  className="text-gray-300 hover:text-cyan-400 transition-colors"
                 >
                   team.thinksync.solutions@gmail.com
                 </a>
@@ -39,7 +45,7 @@ const ContactSection = () => {
               </div>
               <div>
                 <h4 className="text-lg font-semibold text-white">Phone</h4>
-                <div className="text-gray-400 space-y-1">
+                <div className="text-gray-300 space-y-1">
                   <a href="tel:+918979937257" className="block hover:text-cyan-400">
                     +91 8979937257
                   </a>
@@ -59,7 +65,7 @@ const ContactSection = () => {
               </div>
               <div>
                 <h4 className="text-lg font-semibold text-white">Location</h4>
-                <p className="text-gray-400">Himgiri Colony, Moradabad</p>
+                <p className="text-gray-300">Himgiri Colony, Moradabad</p>
               </div>
             </div>
 
@@ -149,14 +155,14 @@ const ContactSection = () => {
                 <textarea
                   rows={6}
                   name="message"
-                  className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 text-white resize-none transition"
+                  className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:border-blue-600 focus:ring-1 focus:ring-blue-600 text-white resize-none transition"
                   placeholder="Tell us about your project..."
                 ></textarea>
               </div>
 
               <button
                 type="submit"
-                className="w-full py-3 bg-cyan-600 hover:bg-cyan-500 rounded-lg font-semibold text-white transition-colors duration-300"
+                className="w-full py-3 bg-blue-600 hover:bg-blue-700 rounded-lg font-semibold text-white transition-colors duration-300"
               >
                 Send Message
               </button>

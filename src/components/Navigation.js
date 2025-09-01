@@ -13,7 +13,7 @@ const navigationItems = [
   { href: "/#services", label: "Services" },
   { href: "/projects", label: "Projects" },
   { href: "/team", label: "Team" },
-  { href: "/contact", label: "Contact" },
+  { href: "/#contact", label: "Contact" },
 ];
 
 const Navigation = () => {
@@ -84,8 +84,8 @@ const Navigation = () => {
                   href={item.href}
                   className={`block w-full text-left py-2 transition-colors duration-300 ${
                     isActive
-                      ? "text-cyan-400 font-bold"
-                      : "text-gray-300 hover:text-cyan-400"
+                      ? "text-blue-600 font-bold"
+                      : "text-gray-300 hover:text-blue-600"
                   }`}
                   onClick={() => setIsMenuOpen(false)}
                 >

@@ -87,7 +87,7 @@ const HeroSection = ({ glitchEffect, scrollToSection }) => {
           </Link>
           <button
             onClick={() => scrollToSection('contact')}
-            className="px-8 py-4 border-2 border-gray-600 rounded-full font-semibold text-gray-300 hover:border-cyan-400 hover:text-cyan-400 transition-all duration-300"
+            className="px-8 py-4 border-2 border-gray-600 rounded-full font-semibold text-gray-300 hover:border-blue-600 hover:text-blue-600 transition-all duration-300"
           >
             Get In Touch
           </button>

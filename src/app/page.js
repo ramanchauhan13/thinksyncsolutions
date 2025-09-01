@@ -7,7 +7,7 @@ import 'aos/dist/aos.css'; // Import AOS styles
 import HeroSection from '@/components/HeroSection';
 import ServicesSection from '@/components/ServicesSection';
 import ContactSection from '@/components/ContactSection';
-import Footer from '@/components/Footer';
+import TestimonialsSection from '@/components/Testimonials';
 import ScrollToTop from '@/components/ScrollToTop';
 import CornerAccents from '@/components/CornerAccents';
 import WhyChooseUs from '@/components/WhyChooseUs';
@@ -57,6 +57,7 @@ export default function Home() {
       <HeroSection glitchEffect={glitchEffect} scrollToSection={scrollToSection} />
       <ServicesSection />
       <WhyChooseUs />
+      <TestimonialsSection />
       <ContactSection />
       
       <ScrollToTop scrollY={scrollY} />

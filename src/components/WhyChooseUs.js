@@ -23,19 +23,25 @@ const iconMap = {
 
 const WhyChooseUs = () => {
   return (
-    <section id="about" className="py-20 relative">
+    <section
+      id="about"
+      className="py-20 relative bg-[url('/back.png')] bg-cover bg-center"
+    >
+      {/* Dark overlay */}
+      <div className="absolute inset-0"></div>
+
       <div
         data-aos="fade-down"
         data-aos-duration="500"
         data-aos-anchor-placement="top-bottom"
-        className="container mx-auto px-6"
+        className="relative container mx-auto px-6"
       >
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-5xl py-2 font-bold mb-4 bg-gradient-to-r from-blue-600 via-blue-800 to-gray-400 bg-clip-text text-transparent">
             Why Choose Us
           </h2>
-          <p className="text-lg text-gray-400 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-300 max-w-2xl mx-auto">
             We are a collective of digital architects, pushing the boundaries of
             what&rsquo;s possible in web development.
           </p>
@@ -52,7 +58,7 @@ const WhyChooseUs = () => {
             return (
               <div
                 key={index}
-                className="text-center p-8 rounded-xl bg-gray-900/60 border border-gray-800 transition-all duration-300 hover:border-cyan-400"
+                className="relative text-center p-8 rounded-xl bg-gray-900/60 backdrop-blur-sm border border-gray-800 transition-all duration-300 hover:border-cyan-400"
               >
                 {/* Icon */}
                 <IconComponent className="w-10 h-10 mx-auto mb-4 text-cyan-400" />
@@ -63,7 +69,7 @@ const WhyChooseUs = () => {
                 </div>
 
                 {/* Label */}
-                <div className="text-gray-400 text-sm font-medium">
+                <div className="text-gray-300 text-sm font-medium">
                   {stat.label}
                 </div>
               </div>

@@ -172,3 +172,27 @@ export const navigationItems = [
   { id: 'hero', label: 'Home' },
   // ... other navigation items
 ];
+
+export const testimonials = [
+  {
+    name: "Ayush Gaur",
+    role: "Event Manager",
+    feedback:
+      "Working with ThinkSync Solutions was super easy. They listened to what I needed and turned my ideas into a really smooth, modern website. It honestly made my job a lot easier.",
+    image: "/user.jpg",
+  },
+  {
+    name: "Lalit Singh Mehta",
+    role: "Architect",
+    feedback:
+      "I wanted a site that looked clean and loaded fast, and that’s exactly what they delivered. The team kept me updated the whole time and finished earlier than I expected.",
+    image: "/user.jpg",
+  },
+  {
+    name: "Dzine Tech Solution",
+    role: "Coaching Center Owner",
+    feedback:
+      "I’m not very tech-savvy, but these guys explained everything simply and built a site my students love using. It feels smooth and professional without being complicated.",
+    image: "/user.jpg",
+  },
+];
