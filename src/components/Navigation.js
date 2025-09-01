@@ -5,18 +5,20 @@ import logo from "../../public/logo.png";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import {useState} from "react";
 
 const navigationItems = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
-  { href: "/services", label: "Services" },
+  { href: "/#services", label: "Services" },
   { href: "/projects", label: "Projects" },
   { href: "/team", label: "Team" },
   { href: "/contact", label: "Contact" },
 ];
 
-const Navigation = ({ isMenuOpen, setIsMenuOpen }) => {
+const Navigation = () => {
   const pathname = usePathname();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-40 bg-black/40 backdrop-blur-xl border-b border-gray-800">
@@ -25,17 +27,17 @@ const Navigation = ({ isMenuOpen, setIsMenuOpen }) => {
         data-aos-duration="500"
         className="container mx-auto px-6 py-4"
       >
-        <div className="flex items-center justify-around">
+        <div className="flex items-center justify-between">
           {/* Logo and Brand Name */}
-          <Link href="/" className="flex items-center space-x-3">
+          <Link href="/" className="flex items-center space-x-4">
             <Image
               src={logo}
               alt="ThinkSync Solutions Logo"
               width={50}
               height={50}
-              className="rounded-full h-10 object-contain"
+              className="object-contain"
             />
-            <div className="text-2xl font-bold bg-gradient-to-r from-blue-500 via-blue-700 to-blue-300 bg-clip-text text-transparent">
+            <div className="text-2xl font-bold bg-gradient-to-r from-blue-600 via-blue-800 to-blue-400 bg-clip-text text-transparent">
               THINKSYNC SOLUTIONS
             </div>
           </Link>

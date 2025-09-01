@@ -4,7 +4,6 @@ import { useState, useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
 // import CursorTrail from '@/components/CursorTrail';
-import Navigation from '@/components/Navigation';
 import HeroSection from '@/components/HeroSection';
 import ServicesSection from '@/components/ServicesSection';
 import ContactSection from '@/components/ContactSection';
@@ -15,17 +14,15 @@ import WhyChooseUs from '@/components/WhyChooseUs';
 
 
 export default function Home() {
-   const [currentSection, setCurrentSection] = useState('hero');
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrollY, setScrollY] = useState(0);
   const [glitchEffect, setGlitchEffect] = useState(false);
   // const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
 
   useEffect(() => {
-     AOS.init({
+     AOS.init(
       // once: true,
-    });
+);
 
     const handleScroll = () => setScrollY(window.scrollY);
     // const handleMouseMove = (e) => setMousePosition({ x: e.clientX, y: e.clientY });
@@ -49,30 +46,18 @@ export default function Home() {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
-      setCurrentSection(sectionId);
-      setIsMenuOpen(false);
     }
   };
 
 
   return (
       <div className="min-h-screen bg-black text-white relative overflow-hidden">
-      {/* <CursorTrail mousePosition={mousePosition} /> */}
-      
-      {/* <Navigation 
-        currentSection={currentSection} 
-        isMenuOpen={isMenuOpen} 
-        setIsMenuOpen={setIsMenuOpen} 
-        scrollToSection={scrollToSection} 
-      /> */}
+
       
       <HeroSection glitchEffect={glitchEffect} scrollToSection={scrollToSection} />
       <ServicesSection />
       <WhyChooseUs />
-      {/* <ProjectsSection /> */}
-      {/* <TeamSection /> */}
       <ContactSection />
-      {/* <Footer /> */}
       
       <ScrollToTop scrollY={scrollY} />
       <CornerAccents />

@@ -16,7 +16,7 @@ const TeamPage = () => {
       >
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-5xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+          <h2 className="text-5xl font-bold mb-4 bg-gradient-to-r from-blue-600 via-blue-800 to-gray-400 bg-clip-text text-transparent">
             Meet The Team
           </h2>
           <p className="text-lg text-gray-400 max-w-2xl mx-auto">

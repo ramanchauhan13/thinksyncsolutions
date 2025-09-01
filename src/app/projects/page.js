@@ -12,7 +12,7 @@ const ProjectPage = () => {
     <section  id="projects" className="py-22 relative">
       <div data-aos="fade-down" data-aos-duration="500" className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 via-blue-800 to-gray-a400 bg-clip-text text-transparent">
+          <h2 className="text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 via-blue-800 to-gray-400 bg-clip-text text-transparent">
             Featured Projects
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">

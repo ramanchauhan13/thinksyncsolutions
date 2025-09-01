@@ -1,8 +1,6 @@
-import Navigation from '@/components/Navigation';
 import './globals.css';
 import Script from 'next/script';
-import Footer from '@/components/Footer';
-import RouteLoader from '@/components/RouteLoader';
+import LayoutWrapper from "@/components/LayoutWrapper";
 
 export const metadata = {
    metadataBase: new URL("https://thinksync.solutions"),
@@ -114,11 +112,9 @@ export default function RootLayout({ children }) {
         </Script>
   </head>
       <body className="min-h-screen bg-black text-white relative">
-        <RouteLoader />
-      
-          <Navigation/>
-          {children}
-        <Footer />
+       <LayoutWrapper>
+        {children}
+       </LayoutWrapper>
         
       </body>
     </html>
