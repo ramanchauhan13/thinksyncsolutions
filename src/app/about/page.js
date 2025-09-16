@@ -111,7 +111,7 @@ export default function AboutPage() {
             is here to bring your ideas to life.
           </p>
           <a
-            href="/contact"
+            href="/#contact"
             className="inline-block px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-800 text-white rounded-lg font-semibold hover:scale-105 transition"
           >
             Contact Us
