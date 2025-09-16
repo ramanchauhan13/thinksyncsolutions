@@ -1,4 +1,5 @@
 import { Target, Eye, HeartHandshake, Lightbulb, ShieldCheck, Users } from "lucide-react";
+import Link from "next/link";
 
 export default function AboutPage() {
   return (
@@ -110,12 +111,12 @@ export default function AboutPage() {
             <span className="font-semibold text-white">ThinkSync Solutions</span>{" "}
             is here to bring your ideas to life.
           </p>
-          <a
+          <Link
             href="/#contact"
             className="inline-block px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-800 text-white rounded-lg font-semibold hover:scale-105 transition"
           >
             Contact Us
-          </a>
+          </Link>
         </div>
       </div>
     </section>
