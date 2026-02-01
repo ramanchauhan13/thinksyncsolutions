@@ -7,7 +7,6 @@ const ContactPage = () => {
   const [activeType, setActiveType] = useState('Development');
 
   return (
-    <div>
     <div className="min-h-screen bg-white text-slate-900 font-sans selection:bg-blue-600 selection:text-white overflow-x-hidden">
       {/* Texture Layer */}
       <div className="fixed inset-0 pointer-events-none opacity-[0.03] z-0" 
@@ -147,7 +146,6 @@ const ContactPage = () => {
           <span className="font-black text-2xl tracking-tighter">© 2026</span>
         </div>
       </main>
-    </div>
     </div>
   );
 };

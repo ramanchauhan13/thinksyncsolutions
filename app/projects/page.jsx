@@ -77,14 +77,13 @@ const Projects = () => {
   ];
 
   return (
-    <div>
-      <div className="min-h-screen bg-white py-10 px-6">
+      <div className="min-h-screen bg-white py-26 px-6">
         <div className="max-w-7xl mx-auto">
           {/* Header Section */}
           <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
             <div className="max-w-2xl">
               <div className="flex items-center gap-3 mb-6">
-                <span className="h-[2px] w-12 bg-blue-600"></span>
+                <span className="h-[1px] w-12 bg-blue-600"></span>
                 <span className="text-blue-600 font-black uppercase tracking-[0.3em] text-[10px]">
                   Proven Shipments
                 </span>
@@ -180,7 +179,6 @@ const Projects = () => {
           </div>
         </div>
       </div>
-    </div>
   );
 };
 

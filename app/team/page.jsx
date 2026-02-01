@@ -44,7 +44,7 @@ const TeamPage = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-white text-slate-900 font-sans selection:bg-blue-600 selection:text-white pt-10">
+    <div className="min-h-screen bg-white text-slate-900 font-sans selection:bg-blue-600 selection:text-white">
       {/* Texture Layer */}
       <div
         className="fixed inset-0 pointer-events-none opacity-[0.02] z-0"
@@ -53,7 +53,7 @@ const TeamPage = () => {
         }}
       ></div>
 
-      <main className="relative z-10 max-w-7xl mx-auto px-6 pb-24">
+      <main className="relative z-10 max-w-7xl mx-auto px-6 py-26">
         {/* Header: Massive Scale */}
         <div className="mb-20">
           <div className="flex items-center gap-4 mb-8">

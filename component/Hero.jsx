@@ -3,7 +3,7 @@ import { ArrowRight, Zap, Cpu } from 'lucide-react'
 
 const Hero = () => {
   return (
-    <section className="relative pt-32 pb-20 px-6 overflow-hidden">
+    <section className="relative py-26 px-6 overflow-hidden">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
           <div className="z-10">
             <div className="flex items-center gap-2 mb-6">
