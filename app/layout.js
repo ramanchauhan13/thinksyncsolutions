@@ -25,12 +25,15 @@ export const metadata = {
   verification: {
     google: "YOUR_GOOGLE_CONSOLE_CODE", // Replace this with your actual code from Search Console
   },
+  icons: {
+    icon: '/logo.png',
+  },
   openGraph: {
     title: "ThinkSync Solutions | Innovative Tech Partner",
     description: "Driving business growth through synchronized technology solutions in Moradabad.",
     url: "https://thinksync.solutions",
     siteName: "ThinkSync Solutions",
-    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
+    images: [{ url: "/logo.png", width: 1200, height: 630 }],
     locale: "en_IN",
     type: "website",
   },
