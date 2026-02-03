@@ -1,10 +1,10 @@
-import React from 'react';
+import React from "react";
 
 const Stats = () => {
   const stats = [
-    { value: '100+', label: 'Products Shipped', sub: 'Global Delivery' },
-    { value: '02hr', label: 'Support Response', sub: 'High Priority' },
-    { value: '100%', label: 'In-House Engineering', sub: 'Zero Outsourcing' }
+    { value: "100+", label: "Products Shipped", sub: "Global Delivery" },
+    { value: "02hr", label: "Support Response", sub: "High Priority" },
+    { value: "100%", label: "In-House Engineering", sub: "Zero Outsourcing" },
   ];
 
   return (
@@ -15,7 +15,7 @@ const Stats = () => {
             <div key={idx} className="group relative">
               {/* Decorative Glass Background - Visible on Hover */}
               <div className="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 group-hover:scale-105 group-hover:-rotate-1 rounded-3xl transition-all duration-500 border border-white/10 backdrop-blur-sm" />
-              
+
               {/* Main Card Content */}
               <div className="relative p-8 rounded-3xl transition-transform duration-500 group-hover:-translate-y-2">
                 {/* Accent Line */}
@@ -28,7 +28,7 @@ const Stats = () => {
                   <div className="text-7xl lg:text-8xl font-black mb-2 tracking-tighter drop-shadow-2xl">
                     {item.value}
                   </div>
-                  
+
                   {/* Label with increased letter spacing */}
                   <div className="uppercase tracking-[0.3em] font-black text-[10px] text-blue-100 mb-2 opacity-80 group-hover:opacity-100">
                     {item.label}

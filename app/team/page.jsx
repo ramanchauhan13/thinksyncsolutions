@@ -125,13 +125,13 @@ const TeamPage = () => {
                   </div>
                   <div className="ml-auto">
                     <a
-                        href={member.bioLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="ml-auto flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest bg-black text-white px-6 py-3 rounded-full group-hover:bg-blue-600 group-hover:text-white transition-all"
-                      >
-                        Full Bio <ArrowUpRight size={14} />
-                      </a>
+                      href={member.bioLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="ml-auto flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest bg-black text-white px-6 py-3 rounded-full group-hover:bg-blue-600 group-hover:text-white transition-all"
+                    >
+                      Full Bio <ArrowUpRight size={14} />
+                    </a>
                   </div>
                 </div>
               </div>
@@ -140,7 +140,7 @@ const TeamPage = () => {
         </div>
 
         {/* Join the Team Section */}
-        <section className="mt-40 grid md:grid-cols-2 gap-px bg-slate-200 border-2 border-slate-200 rounded-[2rem] overflow-hidden">
+        {/* <section className="mt-40 grid md:grid-cols-2 gap-px bg-slate-200 border-2 border-slate-200 rounded-[2rem] overflow-hidden">
           <div className="bg-white p-12 md:p-20">
             <h3 className="text-4xl font-black uppercase tracking-tighter mb-6">
               We are <br /> always scouting.
@@ -159,7 +159,7 @@ const TeamPage = () => {
               <ArrowUpRight className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
             </button>
           </div>
-        </section>
+        </section> */}
       </main>
 
       {/* Footer Branding */}
