@@ -38,7 +38,7 @@ const Process = () => {
       <div className="max-w-7xl mx-auto">
         {/* Header with Background Text */}
         <div className="relative mb-24 flex flex-col items-center">
-          <span className="absolute -top-10 text-[10rem] font-black text-slate-100 select-none -z-0">
+          <span className="absolute -top-10 text-[10rem] font-black text-slate-100 select-none z-0">
             WORK
           </span>
           <h2 className="relative z-10 text-5xl md:text-6xl font-black text-slate-900 uppercase tracking-tighter text-center">
@@ -57,14 +57,14 @@ const Process = () => {
         {/* Process Path */}
         <div className="grid md:grid-cols-4 gap-8 relative">
           {/* Connecting Line (Hidden on Mobile) */}
-          <div className="hidden md:block absolute top-1/2 left-0 w-full h-[2px] bg-slate-100 -translate-y-12 z-0" />
+          <div className="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-slate-100 -translate-y-12 z-0" />
 
           {steps.map((item, idx) => (
             <div key={idx} className="group relative z-10">
               {/* Step Number Badge */}
               <div className="flex items-center justify-center mb-8">
                 <div
-                  className={`w-14 h-14 rounded-full ${item.color} text-white flex items-center justify-center shadow-xl shadow-blue-200 group-hover:scale-110 group-hover:rotate-[360deg] transition-all duration-700 relative`}
+                  className={`w-14 h-14 rounded-full ${item.color} text-white flex items-center justify-center shadow-xl shadow-blue-200 group-hover:scale-110 group-hover:rotate-360 transition-all duration-700 relative`}
                 >
                   {item.icon}
                   {/* Floating Number */}
@@ -97,7 +97,7 @@ const Process = () => {
               {/* Mobile Arrow (Visible only on small screens) */}
               {idx !== steps.length - 1 && (
                 <div className="md:hidden flex justify-center py-4">
-                  <div className="h-8 w-[2px] bg-slate-200" />
+                  <div className="h-8 w-0.5 bg-slate-200" />
                 </div>
               )}
             </div>

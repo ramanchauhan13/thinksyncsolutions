@@ -46,7 +46,7 @@ const Testimonials = () => {
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-4">
           <div className="max-w-xl">
             <div className="flex items-center gap-4 mb-4">
-              <span className="h-[2px] w-12 bg-blue-600"></span>
+              <span className="h-0.5 w-12 bg-blue-600"></span>
               <span className="text-blue-600 font-black uppercase tracking-[0.4em] text-[10px]">
                 Proof of Performance
               </span>
@@ -73,7 +73,7 @@ const Testimonials = () => {
         </div>
 
         {/* Interactive Carousel Box */}
-        <div className="relative min-h-[280px] flex items-center">
+        <div className="relative min-h-70 flex items-center">
           {reviews.map((r, i) => (
             <div
               key={i}

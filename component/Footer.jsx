@@ -22,7 +22,7 @@ const Footer = () => {
   return (
     <footer className="bg-[#0f172a] pt-24 pb-10 px-6 text-white rounded-t-[3rem] md:rounded-t-[5rem] relative overflow-hidden">
       {/* Background Brand Text */}
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/3 text-[20vw] font-black text-white/[0.02] select-none pointer-events-none whitespace-nowrap">
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/3 text-[20vw] font-black text-white/2 select-none pointer-events-none whitespace-nowrap">
         THINKSYNC
       </div>
 
@@ -34,7 +34,7 @@ const Footer = () => {
             <h2 className="text-6xl md:text-8xl font-black mb-10 leading-[0.85] tracking-tighter uppercase">
               READY TO
               <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-indigo-400 italic">
+              <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-500 to-indigo-400 italic">
                 SYNC UP?
               </span>
             </h2>

@@ -8,7 +8,7 @@ const Hero = () => {
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
         <div className="z-10">
           <div className="flex items-center gap-2 mb-6">
-            <span className="h-[1px] w-12 bg-blue-600"></span>
+            <span className="h-px w-12 bg-blue-600"></span>
             <span className="text-blue-600 font-bold tracking-[0.2em] text-xs uppercase">
               Elite Software Partner
             </span>
@@ -134,11 +134,11 @@ const Hero = () => {
           </div>
 
           {/* The "Mobile Result" - Floating on top to show the final product */}
-          <div className="absolute -bottom-10 -right-4 w-40 h-72 bg-white rounded-[2.5rem] border-[8px] border-slate-900 shadow-2xl hidden md:block transform lg:rotate-6 hover:rotate-0 transition-all duration-500">
+          <div className="absolute -bottom-10 -right-4 w-40 h-72 bg-white rounded-[2.5rem] border-8 border-slate-900 shadow-2xl hidden md:block transform lg:rotate-6 hover:rotate-0 transition-all duration-500">
             <div className="w-12 h-1 bg-slate-200 mx-auto mt-3 rounded-full" />
             <div className="p-4 mt-6">
               <div className="w-full h-32 bg-slate-100 rounded-2xl mb-4 overflow-hidden relative">
-                <div className="absolute inset-0 bg-gradient-to-tr from-blue-600 to-indigo-600 opacity-20" />
+                <div className="absolute inset-0 bg-linear-to-tr from-blue-600 to-indigo-600 opacity-20" />
                 <Zap className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-blue-600 w-8 h-8" />
               </div>
               <div className="space-y-2">

@@ -35,7 +35,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed w-[95%] lg:w-[90%] left-1/2 -translate-x-1/2 top-4 z-[100] transition-all duration-500 rounded-2xl border border-white/20 
+      className={`fixed w-[95%] lg:w-[90%] left-1/2 -translate-x-1/2 top-4 z-100 transition-all duration-500 rounded-2xl border border-white/20 
       ${
         scrolled
           ? "bg-white/40 backdrop-blur-2xl shadow-[0_8px_32px_0_rgba(31,38,135,0.07)]"
@@ -51,9 +51,9 @@ const Navbar = () => {
           <div className="transition-transform duration-300 group-hover:rotate-12">
             <Image src="/logo.png" alt="Logo" width={32} height={32} />
           </div>
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#0c2f55] to-blue-600">
+          <span className="bg-clip-text text-transparent bg-linear-to-r from-[#0c2f55] to-blue-600">
             THINK
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-blue-600">
+            <span className="bg-clip-text text-transparent bg-linear-to-r from-blue-700 to-blue-600">
               SYNC
             </span>
           </span>

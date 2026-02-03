@@ -55,7 +55,7 @@ const Services = () => {
             </span>
             <h2 className="text-5xl md:text-6xl font-black text-slate-900 leading-none tracking-tighter">
               SPECIALIZED <br />{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-500">
+              <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-600 to-indigo-500">
                 SOLUTIONS.
               </span>
             </h2>
@@ -79,7 +79,7 @@ const Services = () => {
 
                 {/* Icon & Arrow */}
                 <div className="flex justify-between items-start mb-8">
-                  <div className="p-4 bg-blue-600 rounded-2xl text-white group-hover:bg-blue-600 group-hover:text-white group-hover:rotate-[360deg] transition-all duration-700 shadow-inner">
+                  <div className="p-4 bg-blue-600 rounded-2xl text-white group-hover:bg-blue-600 group-hover:text-white group-hover:rotate-360 transition-all duration-700 shadow-inner">
                     {s.icon}
                   </div>
                   <ArrowUpRight
@@ -100,7 +100,7 @@ const Services = () => {
 
                 {/* Decorative Progress Bar */}
                 <div className="relative h-1 w-full bg-slate-100 rounded-full overflow-hidden">
-                  <div className="absolute top-0 left-0 h-full w-0 bg-gradient-to-r from-blue-600 to-indigo-400 group-hover:w-full transition-all duration-700 ease-out" />
+                  <div className="absolute top-0 left-0 h-full w-0 bg-linear-to-r from-blue-600 to-indigo-400 group-hover:w-full transition-all duration-700 ease-out" />
                 </div>
               </div>
             </Link>

@@ -89,7 +89,7 @@ const WhyUs = () => {
 
           <h2 className="text-5xl lg:text-7xl font-black mb-10 leading-[0.85] text-slate-900 uppercase tracking-tighter">
             Why we are the <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 italic">
+            <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-600 to-indigo-600 italic">
               right choice.
             </span>
           </h2>
@@ -113,10 +113,10 @@ const WhyUs = () => {
             ].map((item, i) => (
               <div
                 key={i}
-                className="group flex flex-col md:flex-row gap-6 p-8 rounded-[2rem] transition-all duration-300 hover:bg-slate-50 border border-transparent hover:border-slate-100"
+                className="group flex flex-col md:flex-row gap-6 p-8 rounded-4xl transition-all duration-300 hover:bg-slate-50 border border-transparent hover:border-slate-100"
               >
                 {/* Dynamic Stat Node */}
-                <div className="flex-shrink-0 w-24 h-24 bg-blue-50 rounded-3xl flex flex-col items-center justify-center border border-blue-100 group-hover:bg-blue-600 group-hover:border-blue-600 transition-all duration-500">
+                <div className="shrink-0 w-24 h-24 bg-blue-50 rounded-3xl flex flex-col items-center justify-center border border-blue-100 group-hover:bg-blue-600 group-hover:border-blue-600 transition-all duration-500">
                   <span className="text-2xl font-black text-blue-600 group-hover:text-white transition-colors">
                     {item.stat}
                   </span>

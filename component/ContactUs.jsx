@@ -118,14 +118,14 @@ const ContactUs = () => {
               </button>
 
               {/* Action: Discovery Call */}
-              <button className="group/card relative bg-white p-8 rounded-[2rem] hover:bg-slate-100 transition-all duration-500 text-left">
+              <button className="group/card relative bg-white p-8 rounded-4xl hover:bg-slate-100 transition-all duration-500 text-left">
                 <Link href="/contact">
                   <div className="flex justify-between items-start">
                     <div>
                       <h3 className="text-slate-900 text-2xl font-black uppercase tracking-tighter mb-2">
                         Strategy Call
                       </h3>
-                      <p className="text-slate-500 text-sm font-medium max-w-[200px]">
+                      <p className="text-slate-500 text-sm font-medium max-w-50">
                         Book a 15-minute technical audit with us.
                       </p>
                     </div>
