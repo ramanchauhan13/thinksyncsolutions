@@ -84,7 +84,7 @@ const Projects = () => {
         <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
           <div className="max-w-2xl">
             <div className="flex items-center gap-3 mb-6">
-              <span className="h-[1px] w-12 bg-blue-600"></span>
+              <span className="h-px w-12 bg-blue-600"></span>
               <span className="text-blue-600 font-black uppercase tracking-[0.3em] text-[10px]">
                 Proven Shipments
               </span>
@@ -107,7 +107,7 @@ const Projects = () => {
           {projects.map((p, i) => (
             <div
               key={i}
-              className={`group relative p-10 rounded-[3rem] transition-all duration-500 overflow-hidden border border-slate-100 flex flex-col justify-between h-[400px] ${p.color} hover:shadow-2xl hover:shadow-blue-200`}
+              className={`group relative p-10 rounded-[3rem] transition-all duration-500 overflow-hidden border border-slate-100 flex flex-col justify-between h-100 ${p.color} hover:shadow-2xl hover:shadow-blue-200`}
             >
               {/* Top Row: Meta Info */}
               <div className="z-10 flex justify-between items-start">
@@ -148,7 +148,7 @@ const Projects = () => {
                 <button className="flex items-center gap-2 font-black text-xs uppercase tracking-widest group-hover:gap-4 transition-all">
                   Launch Project <ExternalLink size={14} />
                 </button>
-                <div className="h-4 w-[1px] bg-current opacity-20"></div>
+                <div className="h-4 w-px bg-current opacity-20"></div>
                 <button className="opacity-60 hover:opacity-100 transition-opacity">
                   <Github size={20} />
                 </button>

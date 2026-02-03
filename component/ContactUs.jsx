@@ -33,7 +33,7 @@ const ContactUs = () => {
 
               <h2 className="text-6xl md:text-8xl font-black text-white leading-[0.85] tracking-tighter uppercase mb-12">
                 Let’s build <br />{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-indigo-400 italic">
+                <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-500 to-indigo-400 italic">
                   Something.
                 </span>
               </h2>
@@ -89,20 +89,20 @@ const ContactUs = () => {
             </div>
 
             {/* Right Side: Action Cards (5 Columns) */}
-            <div className="lg:col-span-5 p-6 md:p-12 flex flex-col justify-center gap-6 bg-white/[0.02] backdrop-blur-3xl">
+            <div className="lg:col-span-5 p-6 md:p-12 flex flex-col justify-center gap-6 bg-white/2 backdrop-blur-3xl">
               <h4 className="text-white/40 font-black uppercase tracking-[0.2em] text-[10px] px-2">
                 Choose your entry point
               </h4>
 
               {/* Action: Project Inquiry */}
-              <button className="group/card relative bg-white/5 border border-white/10 p-8 rounded-[2rem] hover:bg-blue-600 transition-all duration-500 text-left overflow-hidden">
+              <button className="group/card relative bg-white/5 border border-white/10 p-8 rounded-4xl hover:bg-blue-600 transition-all duration-500 text-left overflow-hidden">
                 <Link href="/contact">
                   <div className="relative z-10 flex justify-between items-start">
                     <div>
                       <h3 className="text-white text-2xl font-black uppercase tracking-tighter mb-2">
                         Project Brief
                       </h3>
-                      <p className="text-slate-400 group-hover/card:text-blue-100 text-sm font-medium max-w-[200px]">
+                      <p className="text-slate-400 group-hover/card:text-blue-100 text-sm font-medium max-w-50">
                         Send us your requirements and get a quote in 24h.
                       </p>
                     </div>

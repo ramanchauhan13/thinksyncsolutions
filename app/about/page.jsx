@@ -39,7 +39,7 @@ const AboutPage = () => {
         <div className="grid lg:grid-cols-2 gap-20 mb-12">
           <div>
             <div className="flex items-center gap-4 mb-10">
-              <div className="w-12 h-[1px] bg-blue-600" />
+              <div className="w-12 h-px bg-blue-600" />
               <span className="text-blue-600 font-black uppercase tracking-[0.4em] text-[10px]">
                 The Manifesto
               </span>

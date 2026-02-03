@@ -21,7 +21,7 @@ const ContactPage = () => {
           {/* Left Side: Editorial Content */}
           <div className="sticky">
             <div className="flex items-center gap-4 mb-8">
-              <div className="w-12 h-[1px] bg-blue-600" />
+              <div className="w-12 h-px bg-blue-600" />
               <span className="text-blue-600 font-black uppercase tracking-[0.4em] text-[10px]">
                 Project Inquiry
               </span>
@@ -169,7 +169,7 @@ const ContactPage = () => {
                   />
 
                   {/* Subtle hover effect light */}
-                  <div className="absolute top-0 -left-full w-full h-full bg-gradient-to-r from-transparent via-white/10 to-transparent group-hover:left-full transition-all duration-700" />
+                  <div className="absolute top-0 -left-full w-full h-full bg-linear-to-r from-transparent via-white/10 to-transparent group-hover:left-full transition-all duration-700" />
                 </button>
 
                 {/* <p className="text-center text-[10px] font-black text-slate-300 uppercase tracking-widest">

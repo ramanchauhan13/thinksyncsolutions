@@ -57,7 +57,7 @@ const TeamPage = () => {
         {/* Header: Massive Scale */}
         <div className="mb-20">
           <div className="flex items-center gap-4 mb-8">
-            <div className="w-12 h-[1px] bg-blue-600" />
+            <div className="w-12 h-px bg-blue-600" />
             <span className="text-blue-600 font-black uppercase tracking-[0.4em] text-[10px]">
               The Collective
             </span>
