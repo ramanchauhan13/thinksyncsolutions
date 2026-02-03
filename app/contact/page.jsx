@@ -34,9 +34,9 @@ const ContactPage = () => {
               you're building."
             </p>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-50 border-t border-slate-100 pt-6">
+            <div className="grid grid-cols-1 gap-10 border-t border-slate-100 pt-6">
               <div>
-                <p className="text-slate-400 font-black uppercase tracking-widest text-[10px] mb-4">
+                <p className="text-slate-400 font-black uppercase tracking-widest text-[10px] mb-2">
                   Direct Email
                 </p>
                 <a
@@ -47,7 +47,7 @@ const ContactPage = () => {
                 </a>
               </div>
               <div>
-                <p className="text-slate-400 font-black uppercase tracking-widest text-[10px] mb-4">
+                <p className="text-slate-400 font-black uppercase tracking-widest text-[10px] mb-2">
                   Urgent Call
                 </p>
                 <a
