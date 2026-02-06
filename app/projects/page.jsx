@@ -78,7 +78,7 @@ const Projects = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-white py-26 px-6">
+    <div className="min-h-screen bg-white py-26 px-35">
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
