@@ -26,14 +26,14 @@ export const metadata = {
     google: "YOUR_GOOGLE_CONSOLE_CODE", // Replace this with your actual code from Search Console
   },
   icons: {
-    icon: '/logo.png',
+    icon: '/logo1.png',
   },
   openGraph: {
     title: "ThinkSync Solutions | Innovative Tech Partner",
     description: "Driving business growth through synchronized technology solutions in Moradabad.",
     url: "https://thinksync.solutions",
     siteName: "ThinkSync Solutions",
-    images: [{ url: "/logo.png", width: 1200, height: 630 }],
+    images: [{ url: "/logo1.png", width: 1200, height: 630 }],
     locale: "en_IN",
     type: "website",
   },
@@ -55,7 +55,7 @@ export default function RootLayout({ children }) {
               "@context": "https://schema.org",
               "@type": "ProfessionalService",
               "name": "ThinkSync Solutions",
-              "image": "https://thinksync.solutions/logo.png",
+              "image": "https://thinksync.solutions/logo1.png",
               "url": "https://thinksync.solutions",
               "telephone": ["+91-8979937257", "+91-9759862839"],
               "address": {
