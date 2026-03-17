@@ -9,6 +9,8 @@ const OurClients = () => {
     "ThinkNOrder",
     "Heboc Events",
     "DzineTech",
+    "OM Royal GYM",
+    "PotatoTrails"
   ];
 
   return (

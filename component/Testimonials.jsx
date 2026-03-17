@@ -28,6 +28,26 @@ const Testimonials = () => {
       position: "Coaching Center Owner",
       metric: "User-Friendly Experience",
     },
+    {
+      quote:
+        "ThinkSync Solutions really got what I wanted. They created a website that’s not only beautiful but also super easy to manage. It’s been a great experience working with them.",
+      client: "Pulkit Goel",
+      position: "Exporter",
+      metric: "Beautiful & Manageable",
+    },
+    {
+      quote:
+        "I needed a website that could handle a lot of traffic and still look great. ThinkSync Solutions delivered exactly that, and they were great to work with throughout the process.",
+      client: "QCD Globals",
+      position: "Travel Agency",
+      metric: "Scalable & Stunning",
+    },
+    {
+      quote: "ThinkSync Solutions took my vision and made it a reality. The App they built is not only visually appealing but also really easy to navigate. I couldn’t be happier with the result.",
+      client:"Abhishek Singh Thakur",
+      position:"Fitness Center",
+      metric:"Engaging & Dynamic"
+    },
   ];
 
   const next = () =>
