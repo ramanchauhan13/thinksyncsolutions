@@ -2,9 +2,62 @@
 
 import React, { useState } from "react";
 import { Send, Globe, Mail, Phone, CheckCircle2 } from "lucide-react";
+import { sendEmail } from "@/lib/emailjs";
 
 const ContactPage = () => {
   const [activeType, setActiveType] = useState("Development");
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    type: "Development",
+    brief: "",
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submissionResult, setSubmissionResult] = useState(null);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    if (!formData.name || !formData.email || !formData.brief) {
+      alert("Please fill in all required fields.");
+      return;
+    }
+
+    setIsSubmitting(true);
+    try {
+      await sendEmail({
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        subject: `New Contact Inquiry: ${formData.type}`,
+        message: `
+          CONTACT FORM INQUIRY
+          ---------------------
+          Full Name: ${formData.name}
+          Email Address: ${formData.email}
+          Phone Number: ${formData.phone}
+          Project Type: ${formData.type}
+          
+          User Message:
+          ${formData.brief}
+        `,
+      });
+      // Reset form
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        type: "Development",
+        brief: "",
+      });
+    } catch (error) {
+      console.error("Email failed:", error);
+      alert("Something went wrong. Please try again later.");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
     <div className="min-h-screen bg-white text-slate-900 font-sans selection:bg-blue-600 selection:text-white overflow-x-hidden">
@@ -66,7 +119,7 @@ const ContactPage = () => {
             <div className="absolute -top-20 -right-20 w-64 h-64 bg-blue-100 rounded-full blur-[100px] opacity-40 -z-10" />
 
             <div className="bg-white p-8 md:p-10 rounded-[3.5rem] border border-slate-100 shadow-[0_32px_64px_-16px_rgba(0,0,0,0.05)]">
-              <form className="space-y-8">
+              <form onSubmit={handleSubmit} className="space-y-8">
                 {/* 1. Project Type Selector (The "Modern" touch) */}
                 <div>
                   <label className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-6 block">
@@ -78,7 +131,10 @@ const ContactPage = () => {
                         <button
                           key={type}
                           type="button"
-                          onClick={() => setActiveType(type)}
+                          onClick={() => {
+                            setActiveType(type);
+                            setFormData({ ...formData, type });
+                          }}
                           className={`px-6 py-3 rounded-xl text-[10px] font-black uppercase tracking-widest transition-all ${
                             activeType === type
                               ? "bg-blue-600 text-white shadow-lg shadow-blue-200 scale-105"
@@ -99,6 +155,10 @@ const ContactPage = () => {
                     required
                     className="peer w-full bg-transparent border-b-2 border-slate-100 py-3 focus:outline-none focus:border-blue-600 transition-all font-bold text-xl placeholder-transparent"
                     placeholder="Full Name"
+                    value={formData.name}
+                    onChange={(e) =>
+                      setFormData({ ...formData, name: e.target.value })
+                    }
                     id="name"
                   />
                   <label
@@ -116,6 +176,10 @@ const ContactPage = () => {
                     required
                     className="peer w-full bg-transparent border-b-2 border-slate-100 py-3 focus:outline-none focus:border-blue-600 transition-all font-bold text-xl placeholder-transparent"
                     placeholder="Email"
+                    value={formData.email}
+                    onChange={(e) =>
+                      setFormData({ ...formData, email: e.target.value })
+                    }
                     id="email"
                   />
                   <label
@@ -133,6 +197,10 @@ const ContactPage = () => {
                     required
                     className="peer w-full bg-transparent border-b-2 border-slate-100 py-3 focus:outline-none focus:border-blue-600 transition-all font-bold text-xl placeholder-transparent"
                     placeholder="Phone Number"
+                    value={formData.phone}
+                    onChange={(e) =>
+                      setFormData({ ...formData, phone: e.target.value })
+                    }
                     id="phone"
                   />
                   <label
@@ -150,6 +218,10 @@ const ContactPage = () => {
                     required
                     className="peer w-full bg-transparent border-b-2 border-slate-100 py-3 focus:outline-none focus:border-blue-600 transition-all font-bold text-xl placeholder-transparent resize-none"
                     placeholder="Brief"
+                    value={formData.brief}
+                    onChange={(e) =>
+                      setFormData({ ...formData, brief: e.target.value })
+                    }
                     id="brief"
                   />
                   <label
@@ -161,8 +233,13 @@ const ContactPage = () => {
                 </div>
 
                 {/* 5. Submit Button */}
-                <button className="group w-full bg-slate-900 text-white py-6 rounded-2xl font-black text-xs tracking-[0.3em] uppercase hover:bg-blue-600 transition-all flex items-center justify-center gap-4 relative overflow-hidden shadow-2xl">
-                  <span className="relative z-10">Initialize Sync</span>
+                <button
+                  disabled={isSubmitting}
+                  className="group w-full bg-slate-900 text-white py-6 rounded-2xl font-black text-xs tracking-[0.3em] uppercase hover:bg-blue-600 transition-all flex items-center justify-center gap-4 relative overflow-hidden shadow-2xl"
+                >
+                  <span className="relative z-10">
+                    {isSubmitting ? "Initializing Sync..." : "Initialize Sync"}
+                  </span>
                   <Send
                     size={16}
                     className="relative z-10 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"

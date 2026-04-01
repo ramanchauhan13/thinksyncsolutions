@@ -143,7 +143,7 @@ const Footer = () => {
         <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-[10px] font-black uppercase tracking-[0.3em] text-slate-600">
           <div className="flex items-center gap-3">
             <div className="w-2 h-2 rounded-full bg-blue-600" />
-            <span>© {new Date().getFullYear()} THINKSYNC SOLUTIONS</span>
+            <span>© 2025 THINKSYNC SOLUTIONS</span>
           </div>
 
           <div className="italic">Built with precision & code.</div>
