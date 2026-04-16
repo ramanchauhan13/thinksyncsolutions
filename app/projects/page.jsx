@@ -9,6 +9,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 import Link from "next/link";
+import { link } from "framer-motion/client";
 
 const Projects = () => {
   const projects = [
@@ -20,6 +21,8 @@ const Projects = () => {
       stack: ["Next.js", "MongoDB", "Tailwind CSS"],
       color: "bg-blue-600 text-white",
       status: "Live",
+      link: "https://qcdtravels.com",
+      github: "https://github.com/qcdtravels"
     },
     {
       id: "02",
@@ -27,8 +30,10 @@ const Projects = () => {
       category: "Website Development",
       desc: "A modern website for a leading brassware exporter, featuring an interactive product catalog, client testimonials, and integrated inquiry forms to boost global outreach.",
       stack: ["Next.js", "MongoDB", "Tailwind CSS"],
-      color: "bg-white text-slate-900",
-      status: "Production",
+      color: "bg-slate-100 text-slate-900",
+      status: "Live",
+      link: "https://durgabrassoverseas.com",
+      github: "https://github.com/durgabrassoverseas"
     },
     {
       id: "03",
@@ -38,6 +43,8 @@ const Projects = () => {
       stack: ["React.js", "Node.js", "MongoDB", "Tailwind CSS"],
       color: "bg-slate-900 text-slate-100",
       status: "Production",
+      link: "https://thinknorder.in",
+      github: "https://github.com/thinknorder"
     },
     {
       id: "04",
@@ -47,6 +54,8 @@ const Projects = () => {
       stack: ["Next.js", "Tailwind CSS"],
       color: "bg-blue-50 text-blue-600",
       status: "Live",
+      link: "https://hevocevents.in",
+      github: "https://github.com/hevocevents"
     },
     {
       id: "05",
@@ -55,7 +64,9 @@ const Projects = () => {
       desc: "A sleek corporate website for a tech solutions provider, showcasing services, case studies, and a blog to establish thought leadership in the industry.",
       stack: ["Next.js", "Tailwind CSS"],
       color: "bg-blue-600 text-white",
-      status: "Live",
+      status: "Production",
+      // link: "https://dzinetech.com",
+      github: "https://github.com/dzinetech"
     },
     {
       id: "06",
@@ -63,8 +74,11 @@ const Projects = () => {
       category: "Fitness Center App",
       desc: "A user-friendly app for a fitness center that offers class scheduling, trainer profiles, workout tracking, and membership management to enhance client engagement.",
       stack: ["React Native", "Node.js", "MongoDB"],
-      color: "bg-white text-slate-900",
+      color: "bg-slate-100 text-slate-900",
       status: "Development",
+      // link: "https://omroyalgym.com",
+      github: "https://github.com/omroyalgym"
+
     },
     {
       id: "07",
@@ -74,21 +88,17 @@ const Projects = () => {
       stack: ["React.js", "Node.js", "MongoDB", "Tailwind CSS"],
       color: "bg-slate-900 text-slate-100",
       status: "Live",
+      link: "https://potatotrails.com",
+      github: "https://github.com/potatotrails"
     },
   ];
 
   return (
-    <div className="min-h-screen bg-white py-26 px-7 lg:px-35">
+    <div className="min-h-screen bg-white py-20 px-6">
       <div className="max-w-7xl">
         {/* Header Section */}
         <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
           <div className="max-w-2xl">
-            <div className="flex items-center gap-3 mb-6">
-              <span className="h-px w-12 bg-blue-600"></span>
-              <span className="text-blue-600 font-black uppercase tracking-[0.3em] text-[10px]">
-                Proven Shipments
-              </span>
-            </div>
             <h1 className="text-7xl md:text-9xl font-black text-slate-900 tracking-tighter leading-[0.85] uppercase">
               The <br /> <span className="text-blue-600 italic">Sync</span>{" "}
               List.
@@ -107,7 +117,7 @@ const Projects = () => {
           {projects.map((p, i) => (
             <div
               key={i}
-              className={`group relative p-10 rounded-[3rem] transition-all duration-500 overflow-hidden border border-slate-100 flex flex-col justify-between h-100 ${p.color} hover:shadow-2xl hover:shadow-blue-200`}
+              className={`group relative p-8 rounded-[3rem] transition-all duration-500 overflow-hidden border border-slate-100 flex flex-col justify-between h-80 ${p.color} hover:shadow-2xl hover:shadow-blue-200`}
             >
               {/* Top Row: Meta Info */}
               <div className="z-10 flex justify-between items-start">
@@ -128,7 +138,7 @@ const Projects = () => {
 
               {/* Center Content: Description & Stack */}
               <div className="z-10">
-                <p className="text-lg font-medium leading-relaxed mb-8 max-w-md opacity-90">
+                <p className="text-md font-medium leading-relaxed mb-2 max-w-lg opacity-90">
                   {p.desc}
                 </p>
                 <div className="flex flex-wrap gap-2">
@@ -137,7 +147,7 @@ const Projects = () => {
                       key={tech}
                       className={`px-4 py-1.5 rounded-lg text-[10px] font-bold border ${p.color.includes("white") && !p.color.includes("blue") ? "bg-slate-50 border-slate-100" : "bg-white/10 border-white/20"}`}
                     >
-                      {tech}
+                    {tech}
                     </span>
                   ))}
                 </div>
@@ -145,14 +155,32 @@ const Projects = () => {
 
               {/* Bottom Row: Actions */}
               <div className="z-10 flex items-center gap-6">
-                <button className="flex items-center gap-2 font-black text-xs uppercase tracking-widest group-hover:gap-4 transition-all">
-                  Launch Project <ExternalLink size={14} />
-                </button>
-                <div className="h-4 w-px bg-current opacity-20"></div>
-                <button className="opacity-60 hover:opacity-100 transition-opacity">
-                  <Github size={20} />
-                </button>
-              </div>
+
+  {/* Project Link */}
+  {p.link ? (
+    <Link href={p.link} target="_blank" rel="noopener noreferrer">
+      <span className="flex items-center gap-2 font-black text-xs uppercase tracking-widest  transition-all cursor-pointer">
+        Launch Project <ExternalLink size={14} />
+      </span>
+    </Link>
+  ) : (
+    <span className="flex items-center gap-2 font-black text-xs uppercase tracking-widest opacity-40 cursor-not-allowed">
+      Coming Soon
+    </span>
+  )}
+
+  <div className="h-4 w-px bg-current opacity-20"></div>
+
+  {/* GitHub Link */}
+  {p.github && (
+    <Link href={p.github} target="_blank" rel="noopener noreferrer">
+      <span className="opacity-60 hover:opacity-100 transition-opacity cursor-pointer">
+        <Github size={20} />
+      </span>
+    </Link>
+  )}
+
+</div>
 
               {/* Background Graphic Decor to fill space */}
               <div className="absolute -bottom-20 -right-10 text-[18rem] font-black opacity-[0.03] select-none group-hover:opacity-[0.07] transition-opacity">

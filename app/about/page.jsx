@@ -34,16 +34,10 @@ const AboutPage = () => {
         }}
       ></div>
 
-      <main className="relative z-10 max-w-7xl mx-auto px-6 py-26">
+      <main className="relative z-10 max-w-7xl mx-auto px-6 py-20">
         {/* Section 1: The Manifesto */}
         <div className="grid lg:grid-cols-2 gap-20 mb-12">
           <div>
-            <div className="flex items-center gap-4 mb-10">
-              <div className="w-12 h-px bg-blue-600" />
-              <span className="text-blue-600 font-black uppercase tracking-[0.4em] text-[10px]">
-                The Manifesto
-              </span>
-            </div>
             <h1 className="text-7xl md:text-9xl font-black leading-[0.8] tracking-tighter uppercase">
               WE BUILD <br /> <span className="text-blue-600 italic">TECH</span>{" "}
               THAT <br /> WORKS.

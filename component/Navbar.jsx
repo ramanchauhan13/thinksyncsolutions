@@ -35,21 +35,21 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed w-[95%] lg:w-[90%] left-1/2 -translate-x-1/2 top-4 z-100 transition-all duration-500 rounded-2xl border border-white/20 
+      className={`fixed w-[95%] lg:w-[98%] left-1/2 -translate-x-1/2 top-4 z-100 transition-all duration-500 rounded-xl border border-black/10 
       ${
         scrolled
           ? "bg-white/40 backdrop-blur-2xl shadow-[0_8px_32px_0_rgba(31,38,135,0.07)]"
-          : "bg-white/20 backdrop-blur-md"
+          : "bg-white/20 backdrop-blur-md "
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <div className="max-w-8xl mx-auto px-4 h-12 flex items-center justify-between">
         {/* LOGO */}
         <Link
           href="/"
-          className="flex items-center gap-2 font-black text-xl tracking-tighter text-[#0c2f55] group"
+          className="flex items-center gap-2 font-black text-2xl tracking-wider text-[#0c2f55] group"
         >
           <div className="transition-transform duration-300 group-hover:rotate-12">
-            <Image src="/logo1.png" alt="Logo" width={32} height={32} />
+            <Image src="/logo1.png" alt="Logo" width={36} height={36} />
           </div>
           <span className="bg-clip-text text-transparent bg-linear-to-r from-[#0c2f55] to-blue-600">
             THINK

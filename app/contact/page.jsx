@@ -69,16 +69,10 @@ const ContactPage = () => {
         }}
       ></div>
 
-      <main className="relative z-10 max-w-7xl mx-auto px-6 py-26">
+      <main className="relative z-10 max-w-7xl mx-auto px-6 py-20">
         <div className="grid lg:grid-cols-2 gap-24 items-start">
           {/* Left Side: Editorial Content */}
           <div className="sticky">
-            <div className="flex items-center gap-4 mb-8">
-              <div className="w-12 h-px bg-blue-600" />
-              <span className="text-blue-600 font-black uppercase tracking-[0.4em] text-[10px]">
-                Project Inquiry
-              </span>
-            </div>
             <h1 className="text-7xl md:text-9xl font-black leading-[0.8] tracking-tighter uppercase mb-12">
               LET’S <br /> <span className="text-blue-600">SYNC.</span>
             </h1>

@@ -116,15 +116,9 @@ const ServicesPage = () => {
           }}
         ></div>
 
-        <main className="relative z-10 max-w-7xl mx-auto px-6 py-26">
+        <main className="relative z-10 max-w-7xl mx-auto px-6 py-20">
           {/* Hero Area */}
           <div className="mb-20 max-w-4xl">
-            <div className="flex items-center gap-4 mb-8">
-              <div className="w-12 h-px bg-blue-600" />
-              <span className="text-blue-600 font-black uppercase tracking-[0.4em] text-[10px]">
-                Capabilities
-              </span>
-            </div>
             <h1 className="text-7xl md:text-9xl font-black leading-[0.8] tracking-tighter uppercase mb-10">
               WHAT WE <br /> <span className="text-blue-600">SOLVE.</span>
             </h1>
@@ -137,7 +131,7 @@ const ServicesPage = () => {
           {/* Detailed Service Sections */}
           <div className="space-y-10">
             {serviceCategories.map((service, i) => (
-              <div key={i} className="group border-t border-slate-100 pt-10">
+              <div key={i} className="group border-t border-slate-300 pt-10">
                 <div className="grid lg:grid-cols-12 gap-12">
                   {/* ID & Basic Info */}
                   <div className="lg:col-span-4">

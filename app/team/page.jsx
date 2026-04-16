@@ -27,8 +27,7 @@ const TeamPage = () => {
       specialty: "TypeScript & UI/UX Design",
       bio: "Delivers high-performance full-stack solutions with a focus on TypeScript and modern web development practices.",
       bioLink: "https://portfolio-khaki-beta-26.vercel.app/",
-      linkedIn:
-        "https://www.linkedin.com/in/umesh-singh-mehta-93819a194?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bo8t991uiRN2PnkFDzG655w%3D%3D",
+      linkedIn: "https://www.linkedin.com/in/umesh-singh-mehta-93819a194?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bo8t991uiRN2PnkFDzG655w%3D%3D",
       github: "https://github.com/UmeshSingh2000",
     },
     {
@@ -53,15 +52,9 @@ const TeamPage = () => {
         }}
       ></div>
 
-      <main className="relative z-10 max-w-7xl mx-auto px-6 py-26">
+      <main className="relative z-10 max-w-7xl mx-auto px-6 py-20">
         {/* Header: Massive Scale */}
         <div className="mb-20">
-          <div className="flex items-center gap-4 mb-8">
-            <div className="w-12 h-px bg-blue-600" />
-            <span className="text-blue-600 font-black uppercase tracking-[0.4em] text-[10px]">
-              The Collective
-            </span>
-          </div>
           <h1 className="text-7xl md:text-9xl font-black leading-[0.8] tracking-tighter uppercase mb-12">
             HUMAN <br /> <span className="text-blue-600">ENGINE.</span>
           </h1>

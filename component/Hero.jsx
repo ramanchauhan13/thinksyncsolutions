@@ -7,12 +7,12 @@ const Hero = () => {
     <section className="relative py-26 px-6 overflow-hidden">
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
         <div className="z-10">
-          <div className="flex items-center gap-2 mb-6">
+          {/* <div className="flex items-center gap-2 mb-6">
             <span className="h-px w-12 bg-blue-600"></span>
             <span className="text-blue-600 font-bold tracking-[0.2em] text-xs uppercase">
               Elite Software Partner
             </span>
-          </div>
+          </div> */}
           <h1 className="text-6xl lg:text-8xl font-black leading-[0.9] mb-8 text-slate-900">
             WE BUILD <br />
             <span className="text-blue-600 italic">THE FUTURE</span> <br />
@@ -39,47 +39,6 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* <div className="relative">
-          <div className="relative bg-white border border-white/40 shadow-2xl rounded-[3rem] p-10 backdrop-blur-sm">
-            <div className="flex items-center justify-between mb-10">
-              <div className="flex gap-2">
-                <div className="w-3 h-3 rounded-full bg-blue-200" />
-                <div className="w-3 h-3 rounded-full bg-blue-200" />
-              </div>
-              <div className="h-2 w-24 bg-blue-200 rounded-full" />
-            </div>
-            <div className="space-y-6">
-              <div className="h-12 w-full bg-blue-200 rounded-2xl flex items-center px-4">
-                <div className="h-2 w-2/3 bg-blue-600 rounded-full" />
-              </div>
-              <div className="grid grid-cols-2 gap-4">
-                <div className="h-32 bg-slate-100 rounded-3xl border border-slate-100 flex flex-col items-center justify-center p-4">
-                  <span className="text-3xl font-black text-blue-600">99%</span>
-                  <span className="text-[10px] uppercase font-bold text-slate-400">
-                    Uptime
-                  </span>
-                </div>
-                <div className="h-32 bg-blue-600 rounded-3xl flex flex-col items-center justify-center p-4 shadow-xl shadow-blue-200">
-                  <Cpu className="text-white w-8 h-8 mb-2" />
-                  <span className="text-[10px] uppercase font-bold text-blue-100">
-                    Optimized
-                  </span>
-                </div>
-              </div>
-              <div className="h-20 w-full bg-slate-900 rounded-2xl flex items-center justify-center">
-                <div className="flex -space-x-2">
-                  {[1, 2, 3].map((i) => (
-                    <div
-                      key={i}
-                      className="w-8 h-8 rounded-full bg-blue-500 border-2 border-slate-900"
-                    />
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="absolute top-10 -left-10 w-full h-full bg-blue-50 rounded-[2.5rem] -z-10 border border-blue-100 lg:-rotate-3" />
-        </div> */}
         <div className="relative">
           {/* The "Code Engine" - Represents your development depth */}
           <div className="relative bg-slate-900 rounded-[2.5rem] p-8 shadow-2xl border border-slate-800 transform lg:-rotate-2 hover:rotate-0 transition-transform duration-500">
@@ -108,13 +67,53 @@ const Hero = () => {
                 <span className="text-slate-300">deployFuture = () ={">"}</span>
                 <span className="text-blue-400">true</span>
               </div>
-              <div className="flex gap-4 opacity-50">
+              {/* Line 04 - Logic Implementation */}
+<div className="flex gap-4">
+  <span className="text-slate-600">04</span>
+  <span className="text-purple-400">await</span>
+  <span className="text-slate-300">Sync.</span>
+  <span className="text-yellow-200">initialize</span>
+  <span className="text-slate-300">({'{'}</span>
+  <span className="text-slate-300"> mode: </span>
+  <span className="text-emerald-400">'instant'</span>
+  <span className="text-slate-300"> {'}'})</span>
+</div>
+
+{/* Line 05 - Deployment Trigger */}
+<div className="flex gap-4">
+  <span className="text-slate-600">05</span>
+  <span className="text-purple-400">export default</span>
+  <span className="text-slate-300"> deployFuture;</span>
+</div>
+
+{/* Terminal / Status Console Overlay */}
+<div className="mt-6 pt-4 border-t border-slate-800">
+  <div className="flex items-center gap-2 mb-3">
+    <div className="w-2 h-2 rounded-full bg-emerald-500 shadow-[0_0_8px_rgba(16,185,129,0.6)]" />
+    <span className="text-[10px] text-slate-500 font-mono tracking-widest uppercase">
+      Live Production Stream
+    </span>
+  </div>
+  
+  <div className="space-y-1 font-mono text-[11px]">
+    <p className="text-slate-400">
+      <span className="text-emerald-500">✔</span> Optimization engine primed...
+    </p>
+    <p className="text-slate-400">
+      <span className="text-emerald-500">✔</span> Nodes connected [12/12]
+    </p>
+    <p className="text-blue-400 animate-pulse">
+      &gt; Deployment in progress_
+    </p>
+  </div>
+</div>
+              {/* <div className="flex gap-4 opacity-50">
                 <span className="text-slate-600">03</span>
                 <span className="text-slate-400">
                   // Transforming logic into experience
                 </span>
-              </div>
-              <div className="h-20 bg-blue-600/10 rounded-xl border border-blue-500/20 flex items-center justify-center">
+              </div> */}
+              <div className="h-16 bg-blue-600/10 rounded-xl border border-blue-500/20 flex items-center justify-center">
                 <div className="flex flex-col items-center">
                   <div className="flex gap-1 mb-2">
                     {[1, 2, 3].map((i) => (
