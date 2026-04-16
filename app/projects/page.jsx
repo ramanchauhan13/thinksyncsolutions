@@ -54,7 +54,7 @@ const Projects = () => {
       stack: ["Next.js", "Tailwind CSS"],
       color: "bg-blue-50 text-blue-600",
       status: "Live",
-      link: "https://hevocevents.in",
+      link: "https://www.hevocevents.in",
       github: "https://github.com/hevocevents"
     },
     {
@@ -88,7 +88,7 @@ const Projects = () => {
       stack: ["React.js", "Node.js", "MongoDB", "Tailwind CSS"],
       color: "bg-slate-900 text-slate-100",
       status: "Live",
-      link: "https://potatotrails.com",
+      link: "https://potatotrails.life",
       github: "https://github.com/potatotrails"
     },
   ];
