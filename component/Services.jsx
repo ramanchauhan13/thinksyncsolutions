@@ -45,7 +45,7 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-24 px-6 bg-[#f8fafc] overflow-hidden">
+    <section id="services" className="py-20 px-6 bg-[#f8fafc] overflow-hidden">
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8">
@@ -53,7 +53,7 @@ const Services = () => {
             <span className="text-blue-600 font-bold tracking-widest text-sm uppercase px-4 py-1 bg-blue-50 rounded-full">
               What we do
             </span>
-            <h2 className="text-5xl md:text-6xl font-black text-slate-900 leading-none tracking-tighter">
+            <h2 className="text-5xl lg:text-6xl font-black text-slate-900 leading-none tracking-tighter">
               SPECIALIZED <br />{" "}
               <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-600 to-indigo-500">
                 SOLUTIONS.
@@ -112,3 +112,5 @@ const Services = () => {
 };
 
 export default Services;
+
+

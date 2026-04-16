@@ -20,22 +20,22 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-[#0f172a] pt-24 pb-10 px-6 text-white rounded-t-[3rem] md:rounded-t-[5rem] relative overflow-hidden">
+    <footer className="bg-[#0f172a] pt-14 pb-10 px-6 text-white rounded-t-[3rem] md:rounded-t-[5rem] relative overflow-hidden">
       {/* Background Brand Text */}
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/3 text-[20vw] font-black text-white/2 select-none pointer-events-none whitespace-nowrap">
         THINKSYNC
       </div>
 
       <div className="max-w-7xl mx-auto relative z-10">
-        <div className="flex flex-col lg:flex-row justify-between items-start gap-16 mb-24">
+        <div className="flex flex-col lg:flex-row justify-between items-start gap-16 mb-10">
           
           {/* CTA Section */}
           <div className="max-w-2xl">
-            <h2 className="text-6xl md:text-8xl font-black mb-10 leading-[0.85] tracking-tighter uppercase">
+            <h2 className="text-5xl lg:text-7xl font-black mb-10 leading-[0.85] tracking-tighter uppercase">
               READY TO
               <br />
-              <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-500 to-indigo-400 italic">
-                SYNC UP?
+              <span className="text-transparent pr-2 bg-clip-text bg-linear-to-r from-blue-500 to-indigo-400 italic">
+                SYNC?
               </span>
             </h2>
 
@@ -57,11 +57,18 @@ const Footer = () => {
               >
                 +91 8979937257
               </a>
+
+              <a
+                href="tel:+919759862839"
+                className="text-slate-400 hover:text-blue-500 transition-colors"
+              >
+                +91 9759862839
+              </a>
             </div>
           </div>
 
           {/* Hire Us Button */}
-          <div className="relative group self-center lg:self-start">
+          {/* <div className="relative group self-center lg:self-start">
             <div className="absolute inset-0 bg-blue-600 blur-2xl opacity-20 group-hover:opacity-40 transition-opacity rounded-full" />
             <Link href="/contact">
               <button className="relative w-48 h-48 md:w-56 md:h-56 bg-white hover:cursor-pointer text-slate-900 rounded-full font-black text-xl hover:bg-blue-600 hover:text-white transition-all duration-500 flex flex-col items-center justify-center shadow-2xl uppercase tracking-tighter overflow-hidden">
@@ -69,11 +76,11 @@ const Footer = () => {
                 <span className="text-[12px] opacity-60 mt-2">Right Now</span>
               </button>
             </Link>
-          </div>
+          </div> */}
         </div>
 
         {/* Navigation Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-12 mb-24 border-t border-white/5 pt-16">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-12 mb-14 border-t border-white/5 pt-10">
           
           {/* Expertise */}
           <div>

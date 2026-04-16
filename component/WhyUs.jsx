@@ -10,7 +10,7 @@ import {
 
 const WhyUs = () => {
   return (
-    <section id="why" className="py-24 px-6 bg-white overflow-hidden">
+    <section id="why" className="py-20 px-6 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
         {/* Left Side: Creative Visual Grid */}
         <div className="relative">
@@ -79,13 +79,7 @@ const WhyUs = () => {
         </div>
 
         {/* Right Side: Content */}
-        <div className="pt-12 lg:pt-0">
-          <div className="flex items-center gap-3 mb-6">
-            <div className="h-px w-12 bg-blue-600" />
-            <span className="text-blue-600 font-bold uppercase tracking-[0.3em] text-xs">
-              Our Advantage
-            </span>
-          </div>
+        <div >
 
           <h2 className="text-5xl lg:text-7xl font-black mb-10 leading-[0.85] text-slate-900 uppercase tracking-tighter">
             Why we are the <br />
@@ -113,7 +107,7 @@ const WhyUs = () => {
             ].map((item, i) => (
               <div
                 key={i}
-                className="group flex flex-col md:flex-row gap-6 p-8 rounded-4xl transition-all duration-300 hover:bg-slate-50 border border-transparent hover:border-slate-100"
+                className="group flex flex-col md:flex-row gap-6 p-4 rounded-4xl transition-all duration-300 hover:bg-slate-50 border border-transparent hover:border-slate-100"
               >
                 {/* Dynamic Stat Node */}
                 <div className="shrink-0 w-24 h-24 bg-blue-50 rounded-3xl flex flex-col items-center justify-center border border-blue-100 group-hover:bg-blue-600 group-hover:border-blue-600 transition-all duration-500">

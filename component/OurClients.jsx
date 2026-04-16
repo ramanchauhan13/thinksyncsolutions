@@ -18,24 +18,18 @@ const OurClients = () => {
       <div className="max-w-7xl mx-auto px-6">
         {/* Header Section */}
         <div className="mb-10">
-          <div className="flex items-center gap-4 mb-8">
-            <div className="w-12 h-px bg-blue-600" />
-            <span className="text-blue-600 font-black uppercase tracking-[0.4em] text-[10px]">
-              Strategic Partners
-            </span>
-          </div>
-          <h2 className="text-6xl md:text-8xl font-black tracking-tighter uppercase leading-[0.85]">
+          <h2 className="text-5xl lg:text-6xl font-black tracking-tighter uppercase leading-[0.85]">
             TRUSTED BY <br /> <span className="text-blue-600">THE BEST.</span>
           </h2>
         </div>
 
         {/* Endless Logo Marquee - Visual Density */}
-        <div className="relative flex overflow-x-hidden border-y border-slate-300 py-12 group">
+        <div className="relative flex overflow-x-hidden border-y border-slate-300 py-16 group">
           <div className="flex animate-marquee whitespace-nowrap gap-20 items-center">
             {[...logos, ...logos].map((logo, i) => (
               <span
                 key={i}
-                className="text-4xl md:text-6xl font-black uppercase tracking-tighter text-slate-300 group-hover:text-blue-600 transition-colors duration-700 select-none px-4"
+                className="text-6xl lg:text-6xl font-black uppercase tracking-tighter text-slate-300 group-hover:text-blue-600 transition-colors duration-700 select-none px-4"
               >
                 {logo}
               </span>
