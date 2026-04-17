@@ -14,31 +14,37 @@ const Services = () => {
   const services = [
     {
       icon: <Code2 size={24} />,
+      gif: "/gifs/coding.gif",
       title: "Full-Stack Dev",
       desc: "MERN excellence for real-time applications.",
     },
     {
       icon: <Layers size={24} />,
+      gif: "/gifs/saas.gif",
       title: "Custom SaaS",
       desc: "Multi-tenant platforms built to scale to millions.",
     },
     {
       icon: <MousePointer2 size={24} />,
+      gif: "/gifs/dashboard.gif",
       title: "UI/UX Strategy",
       desc: "Conversion-focused interfaces that reduce churn.",
     },
     {
       icon: <Cpu size={24} />,
+      gif: "/gifs/gear-wrench.gif",
       title: "Automation",
       desc: "Proprietary AI and workflow triggers for efficiency.",
     },
     {
       icon: <ShieldCheck size={24} />,
+      gif: "/gifs/migration.gif",
       title: "Legacy Migration",
       desc: "Safely porting old tech to modern cloud stacks.",
     },
     {
       icon: <Globe size={24} />,
+      gif: "/gifs/smartphone-coding.gif",
       title: "Mobile Growth",
       desc: "Native-feel cross-platform apps using React Native.",
     },
@@ -69,31 +75,33 @@ const Services = () => {
         {/* Services Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((s, i) => (
-            <Link key={i} href="/services">
-              <div
-                key={i}
-                className="group relative bg-white p-10 rounded-3xl border border-slate-200/60 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 overflow-hidden"
-              >
+            <Link key={i} href="/services" className="group">
+              <div className="relative h-full bg-white p-8 rounded-3xl border border-slate-200/60 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 overflow-hidden">
+                
                 {/* Background Accent Blur */}
-                <div className="absolute -right-10 -top-10 w-32 h-32 bg-blue-50 rounded-full blur-3xl group-hover:bg-blue-100 transition-colors duration-500" />
+                <div className="absolute -right-10 -top-10 w-32 h-32 bg-blue-50 rounded-full blur-3xl duration-500" />
 
-                {/* Icon & Arrow */}
-                <div className="flex justify-between items-start mb-8">
-                  <div className="p-4 bg-blue-600 rounded-2xl text-white group-hover:bg-blue-600 group-hover:text-white group-hover:rotate-360 transition-all duration-700 shadow-inner">
-                    {s.icon}
+                {/* GIF Icon & Arrow */}
+                <div className="flex justify-between items-start mb-4">
+                  <div className="relative w-20 h-20 bg-blue-50 rounded-2xl flex items-center justify-center duration-500 p-1 overflow-hidden">
+                    <img 
+                      src={s.gif} 
+                      alt={s.title} 
+                      className="w-full h-full object-contain mix-blend-multiply transition-all duration-500"
+                    />
                   </div>
                   <ArrowUpRight
                     className="text-slate-300 group-hover:text-blue-600 transition-colors"
-                    size={20}
+                    size={24}
                   />
                 </div>
 
                 {/* Content */}
                 <div className="relative z-10">
-                  <h3 className="text-2xl font-bold mb-3 text-slate-800 tracking-tight transition-colors group-hover:text-blue-700">
+                  <h3 className="text-2xl font-bold mb-1 text-slate-800 tracking-tight transition-colors group-hover:text-blue-700">
                     {s.title}
                   </h3>
-                  <p className="text-slate-500 leading-relaxed font-medium mb-8">
+                  <p className="text-slate-500 leading-relaxed font-medium mb-6">
                     {s.desc}
                   </p>
                 </div>

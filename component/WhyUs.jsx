@@ -19,15 +19,18 @@ const WhyUs = () => {
 
           <div className="grid grid-cols-2 gap-6 relative z-10">
             {/* Card 1: Growth Driven */}
+            {/* Card 1: Growth Driven */}
             <div className="group bg-slate-50 rounded-[2.5rem] h-72 flex flex-col justify-between p-8 border border-slate-100 transition-all duration-500 hover:shadow-2xl hover:bg-white hover:-translate-y-2">
-              <div className="w-14 h-14 bg-white rounded-2xl flex items-center justify-center shadow-sm group-hover:scale-110 group-hover:bg-blue-600 group-hover:text-white transition-all">
-                <BarChart3 size={28} />
+              <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center shadow-sm transition-all overflow-hidden p-2">
+                <img
+                  src="/gifs/gowth.gif"
+                  alt="Growth"
+                  className="w-full h-full object-contain transition-all"
+                />
               </div>
               <div>
                 <h3 className="text-2xl font-black text-slate-900 tracking-tighter uppercase mb-1 leading-none">
-                  Growth
-                  <br />
-                  Driven
+                  Growth <br /> Driven
                 </h3>
                 <div className="h-1.5 w-8 bg-blue-600 group-hover:w-full transition-all duration-500 rounded-full" />
               </div>
@@ -35,14 +38,16 @@ const WhyUs = () => {
 
             {/* Card 2: User Focused */}
             <div className="group bg-blue-600 rounded-[2.5rem] h-72 translate-y-12 flex flex-col justify-between p-8 text-white shadow-xl shadow-blue-200 transition-all duration-500 hover:shadow-blue-400 hover:translate-y-8">
-              <div className="w-14 h-14 bg-white/10 backdrop-blur-md rounded-2xl flex items-center justify-center border border-white/20 group-hover:bg-white group-hover:text-blue-600 transition-all">
-                <Users size={28} />
+              <div className="w-20 h-20 bg-white backdrop-blur-md rounded-2xl flex items-center justify-center border border-white/20 transition-all overflow-hidden p-2">
+                <img
+                  src="/gifs/no-focus.gif" 
+                  alt="Users"
+                  className="w-full h-full object-contain transition-all"
+                />
               </div>
               <div>
                 <h3 className="text-2xl font-black tracking-tighter uppercase mb-1 leading-none">
-                  User
-                  <br />
-                  Focused
+                  User <br /> Focused
                 </h3>
                 <div className="h-1.5 w-8 bg-blue-300 group-hover:w-full transition-all duration-500 rounded-full" />
               </div>
@@ -51,8 +56,12 @@ const WhyUs = () => {
             {/* Velocity/Tech Depth Card (Full Width) */}
             <div className="mt-12 lg:flex bg-slate-900 rounded-[2.5rem] p-8 col-span-2 items-center justify-between overflow-hidden relative group border border-slate-800 shadow-2xl">
               <div className="relative z-10 flex items-center gap-6 text-white">
-                <div className="w-16 h-16 rounded-2xl bg-blue-600 flex items-center justify-center group-hover:rotate-12 transition-transform duration-500">
-                  <Zap className="text-white fill-white" size={32} />
+                <div className="w-18 h-18 rounded-2xl p-2 bg-white flex items-center justify-center group-hover:rotate-12 transition-transform duration-500">
+                  <img
+                    src="/gifs/fast.gif"
+                    alt="Velocity"
+                    className="w-full h-full object-contain transition-all duration-500"
+                  />
                 </div>
                 <div>
                   <div className="text-[10px] font-bold text-blue-400 uppercase tracking-[0.3em] mb-1">
