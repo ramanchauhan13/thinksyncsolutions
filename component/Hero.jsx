@@ -7,12 +7,18 @@ const Hero = () => {
     <section className="relative py-20 px-6 overflow-hidden">
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
         <div className="z-10">
-          {/* <div className="flex items-center gap-2 mb-6">
-            <span className="h-px w-12 bg-blue-600"></span>
-            <span className="text-blue-600 font-bold tracking-[0.2em] text-xs uppercase">
-              Elite Software Partner
-            </span>
-          </div> */}
+          
+          <div className="flex items-center gap-4 mb-6">
+  <div className="flex flex-col gap-1">
+    <span className="h-1 w-12 bg-blue-600 rounded-full"></span>
+    <span className="h-1 w-6 bg-blue-600/30 rounded-full"></span>
+  </div>
+  
+  <span className="text-slate-900 font-black tracking-[0.3em] text-xs uppercase relative">
+    Elite Software Partner
+    <span className="absolute -bottom-1 left-0 w-0 h-px bg-blue-600 transition-all duration-700 group-hover:w-full"></span>
+  </span>
+</div>
           <h1 className="text-6xl lg:text-8xl font-black leading-[0.9] mb-8 text-slate-900">
             WE BUILD <br />
             <span className="text-blue-600 italic">THE FUTURE</span> <br />

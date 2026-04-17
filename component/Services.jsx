@@ -56,9 +56,17 @@ const Services = () => {
         {/* Header Section */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8">
           <div className="space-y-4">
-            <span className="text-blue-600 font-bold tracking-widest text-sm uppercase px-4 py-1 bg-blue-50 rounded-full">
-              What we do
-            </span>
+            <div className="flex items-center gap-4 mb-2">
+  <div className="flex flex-col gap-1">
+    <span className="h-1 w-12 bg-blue-600 rounded-full"></span>
+    <span className="h-1 w-6 bg-blue-600/30 rounded-full"></span>
+  </div>
+  
+  <span className="text-slate-900 font-black tracking-[0.3em] text-xs uppercase relative">
+    What We Do
+    <span className="absolute -bottom-1 left-0 w-0 h-px bg-blue-600 transition-all duration-700 group-hover:w-full"></span>
+  </span>
+</div>
             <h2 className="text-5xl lg:text-6xl font-black text-slate-900 leading-none tracking-tighter">
               SPECIALIZED <br />{" "}
               <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-600 to-indigo-500">
