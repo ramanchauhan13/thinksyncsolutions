@@ -20,7 +20,7 @@ const WhyUs = () => {
           <div className="grid grid-cols-2 gap-6 relative z-10">
             {/* Card 1: Growth Driven */}
             {/* Card 1: Growth Driven */}
-            <div className="group bg-slate-50 rounded-[2.5rem] h-72 flex flex-col justify-between p-8 border border-slate-100 transition-all duration-500 hover:shadow-2xl hover:bg-white hover:-translate-y-2">
+            <div className="group bg-slate-100 rounded-[2.5rem] h-72 flex flex-col justify-between p-8 border border-slate-100 transition-all duration-500 hover:shadow-2xl hover:bg-white hover:-translate-y-2">
               <div className="w-20 h-20 bg-blue-50 rounded-2xl flex items-center justify-center shadow-sm transition-all overflow-hidden p-2">
                 <img
                   src="/gifs/growth.gif"
@@ -54,36 +54,51 @@ const WhyUs = () => {
             </div>
 
             {/* Velocity/Tech Depth Card (Full Width) */}
-            <div className="mt-12 lg:flex bg-slate-900 rounded-[2.5rem] p-8 col-span-2 items-center justify-between overflow-hidden relative group border border-slate-800 shadow-2xl">
-              <div className="relative z-10 flex items-center gap-4 text-white">
-                <div className="w-18 h-18 rounded-2xl p-2 bg-white flex items-center justify-center group-hover:rotate-12 transition-transform duration-500">
-                  <img
-                    src="/gifs/fast.gif"
-                    alt="Velocity"
-                    className="w-full h-full object-contain transition-all duration-500"
-                  />
-                </div>
-                <div>
-                  <div className="text-[10px] font-bold text-blue-400 uppercase tracking-[0.3em] mb-1">
-                    Production Velocity
-                  </div>
-                  <div className="text-2xl font-black italic tracking-tighter uppercase">
-                    Shipping 60% Faster
-                  </div>
-                </div>
-              </div>
+            {/* Velocity/Tech Depth Card (Full Width) */}
+<div className="mt-10 md:mt-12 col-span-2 bg-slate-900 rounded-[2rem] md:rounded-[2.5rem] p-6 md:p-8 overflow-hidden relative group border border-slate-800 shadow-2xl">
+  
+  {/* Flex Container: Stays row on all screens to keep lines to the right */}
+  <div className="relative z-10 flex items-center justify-between">
+    
+    <div className="flex items-center gap-3 md:gap-4">
+      {/* Icon Container */}
+      <div className="w-14 h-14 md:w-18 md:h-18 shrink-0 rounded-xl md:rounded-2xl p-2 bg-white flex items-center justify-center group-hover:rotate-12 transition-transform duration-500">
+        <img
+          src="/gifs/fast.gif"
+          alt="Velocity"
+          className="w-full h-full object-contain"
+        />
+      </div>
 
-              {/* Visual "Speed" Lines */}
-              <div className="flex gap-1.5 h-12 items-end">
-                {[30, 60, 45, 90, 100, 70].map((h, i) => (
-                  <div
-                    key={i}
-                    className="w-1.5 bg-slate-700 rounded-full group-hover:bg-blue-500 transition-all duration-700"
-                    style={{ height: `${h}%`, transitionDelay: `${i * 50}ms` }}
-                  />
-                ))}
-              </div>
-            </div>
+      {/* Text Wrapper */}
+      <div>
+        <div className="text-[9px] md:text-[10px] font-bold text-blue-400 uppercase tracking-[0.2em] md:tracking-[0.3em] mb-1">
+          Production Velocity
+        </div>
+        <div className="text-xl md:text-2xl font-black italic tracking-tighter uppercase leading-none text-white whitespace-nowrap">
+          Shipping 60% Faster
+        </div>
+      </div>
+    </div>
+
+    {/* Visual "Speed" Lines - Now positioned to the right of the text */}
+    <div className="flex gap-1 md:gap-1.5 h-8 md:h-12 items-end shrink-0 ml-4">
+      {[30, 60, 45, 90, 100, 70].map((h, i) => (
+        <div
+          key={i}
+          className="w-1 md:w-1.5 bg-blue-500 md:bg-slate-700 rounded-full group-hover:bg-blue-500 transition-all duration-700"
+          style={{ 
+            height: `${h}%`, 
+            transitionDelay: `${i * 50}ms` 
+          }}
+        />
+      ))}
+    </div>
+  </div>
+
+  {/* Subtle Background Accent */}
+  <div className="absolute top-0 right-0 w-32 h-32 bg-blue-600/10 blur-[60px] pointer-events-none" />
+</div>
           </div>
         </div>
 
