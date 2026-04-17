@@ -21,11 +21,11 @@ const WhyUs = () => {
             {/* Card 1: Growth Driven */}
             {/* Card 1: Growth Driven */}
             <div className="group bg-slate-50 rounded-[2.5rem] h-72 flex flex-col justify-between p-8 border border-slate-100 transition-all duration-500 hover:shadow-2xl hover:bg-white hover:-translate-y-2">
-              <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center shadow-sm transition-all overflow-hidden p-2">
+              <div className="w-20 h-20 bg-blue-50 rounded-2xl flex items-center justify-center shadow-sm transition-all overflow-hidden p-2">
                 <img
-                  src="/gifs/gowth.gif"
+                  src="/gifs/growth.gif"
                   alt="Growth"
-                  className="w-full h-full object-contain transition-all"
+                  className="w-full h-full object-contain mix-blend-multiply transition-all duration-500"
                 />
               </div>
               <div>
@@ -55,7 +55,7 @@ const WhyUs = () => {
 
             {/* Velocity/Tech Depth Card (Full Width) */}
             <div className="mt-12 lg:flex bg-slate-900 rounded-[2.5rem] p-8 col-span-2 items-center justify-between overflow-hidden relative group border border-slate-800 shadow-2xl">
-              <div className="relative z-10 flex items-center gap-6 text-white">
+              <div className="relative z-10 flex items-center gap-4 text-white">
                 <div className="w-18 h-18 rounded-2xl p-2 bg-white flex items-center justify-center group-hover:rotate-12 transition-transform duration-500">
                   <img
                     src="/gifs/fast.gif"
@@ -68,7 +68,7 @@ const WhyUs = () => {
                     Production Velocity
                   </div>
                   <div className="text-2xl font-black italic tracking-tighter uppercase">
-                    Shipping 40% Faster
+                    Shipping 60% Faster
                   </div>
                 </div>
               </div>
