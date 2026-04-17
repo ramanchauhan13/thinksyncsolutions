@@ -35,14 +35,14 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed w-[95%] lg:w-[98%] left-1/2 -translate-x-1/2 top-4 z-100 transition-all duration-500 rounded-xl border border-black/10 
+      className={`fixed w-[95%] lg:w-[95%] left-1/2 -translate-x-1/2 top-2 z-100 transition-all duration-500 rounded-xl border border-white/10 
       ${
         scrolled
           ? "bg-white/40 backdrop-blur-2xl shadow-[0_8px_32px_0_rgba(31,38,135,0.07)]"
           : "bg-white/20 backdrop-blur-md "
       }`}
     >
-      <div className="max-w-8xl mx-auto px-4 h-12 flex items-center justify-between">
+      <div className="max-w-full mx-auto px-4 h-16 flex items-center justify-between">
         {/* LOGO */}
         <Link
           href="/"
