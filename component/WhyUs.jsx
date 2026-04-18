@@ -54,7 +54,6 @@ const WhyUs = () => {
             </div>
 
             {/* Velocity/Tech Depth Card (Full Width) */}
-            {/* Velocity/Tech Depth Card (Full Width) */}
 <div className="mt-10 md:mt-12 col-span-2 bg-slate-900 rounded-[2rem] md:rounded-[2.5rem] p-6 md:p-8 overflow-hidden relative group border border-slate-800 shadow-2xl">
   
   {/* Flex Container: Stays row on all screens to keep lines to the right */}

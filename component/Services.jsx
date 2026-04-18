@@ -95,7 +95,7 @@ const Services = () => {
                     <img 
                       src={s.gif} 
                       alt={s.title} 
-                      className="w-full h-full object-contain mix-blend-multiply transition-all duration-500"
+                      className="w-full h-full object-contain mix-blend-multiply rounded-full transition-transform duration-500 ease-out group-hover:scale-115"
                     />
                   </div>
                   <ArrowUpRight

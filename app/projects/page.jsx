@@ -128,7 +128,7 @@ const Projects = () => {
           {projects.map((p, i) => (
             <div
               key={i}
-              className={`group relative p-8 rounded-[3rem] transition-all duration-500 overflow-hidden border border-slate-100 flex flex-col justify-between h-80 ${p.color} hover:shadow-2xl hover:shadow-blue-200`}
+              className={`group relative p-8 rounded-[3rem] transition-all duration-500 overflow-hidden border border-slate-100 flex flex-col justify-between h-full ${p.color} hover:shadow-2xl hover:shadow-blue-200`}
             >
               {/* Top Row: Meta Info */}
               <div className="z-10 flex justify-between items-start">
@@ -136,7 +136,7 @@ const Projects = () => {
                   <span className="text-xs font-black uppercase tracking-widest opacity-60">
                     {p.id} / {p.category}
                   </span>
-                  <h2 className="text-4xl font-black mt-2 uppercase tracking-tighter">
+                  <h2 className="text-4xl font-black my-2 uppercase tracking-tighter">
                     {p.title}
                   </h2>
                 </div>
@@ -149,7 +149,7 @@ const Projects = () => {
 
               {/* Center Content: Description & Stack */}
               <div className="z-10">
-                <p className="text-md font-medium leading-relaxed mb-2 max-w-lg opacity-90">
+                <p className="text-md font-medium leading-tighter mb-2 max-w-lg opacity-90">
                   {p.desc}
                 </p>
                 <div className="flex flex-wrap gap-2">
@@ -165,7 +165,7 @@ const Projects = () => {
               </div>
 
               {/* Bottom Row: Actions */}
-              <div className="z-10 flex items-center gap-6">
+              <div className="z-10 flex items-center gap-6 mt-4">
 
   {/* Project Link */}
   {p.link ? (

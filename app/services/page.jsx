@@ -27,6 +27,7 @@ const ServicesPage = () => {
         "Authentication & Security Layers",
         "Cloud Deployment (AWS / Vercel)",
       ],
+      icon: "/gifs/coding.gif",
     },
     {
       id: "02",
@@ -42,6 +43,7 @@ const ServicesPage = () => {
         "Custom Admin Dashboards",
         "API-Driven Architecture",
       ],
+      icon: "/gifs/saas.gif",
     },
     {
       id: "03",
@@ -57,6 +59,7 @@ const ServicesPage = () => {
         "Interactive Prototyping",
         "Performance-Optimized Frontend",
       ],
+      icon: "/gifs/dashboard.gif",
     },
     {
       id: "04",
@@ -72,6 +75,7 @@ const ServicesPage = () => {
         "Data Extraction & Processing",
         "CRM / ERP Tool Integration",
       ],
+      icon: "/gifs/gear-wrench.gif",
     },
     {
       id: "05",
@@ -87,6 +91,7 @@ const ServicesPage = () => {
         "Performance Optimization",
         "Security Hardening",
       ],
+      icon: "/gifs/migration.gif",
     },
     {
       id: "06",
@@ -102,6 +107,7 @@ const ServicesPage = () => {
         "App Store & Play Store Deployment",
         "Real-Time Data Sync",
       ],
+      icon: "/gifs/mobile.gif",
     },
   ];
 
@@ -178,8 +184,8 @@ const ServicesPage = () => {
 
                   {/* Icon/Visual Anchor */}
                   <div className="lg:col-span-3 flex justify-end items-start pt-2">
-                    <div className="w-24 h-24 border border-slate-100 rounded-full flex items-center justify-center group-hover:border-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-all duration-500">
-                      <Zap size={32} />
+                    <div className="w-24 h-24 border border-slate-100 rounded-full flex items-center justify-center p-3 transition-all duration-500">
+                      <img src={service.icon} alt={service.title} className="w-full h-full object-contain rounded-full transition-transform duration-500 ease-out group-hover:scale-125" />
                     </div>
                   </div>
                 </div>

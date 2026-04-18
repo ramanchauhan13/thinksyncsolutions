@@ -39,7 +39,7 @@ const Footer = () => {
               </span>
             </h2>
 
-            <div className="flex flex-wrap gap-x-8 gap-y-4 text-sm font-bold uppercase tracking-widest">
+            <div className="flex flex-col gap-y-2 text-sm font-bold uppercase tracking-widest">
               <a
                 href="mailto:team.thinksync.solutions@gmail.com"
                 className="text-slate-400 hover:text-blue-500 transition-colors flex items-center gap-2 group"
@@ -50,20 +50,21 @@ const Footer = () => {
                   className="group-hover:-translate-y-1 group-hover:translate-x-1 transition-transform"
                 />
               </a>
-
+              <div className="flex justify-around">
               <a
                 href="tel:+918979937257"
                 className="text-slate-400 hover:text-blue-500 transition-colors"
               >
                 +91 8979937257
               </a>
-
+              <span className="text-slate-600">|</span>
               <a
                 href="tel:+919759862839"
                 className="text-slate-400 hover:text-blue-500 transition-colors"
               >
                 +91 9759862839
               </a>
+              </div>
             </div>
           </div>
 
