@@ -1,33 +1,36 @@
+import { headers } from "next/headers";
 import { NextResponse } from "next/server";
 
-export async function POST(req) {
-  try {
-    // Get visitor IP
-    const forwarded = req.headers.get("x-forwarded-for");
+export async function POST() {
+  const headersList = await headers();
 
-    const ip = forwarded
-      ? forwarded.split(",")[0]
-      : "Unknown";
+  let ip =
+    headersList.get("x-forwarded-for");
 
-    // Fetch location server-side
-    const response = await fetch(
-      `https://ipwho.is/${ip}`
+  let country =
+    headersList.get("x-vercel-ip-country");
+
+  let city =
+    headersList.get("x-vercel-ip-city");
+
+  let region =
+    headersList.get(
+      "x-vercel-ip-country-region"
     );
 
-    const data = await response.json();
-
-    return NextResponse.json({
-      success: true,
-      ip,
-      country: data.country,
-      city: data.city,
-      region: data.region,
-      isp: data.connection?.isp,
-    });
-  } catch (error) {
-    return NextResponse.json({
-      success: false,
-      error: error.message,
-    });
+  // Localhost fallback
+  if (!ip) {
+    ip = "127.0.0.1";
+    country = "Local";
+    city = "Development";
+    region = "Localhost";
   }
+
+  return NextResponse.json({
+    success: true,
+    ip: ip.split(",")[0],
+    country,
+    city,
+    region,
+  });
 }
