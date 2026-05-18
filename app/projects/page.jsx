@@ -9,90 +9,15 @@ import {
   ArrowRight,
 } from "lucide-react";
 import Link from "next/link";
-import { link } from "framer-motion/client";
+import { projects } from "../../data/projects";
+
+export const metadata = {
+  title: "Our Projects - ThinkSync Solutions",
+  description:
+    "Explore our portfolio of projects at ThinkSync Solutions, showcasing our expertise in Next.js, MERN stack, ERP systems, and AI-powered applications. See how we deliver engineered growth through innovative software solutions.",
+};
 
 const Projects = () => {
-  const projects = [
-    {
-      id: "01",
-      title: "QCD Travels",
-      category: "Full Stack – Next.js",
-      desc: "A scalable travel discovery platform where users explore destinations, check real-time availability details, interact with an AI-powered chatbot for assistance, and connect directly with travel authorities for inquiries.",
-      stack: ["Next.js", "MongoDB", "Tailwind CSS"],
-      color: "bg-blue-600 text-white",
-      status: "Live",
-      link: "https://qcdtravels.com",
-      github: "https://github.com/qcdtravels"
-    },
-    {
-      id: "02",
-      title: "Durga Brass Overseas",
-      category: "Website Development",
-      desc: "A modern website for a leading brassware exporter, featuring an interactive product catalog, client testimonials, and integrated inquiry forms to boost global outreach.",
-      stack: ["Next.js", "MongoDB", "Tailwind CSS"],
-      color: "bg-slate-100 text-slate-900",
-      status: "Live",
-      link: "https://durgabrassoverseas.com",
-      github: "https://github.com/durgabrassoverseas"
-    },
-    {
-      id: "03",
-      title: "ThinkNOrder",
-      category: "Business Solutions",
-      desc: "An AI-driven order management system that streamlines order processing, inventory tracking, and customer communication for small to medium-sized enterprises.",
-      stack: ["React.js", "Node.js", "MongoDB", "Tailwind CSS"],
-      color: "bg-slate-900 text-slate-100",
-      status: "Production",
-      link: "https://thinknorder.in",
-      github: "https://github.com/thinknorder"
-    },
-    {
-      id: "04",
-      title: "Hevoc Events",
-      category: "Event Management Platform",
-      desc: "A comprehensive event management platform that allows users to create, manage, and promote events with features like ticketing, scheduling, and attendee engagement tools.",
-      stack: ["Next.js", "Tailwind CSS"],
-      color: "bg-blue-50 text-blue-600",
-      status: "Live",
-      link: "https://www.hevocevents.in",
-      github: "https://github.com/hevocevents"
-    },
-    {
-      id: "05",
-      title: "DzineTech Solutions",
-      category: "Corporate Website",
-      desc: "A sleek corporate website for a tech solutions provider, showcasing services, case studies, and a blog to establish thought leadership in the industry.",
-      stack: ["Next.js", "Tailwind CSS"],
-      color: "bg-blue-600 text-white",
-      status: "Production",
-      // link: "https://dzinetech.com",
-      github: "https://github.com/dzinetech"
-    },
-    {
-      id: "06",
-      title: "OM Royal GYM",
-      category: "Fitness Center App",
-      desc: "A user-friendly app for a fitness center that offers class scheduling, trainer profiles, workout tracking, and membership management to enhance client engagement.",
-      stack: ["React Native", "Node.js", "MongoDB"],
-      color: "bg-slate-100 text-slate-900",
-      status: "Development",
-      // link: "https://omroyalgym.com",
-      github: "https://github.com/omroyalgym"
-
-    },
-    {
-      id: "07",
-      title: "PotatoTrails",
-      category: "Travel Blog",
-      desc: "A visually appealing travel blog platform where users can share travel experiences, tips, and itineraries, complete with photo galleries and interactive maps.",
-      stack: ["React.js", "Node.js", "MongoDB", "Tailwind CSS"],
-      color: "bg-slate-900 text-slate-100",
-      status: "Live",
-      link: "https://potatotrails.life",
-      github: "https://github.com/potatotrails"
-    },
-  ];
-
   return (
     <div className="min-h-screen bg-white py-20 px-6">
       <div className="max-w-full">
@@ -169,7 +94,7 @@ const Projects = () => {
 
   {/* Project Link */}
   {p.link ? (
-    <Link href={p.link} target="_blank" rel="noopener noreferrer">
+    <Link href={`/projects/${p.slug}`} rel="noopener noreferrer">
       <span className="flex items-center gap-2 font-black text-xs uppercase tracking-widest  transition-all cursor-pointer">
         Launch Project <ExternalLink size={14} />
       </span>

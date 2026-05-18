@@ -11,6 +11,12 @@ import {
 import Navbar from "../../component/Navbar";
 import Link from "next/link";
 
+export const metadata = {
+  title: "Our Services - ThinkSync Solutions",
+  description:
+    "Discover the comprehensive software development services offered by ThinkSync Solutions, including full-stack engineering, custom SaaS platforms, UI/UX design, automation systems, legacy modernization, and mobile app growth.",
+};
+
 const ServicesPage = () => {
   const serviceCategories = [
     {

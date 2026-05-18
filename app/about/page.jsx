@@ -5,8 +5,16 @@ import {
   Zap,
   Users2,
   Target,
+  Cpu,
+  Layers,
 } from "lucide-react";
 import Link from "next/link";
+
+export const metadata = {
+  title: "About ThinkSync Solutions",
+  description:
+    "Learn about ThinkSync Solutions, a software development company specializing in Next.js, MERN stack, ERP systems, and AI-powered applications.",
+};
 
 const AboutPage = () => {
   const values = [
@@ -36,19 +44,18 @@ const AboutPage = () => {
 
       <main className="relative z-10 max-w-7xl mx-auto px-6 py-20">
         {/* Section 1: The Manifesto */}
-        <div className="grid lg:grid-cols-2 gap-20 mb-12">
+        <div className="grid lg:grid-cols-2 gap-20 mb-24">
           <div>
             <div className="flex items-center gap-4 mb-2">
-  <div className="flex flex-col gap-1">
-    <span className="h-1 w-12 bg-blue-600 rounded-full"></span>
-    <span className="h-1 w-6 bg-blue-600/30 rounded-full"></span>
-  </div>
-  
-  <span className="text-slate-900 font-black tracking-[0.3em] text-xs uppercase relative">
-    Who We Are
-    <span className="absolute -bottom-1 left-0 w-0 h-px bg-blue-600 transition-all duration-700 group-hover:w-full"></span>
-  </span>
-</div>
+              <div className="flex flex-col gap-1">
+                <span className="h-1 w-12 bg-blue-600 rounded-full"></span>
+                <span className="h-1 w-6 bg-blue-600/30 rounded-full"></span>
+              </div>
+
+              <span className="text-slate-900 font-black tracking-[0.3em] text-xs uppercase relative">
+                Who We Are
+              </span>
+            </div>
             <h1 className="text-7xl md:text-9xl font-black leading-[0.8] tracking-tighter uppercase">
               WE BUILD <br /> <span className="text-blue-600 italic">TECH</span>{" "}
               THAT <br /> WORKS.
@@ -68,8 +75,8 @@ const AboutPage = () => {
           </div>
         </div>
 
-        {/* Section 2: Numbers that Matter (The Vibe Filler) */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 mb-10 border-y border-slate-100 py-20">
+        {/* Section 2: Numbers that Matter */}
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 mb-24 border-y border-slate-100 py-20">
           {[
             { label: "Products Shipped", val: "100+" },
             { label: "Lines of Code", val: "4.2M" },
@@ -87,8 +94,8 @@ const AboutPage = () => {
           ))}
         </div>
 
-        {/* Section 3: Core Values (Non-Bento Grid) */}
-        <div className="mb-10">
+        {/* Section 3: Core Values */}
+        <div className="mb-24">
           <h2 className="text-5xl font-black uppercase tracking-tighter mb-10 text-center">
             The{" "}
             <span className="text-blue-600 italic underline">ThinkSync</span>{" "}
@@ -114,9 +121,80 @@ const AboutPage = () => {
           </div>
         </div>
 
-        {/* Section 4: Final Hook */}
+        {/* Section 4: What We Do (SEO & Intent Optimization) */}
+        <div className="grid lg:grid-cols-12 gap-12 mb-24 items-start border-t border-slate-100 pt-20">
+          <div className="lg:col-span-5 sticky top-6">
+            <div className="flex items-center gap-3 mb-4">
+              <Layers className="text-blue-600" size={24} />
+              <span className="text-xs font-black uppercase tracking-[0.3em] text-slate-400">
+                Capabilities
+              </span>
+            </div>
+            <h2 className="text-5xl md:text-6xl font-black uppercase tracking-tight leading-none">
+              WHAT <br />WE DO.
+            </h2>
+          </div>
+          <div className="lg:col-span-7 space-y-6">
+            <p className="text-slate-700 text-xl md:text-2xl font-bold leading-relaxed tracking-tight">
+              ThinkSync Solutions is a premier software development company
+              specializing in high-performance digital architectures for startups
+              and enterprises across India.
+            </p>
+            <p className="text-slate-500 text-lg leading-relaxed">
+              We engineer custom applications from the ground up, utilizing
+              production-grade framework stacks like **Next.js** and the **MERN
+              ecosystem** to deliver elite **ERP software**, **AI-powered
+              platforms**, robust **SaaS products**, and targeted business automation systems.
+            </p>
+            <p className="text-slate-500 text-lg leading-relaxed">
+              Whether you need to deploy enterprise cloud infrastructure, build cross-platform native mobile applications, or orchestrate highly synchronized internal management setups, we transition concepts into ultra-scalable production environments.
+            </p>
+          </div>
+        </div>
+
+        {/* Section 5: Technologies We Use */}
+        <div className="mb-24 bg-slate-50 rounded-[3rem] p-12 md:p-16 border border-slate-100">
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-10">
+            <div>
+              <div className="flex items-center gap-3 mb-2">
+                <Cpu className="text-blue-600" size={20} />
+                <span className="text-xs font-black uppercase tracking-[0.3em] text-slate-400">
+                  Engine Room
+                </span>
+              </div>
+              <h2 className="text-4xl font-black uppercase tracking-tight">
+                TECHNOLOGIES WE USE
+              </h2>
+            </div>
+            <p className="text-slate-500 text-sm font-medium max-w-xs md:text-right">
+              Modern, fast, and secure primitives selected to optimize core web vitals and long-term codebase scale.
+            </p>
+          </div>
+
+          <div className="flex flex-wrap gap-3">
+            {[
+              "Next.js",
+              "React.js",
+              "Node.js",
+              "MongoDB",
+              "Tailwind CSS",
+              "React Native",
+              "AI Integration",
+              "Cloud Deployment",
+            ].map((tech) => (
+              <span
+                key={tech}
+                className="px-6 py-4 rounded-2xl bg-white border border-slate-200/60 font-black text-sm text-slate-800 tracking-wide transition-all duration-300 hover:border-blue-600 hover:text-blue-600 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-blue-500/[0.03]"
+              >
+                {tech}
+              </span>
+            ))}
+          </div>
+        </div>
+
+        {/* Section 6: Final Hook */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-12 bg-slate-900 p-16 rounded-[4rem] text-white overflow-hidden relative">
-          <div className="max-w-xl">
+          <div className="max-w-xl z-10">
             <h2 className="text-5xl font-black uppercase tracking-tighter mb-6 leading-none">
               READY TO SYNC YOUR <br /> VISION WITH REALITY?
             </h2>

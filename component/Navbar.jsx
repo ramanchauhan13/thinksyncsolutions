@@ -49,8 +49,14 @@ const Navbar = () => {
           className="flex items-center gap-2 font-black text-2xl tracking-wider text-[#0c2f55] group"
         >
           <div className="transition-transform duration-300 group-hover:rotate-12">
-            <Image src="/logo1.png" alt="Logo" width={36} height={36} />
-          </div>
+  <Image
+    src="/logo1.png"
+    alt="Logo"
+    width={30}
+    height={30}
+    className="w-auto h-auto"
+  />
+</div>
           <span className="bg-clip-text text-transparent bg-linear-to-r from-[#0c2f55] to-blue-600">
             THINK
             <span className="bg-clip-text text-transparent bg-linear-to-r from-blue-700 to-blue-600">

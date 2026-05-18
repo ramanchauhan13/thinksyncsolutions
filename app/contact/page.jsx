@@ -4,6 +4,12 @@ import React, { useState } from "react";
 import { Send, Globe, Mail, Phone, CheckCircle2 } from "lucide-react";
 import { sendEmail } from "@/lib/emailjs";
 
+export const metadata = {
+  title: "Contact ThinkSync Solutions",
+  description:
+    "Get in touch with ThinkSync Solutions for your software development needs. Contact us via email, phone, or our contact form to discuss your project requirements.",
+};
+
 const ContactPage = () => {
   const [activeType, setActiveType] = useState("Development");
   const [formData, setFormData] = useState({

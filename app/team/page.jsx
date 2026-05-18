@@ -1,6 +1,12 @@
 import React from "react";
 import { Github, Linkedin, ArrowUpRight } from "lucide-react";
 
+export const metadata = {
+  title: "Our Team - ThinkSync Solutions",
+  description:
+    "Meet the talented team behind ThinkSync Solutions, a software development company specializing in Next.js, MERN stack, ERP systems, and AI-powered applications. Learn about our engineers' expertise and passion for building innovative software solutions.",
+};
+
 const TeamPage = () => {
   const team = [
     {

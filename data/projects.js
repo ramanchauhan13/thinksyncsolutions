@@ -1,0 +1,92 @@
+export const projects = [
+    {
+      id: "01",
+      slug: "qcd-travels",
+      title: "QCD Travels",
+      category: "Full Stack – Next.js",
+      desc: "A scalable travel discovery platform where users explore destinations, check real-time availability details, interact with an AI-powered chatbot for assistance, and connect directly with travel authorities for inquiries.",
+      stack: ["Next.js", "MongoDB", "Tailwind CSS"],
+      color: "bg-blue-600 text-white",
+      status: "Live",
+      link: "https://qcdtravels.com",
+      github: "https://github.com/qcdtravels"
+    },
+    {
+      id: "02",
+      slug: "durga-brass-overseas",
+      title: "Durga Brass Overseas",
+      category: "Website Development",
+      desc: "A modern website for a leading brassware exporter, featuring an interactive product catalog, client testimonials, and integrated inquiry forms to boost global outreach.",
+      stack: ["Next.js", "MongoDB", "Tailwind CSS"],
+      color: "bg-slate-100 text-slate-900",
+      status: "Live",
+      link: "https://durgabrassoverseas.com",
+      github: "https://github.com/durgabrassoverseas"
+    },
+    {
+      id: "03",
+      slug: "thinknorder",
+      title: "ThinkNOrder",
+      category: "Business Solutions",
+      desc: "An AI-driven order management system that streamlines order processing, inventory tracking, and customer communication for small to medium-sized enterprises.",
+      stack: ["React.js", "Node.js", "MongoDB", "Tailwind CSS"],
+      color: "bg-slate-900 text-slate-100",
+      status: "Production",
+      link: "https://thinknorder.in",
+      github: "https://github.com/thinknorder"
+    },
+    {
+      id: "04",
+      slug: "hevoc-events",
+      title: "Hevoc Events",
+      category: "Event Management Platform",
+      desc: "A comprehensive event management platform that allows users to create, manage, and promote events with features like ticketing, scheduling, and attendee engagement tools.",
+      stack: ["Next.js", "Tailwind CSS"],
+      color: "bg-blue-50 text-blue-600",
+      status: "Live",
+      link: "https://www.hevocevents.in",
+      github: "https://github.com/hevocevents"
+    },
+    {
+      id: "05",
+      slug: "dzinetech-solutions",
+      title: "DzineTech Solutions",
+      category: "Corporate Website",
+      desc: "A sleek corporate website for a tech solutions provider, showcasing services, case studies, and a blog to establish thought leadership in the industry.",
+      stack: ["Next.js", "Tailwind CSS"],
+      color: "bg-blue-600 text-white",
+      title: "DzineTech Solutions",
+      category: "Corporate Website",
+      desc: "A sleek corporate website for a tech solutions provider, showcasing services, case studies, and a blog to establish thought leadership in the industry.",
+      stack: ["Next.js", "Tailwind CSS"],
+      color: "bg-blue-600 text-white",
+      status: "Production",
+      // link: "https://dzinetech.com",
+      github: "https://github.com/dzinetech"
+    },
+    {
+      id: "06",
+      slug: "om-royal-gym",
+      title: "OM Royal GYM",
+      category: "Fitness Center App",
+      desc: "A user-friendly app for a fitness center that offers class scheduling, trainer profiles, workout tracking, and membership management to enhance client engagement.",
+      stack: ["React Native", "Node.js", "MongoDB"],
+      color: "bg-slate-100 text-slate-900",
+      status: "Development",
+      // link: "https://omroyalgym.com",
+      github: "https://github.com/omroyalgym"
+
+    },
+    {
+      id: "07",
+      slug: "potato-trails",
+      title: "PotatoTrails",
+      category: "Travel Blog",
+      desc: "A visually appealing travel blog platform where users can share travel experiences, tips, and itineraries, complete with photo galleries and interactive maps.",
+      stack: ["React.js", "Node.js", "MongoDB", "Tailwind CSS"],
+      color: "bg-slate-900 text-slate-100",
+      status: "Live",
+      link: "https://potatotrails.life",
+      github: "https://github.com/potatotrails"
+    },
+  ];
