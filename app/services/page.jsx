@@ -128,7 +128,7 @@ const ServicesPage = () => {
           }}
         ></div>
 
-        <main className="relative z-10 max-w-7xl mx-auto px-6 py-20">
+        <main className="relative z-10 max-w-full mx-auto px-6 py-20">
           {/* Hero Area */}
           <div className="mb-20 max-w-4xl">
             <div className="flex items-center gap-4 mb-2">

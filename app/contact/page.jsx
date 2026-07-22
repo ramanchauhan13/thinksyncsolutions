@@ -75,7 +75,7 @@ const ContactPage = () => {
         }}
       ></div>
 
-      <main className="relative z-10 max-w-7xl mx-auto px-6 py-20">
+      <main className="relative z-10 max-w-full mx-auto px-6 py-20">
         <div className="grid lg:grid-cols-2 gap-24 items-start">
           {/* Left Side: Editorial Content */}
           <div className="sticky">

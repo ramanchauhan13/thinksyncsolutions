@@ -58,7 +58,7 @@ const TeamPage = () => {
         }}
       ></div>
 
-      <main className="relative z-10 max-w-7xl mx-auto px-6 py-20">
+      <main className="relative z-10 max-w-full mx-auto px-6 py-20">
         {/* Header: Massive Scale */}
         <div className="mb-20">
           <div className="flex items-center gap-4 mb-2">

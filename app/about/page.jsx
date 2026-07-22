@@ -42,7 +42,7 @@ const AboutPage = () => {
         }}
       ></div>
 
-      <main className="relative z-10 max-w-7xl mx-auto px-6 py-20">
+      <main className="relative z-10 max-w-full mx-auto px-6 py-20">
         {/* Section 1: The Manifesto */}
         <div className="grid lg:grid-cols-2 gap-20 mb-24">
           <div>

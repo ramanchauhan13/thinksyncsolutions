@@ -9,7 +9,7 @@ const Stats = () => {
 
   return (
     <section className="py-12 bg-blue-600 text-white overflow-hidden relative">
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
+      <div className="max-w-full mx-auto px-6 relative z-10">
         <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
           {stats.map((item, idx) => (
             <div key={idx} className="group relative">

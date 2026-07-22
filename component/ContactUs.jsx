@@ -12,7 +12,7 @@ import Link from "next/link";
 const ContactUs = () => {
   return (
     <section id="contact" className="py-12 md:py-16 px-4 bg-white overflow-hidden">
-      <div className="max-w-6xl mx-auto"> {/* Tightened from 7xl to 6xl */}
+      <div className="max-w-7xl mx-auto"> {/* Tightened from 7xl to 6xl */}
         
         {/* The "Main Frame" - Added max-height for large screens */}
         <div className="bg-[#0f172a] rounded-[2rem] md:rounded-[3rem] overflow-hidden shadow-2xl relative border border-white/5 group min-h-[500px]">

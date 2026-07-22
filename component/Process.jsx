@@ -35,7 +35,7 @@ const Process = () => {
 
   return (
     <section id="process" className="py-20 px-6 bg-white overflow-hidden">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-full mx-auto">
         {/* Header with Background Text */}
         <div className="relative mb-24 flex flex-col items-center">
           <span className="absolute -top-10 text-[10rem] font-black text-slate-100 select-none z-0">

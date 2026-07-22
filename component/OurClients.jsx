@@ -15,7 +15,7 @@ const OurClients = () => {
 
   return (
     <section id="clients" className="bg-white overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-fullmx-auto px-6">
         {/* Header Section */}
         <div className="mb-10">
           <div className="flex items-center gap-4 mb-2">

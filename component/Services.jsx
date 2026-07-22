@@ -52,7 +52,7 @@ const Services = () => {
 
   return (
     <section id="services" className="py-20 px-6 bg-[#f8fafc] overflow-hidden">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-full mx-auto">
         {/* Header Section */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8">
           <div className="space-y-4">
