@@ -105,7 +105,7 @@ export default function RootLayout({ children }) {
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <VisitorTracker />
         <Navbar />
-        <main>{children}</main>
+        <main className="py-6">{children}</main>
         <Footer />
       </body>
     </html>
