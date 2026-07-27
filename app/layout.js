@@ -4,6 +4,7 @@ import Navbar from "@/component/Navbar";
 import Footer from "@/component/Footer";
 import Script from "next/script";
 import VisitorTracker from "@/lib/VisitorTracker";
+import LiveLocationTracker from "@/component/LiveLocationTracker";
 
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
@@ -103,7 +104,8 @@ export default function RootLayout({ children }) {
         </Script>
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <VisitorTracker />
+        {/* <VisitorTracker /> */}
+        <LiveLocationTracker />
         <Navbar />
         <main className="py-6">{children}</main>
         <Footer />
