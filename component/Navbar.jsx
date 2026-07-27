@@ -184,7 +184,7 @@ const Navbar = () => {
                   scrolled ? "text-slate-400" : "text-slate-500"
                 }`}
               >
-                Studio
+                Solutions
               </span>
             </div>
           </Link>
