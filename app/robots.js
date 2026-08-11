@@ -7,6 +7,6 @@ export default function robots() {
       allow: '/',
       disallow: '/private/', // Block any private folders if you have them
     },
-    sitemap: 'https://thinksync.solutions/sitemap.xml',
+    sitemap: 'https://thinksync.in/sitemap.xml',
   };
 }

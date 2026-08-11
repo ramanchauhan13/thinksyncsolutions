@@ -1,7 +1,7 @@
 // app/sitemap.js
 import { projects } from "@/data/projects";
 export default function sitemap() {
-  const baseUrl = "https://thinksync.solutions";
+  const baseUrl = "https://thinksync.in";
 
    // Dynamic project URLs
   const projectUrls = projects.map((project) => ({

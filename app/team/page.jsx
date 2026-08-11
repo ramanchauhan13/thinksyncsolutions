@@ -46,6 +46,15 @@ const TeamPage = () => {
         "https://www.linkedin.com/in/vineet-javadev?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BMzqK6ymtQY2iBLWEwi6IYQ%3D%3D",
       github: "https://github.com/vineet-javadev",
     },
+    {
+      name: "Avika Singh",
+      role: "UI/UX Designer",
+      specialty: "Figma and Tailwind CSS",
+      bio: "Crafts intuitive user interfaces and experiences, translating complex requirements into visually appealing designs.",
+      bioLink: "https://avikasingh.thinksync.solutions",
+      linkedIn: "https://www.linkedin.com/in/avikasingh/",
+      github: "https://github.com/avikasingh"
+    }
   ];
 
   return (
