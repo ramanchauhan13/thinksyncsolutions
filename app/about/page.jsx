@@ -44,7 +44,7 @@ const AboutPage = () => {
 
       <main className="relative z-10 max-w-full mx-auto px-6 py-20">
         {/* Section 1: The Manifesto */}
-        <div className="grid lg:grid-cols-2 gap-20 mb-24">
+        <div className="grid lg:grid-cols-2 gap-20 mb-10">
           <div>
             <div className="flex items-center gap-4 mb-2">
               <div className="flex flex-col gap-1">
@@ -56,12 +56,12 @@ const AboutPage = () => {
                 Who We Are
               </span>
             </div>
-            <h1 className="text-7xl md:text-9xl font-black leading-[0.8] tracking-tighter uppercase">
+            <h1 className="text-6xl md:text-8xl font-black leading-[0.8] tracking-tighter uppercase">
               WE BUILD <br /> <span className="text-blue-600 italic">TECH</span>{" "}
               THAT <br /> WORKS.
             </h1>
           </div>
-          <div className="lg:pt-24">
+          <div className="lg:pt-6">
             <p className="text-2xl md:text-4xl font-bold leading-tight mb-8 tracking-tight">
               ThinkSync Solutions was founded on a simple premise: Software
               should be a catalyst, not a bottleneck.
@@ -76,7 +76,7 @@ const AboutPage = () => {
         </div>
 
         {/* Section 2: Numbers that Matter */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 mb-24 border-y border-slate-100 py-20">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 mb-10 border-y border-slate-100 py-20">
           {[
             { label: "Products Shipped", val: "100+" },
             { label: "Lines of Code", val: "4.2M" },
@@ -95,7 +95,7 @@ const AboutPage = () => {
         </div>
 
         {/* Section 3: Core Values */}
-        <div className="mb-24">
+        <div className="mb-10">
           <h2 className="text-5xl font-black uppercase tracking-tighter mb-10 text-center">
             The{" "}
             <span className="text-blue-600 italic underline">ThinkSync</span>{" "}
@@ -122,7 +122,7 @@ const AboutPage = () => {
         </div>
 
         {/* Section 4: What We Do (SEO & Intent Optimization) */}
-        <div className="grid lg:grid-cols-12 gap-12 mb-24 items-start border-t border-slate-100 pt-20">
+        <div className="grid lg:grid-cols-12 gap-12 mb-14 items-start border-t border-slate-100 pt-20">
           <div className="lg:col-span-5 sticky top-6">
             <div className="flex items-center gap-3 mb-4">
               <Layers className="text-blue-600" size={24} />

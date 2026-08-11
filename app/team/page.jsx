@@ -81,7 +81,7 @@ const TeamPage = () => {
     <span className="absolute -bottom-1 left-0 w-0 h-px bg-blue-600 transition-all duration-700 group-hover:w-full"></span>
   </span>
 </div>
-          <h1 className="text-7xl md:text-9xl font-black leading-[0.8] tracking-tighter uppercase mb-12">
+          <h1 className="text-6xl md:text-8xl font-black leading-[0.8] tracking-tighter uppercase mb-12">
             HUMAN <br /> <span className="text-blue-600">ENGINE.</span>
           </h1>
           <p className="text-2xl text-slate-400 font-medium max-w-2xl leading-tight italic">
