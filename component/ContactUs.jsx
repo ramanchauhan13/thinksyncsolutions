@@ -25,14 +25,14 @@ const ContactUs = () => {
             {/* Left Side: Branding & Info */}
             <div className="lg:col-span-7 p-8 md:p-12 lg:p-14 border-b lg:border-b-0 lg:border-r border-white/10 flex flex-col justify-between">
               <div>
-                <div className="flex items-center gap-3 mb-8">
+                {/* <div className="flex items-center gap-3 mb-8">
                   <div className="w-9 h-9 rounded-lg bg-blue-600/10 border border-blue-500/20 flex items-center justify-center">
                     <Zap className="text-blue-500 fill-blue-500/20" size={16} />
                   </div>
                   <span className="text-blue-500 font-black uppercase tracking-[0.3em] text-[9px]">
                     Start the Sync
                   </span>
-                </div>
+                </div> */}
 
                 <h2 className="text-4xl sm:text-5xl md:text-6xl font-black text-white leading-[0.95] tracking-tighter uppercase mb-10">
                   Let’s build <br />

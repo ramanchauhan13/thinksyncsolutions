@@ -7,6 +7,9 @@ import {
   Target,
   Cpu,
   Layers,
+  Lock,
+  ShieldCheck,
+  Code2,
 } from "lucide-react";
 import Link from "next/link";
 
@@ -29,6 +32,24 @@ const AboutPage = () => {
     {
       title: "Scalability",
       desc: "We build for your Series B, C, and beyond. Architecture that grows with your users.",
+    },
+  ];
+
+  const guarantees = [
+    {
+      icon: Lock,
+      title: "Strict NDA & IP Ownership",
+      desc: "Your intellectual property and codebase remain 100% confidential and owned entirely by your company.",
+    },
+    {
+      icon: ShieldCheck,
+      title: "Production SLA & QA",
+      desc: "Rigorous automated testing, security audits, and continuous CI/CD pipelines before any live deployment.",
+    },
+    {
+      icon: Code2,
+      title: "Direct Engineer Sync",
+      desc: "No non-technical account managers. Collaborate directly with architects and core developers in real-time.",
     },
   ];
 
@@ -149,6 +170,39 @@ const AboutPage = () => {
             <p className="text-slate-500 text-lg leading-relaxed">
               Whether you need to deploy enterprise cloud infrastructure, build cross-platform native mobile applications, or orchestrate highly synchronized internal management setups, we transition concepts into ultra-scalable production environments.
             </p>
+          </div>
+        </div>
+
+        {/* Section 4.5: Trust & Client Guarantees */}
+        <div className="mb-20 pt-16 border-t border-slate-100">
+          <div className="mb-12 text-center md:text-left">
+            <span className="text-blue-600 font-mono text-xs font-black uppercase tracking-[0.3em] block mb-2">
+              Engineering Commitments
+            </span>
+            <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter">
+              WHY CLIENTS TRUST THINKSYNC.
+            </h2>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            {guarantees.map((item, idx) => {
+              const IconComp = item.icon;
+              return (
+                <div
+                  key={idx}
+                  className="p-10 bg-slate-50 rounded-[2.5rem] border border-slate-100 hover:border-blue-600/30 transition-all duration-300"
+                >
+                  <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center text-blue-600 mb-6 shadow-sm">
+                    <IconComp size={24} />
+                  </div>
+                  <h3 className="text-xl font-black uppercase tracking-tight mb-3">
+                    {item.title}
+                  </h3>
+                  <p className="text-slate-500 text-sm leading-relaxed">
+                    {item.desc}
+                  </p>
+                </div>
+              );
+            })}
           </div>
         </div>
 

@@ -1,5 +1,5 @@
 import React from "react";
-import { Github, Linkedin, ArrowUpRight } from "lucide-react";
+import { Github, Linkedin, ArrowUpRight, Briefcase, CheckCircle2 } from "lucide-react";
 
 export const metadata = {
   title: "Our Team - ThinkSync Solutions",
@@ -7,13 +7,28 @@ export const metadata = {
     "Meet the talented team behind ThinkSync Solutions, a software development company specializing in Next.js, MERN stack, ERP systems, and AI-powered applications. Learn about our engineers' expertise and passion for building innovative software solutions.",
 };
 
+const guarantees = [
+    { title: "Strict NDA Protection", desc: "Your IP and codebase remain 100% confidential and owned by you." },
+    { title: "Production SLA & QA", desc: "Rigorous automated testing and CI/CD before any production deployment." },
+    { title: "Direct Engineer Sync", desc: "No middle managers. Direct daily comms with architects via Slack/Teams." },
+  ];
+
 const TeamPage = () => {
+
+  const stats = [
+    { label: "Successful Shipments", value: "30+" },
+    { label: "Avg. Seniority", value: "4+ Yrs" },
+    { label: "Code Ownership", value: "100%" },
+    { label: "Client Satisfaction", value: "99%" },
+  ];
+
   const team = [
     {
       name: "Raman Chauhan",
       role: "Full Stack Architect",
-      specialty: "MERN Stack and Scalable Solutions",
-      bio: "Expert in building scalable MERN stack applications with seamless user interfaces and robust backend APIs.",
+      experience: "5+ Years",
+      specialty: "Web, Android & iOS Development, Cloud & AI-Powered Solutions",
+      bio: "Experienced Full Stack Architect with expertise in MERN Stack, React Native, Next.js, cloud infrastructure, microservices, and scalable system design. Builds secure, high-performance web and mobile applications for Android and iOS while leveraging modern cloud technologies to deliver reliable and growth-ready solutions.",
       bioLink: "https://raman.thinksync.solutions",
       linkedIn: "https://www.linkedin.com/in/ramanchauhan13/",
       github: "https://github.com/ramanchauhan13",
@@ -21,26 +36,30 @@ const TeamPage = () => {
     {
       name: "Vaibhav Tyagi",
       role: "Full Stack Architect",
-      specialty: "Cross Platform App Development",
-      bio: "Specializes in building responsive mobile-first web and native apps using React, React Native, and MongoDB.",
+      experience: "4+ Years",
+      specialty: "MERN Stack & Cross-Platform App Development",
+      bio: "Experienced full-stack developer specializing in MERN Stack applications and cross-platform mobile development. Builds scalable web solutions, high-performance Android and iOS apps with React Native, and robust backend systems powered by Node.js, Express, and MongoDB.",
       bioLink: "https://vaibhav.thinksync.solutions",
       linkedIn: "https://www.linkedin.com/in/vaibhavtyagi01",
       github: "https://github.com/CyberDemon2001",
     },
     {
       name: "Umesh Singh Mehta",
-      role: "Full-Stack Engineer",
-      specialty: "TypeScript & UI/UX Design",
-      bio: "Delivers high-performance full-stack solutions with a focus on TypeScript and modern web development practices.",
+      role: "Mobile App Developer",
+      experience: "3+ Years",
+      specialty: "React Native & Cross-Platform Development",
+      bio: "Develops high-performance mobile applications with a focus on user experience and cross-platform compatibility.",
       bioLink: "https://portfolio-khaki-beta-26.vercel.app/",
-      linkedIn: "https://www.linkedin.com/in/umesh-singh-mehta-93819a194?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bo8t991uiRN2PnkFDzG655w%3D%3D",
+      linkedIn:
+        "https://www.linkedin.com/in/umesh-singh-mehta-93819a194?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bo8t991uiRN2PnkFDzG655w%3D%3D",
       github: "https://github.com/UmeshSingh2000",
     },
     {
       name: "Vineet Kumar Rajput",
-      role: "Java Developer",
-      specialty: "Spring Boot and dynamic frontends using Angular",
-      bio: "Full-stack Java developer focused on designing secure, high-performance backend systems and seamless Angular user experiences.",
+      role: "DevOps Engineer",
+      experience: "3+ Years",
+      specialty: "Cloud Infrastructure & CI/CD, AWS, Docker, Kubernetes",
+      bio: "Specializes in managing cloud infrastructure and implementing continuous integration/continuous deployment pipelines.",
       bioLink: "https://portfolio-v2-lac-seven.vercel.app/",
       linkedIn:
         "https://www.linkedin.com/in/vineet-javadev?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BMzqK6ymtQY2iBLWEwi6IYQ%3D%3D",
@@ -49,12 +68,13 @@ const TeamPage = () => {
     {
       name: "Avika Singh",
       role: "UI/UX Designer",
+      experience: "2+ Years",
       specialty: "Figma and Tailwind CSS",
       bio: "Crafts intuitive user interfaces and experiences, translating complex requirements into visually appealing designs.",
       bioLink: "https://avikasingh.thinksync.solutions",
       linkedIn: "https://www.linkedin.com/in/avikasingh/",
-      github: "https://github.com/avikasingh"
-    }
+      github: "https://github.com/avikasingh",
+    },
   ];
 
   return (
@@ -71,16 +91,16 @@ const TeamPage = () => {
         {/* Header: Massive Scale */}
         <div className="mb-20">
           <div className="flex items-center gap-4 mb-2">
-  <div className="flex flex-col gap-1">
-    <span className="h-1 w-12 bg-blue-600 rounded-full"></span>
-    <span className="h-1 w-6 bg-blue-600/30 rounded-full"></span>
-  </div>
-  
-  <span className="text-slate-900 font-black tracking-[0.3em] text-xs uppercase relative">
-    The Collective
-    <span className="absolute -bottom-1 left-0 w-0 h-px bg-blue-600 transition-all duration-700 group-hover:w-full"></span>
-  </span>
-</div>
+            <div className="flex flex-col gap-1">
+              <span className="h-1 w-12 bg-blue-600 rounded-full"></span>
+              <span className="h-1 w-6 bg-blue-600/30 rounded-full"></span>
+            </div>
+
+            <span className="text-slate-900 font-black tracking-[0.3em] text-xs uppercase relative">
+              The Collective
+              <span className="absolute -bottom-1 left-0 w-0 h-px bg-blue-600 transition-all duration-700 group-hover:w-full"></span>
+            </span>
+          </div>
           <h1 className="text-6xl md:text-8xl font-black leading-[0.8] tracking-tighter uppercase mb-12">
             HUMAN <br /> <span className="text-blue-600">ENGINE.</span>
           </h1>
@@ -88,6 +108,16 @@ const TeamPage = () => {
             "A technical team synchronized by a single goal: building software
             that defines the future of your industry."
           </p>
+        </div>
+
+        {/* TRUST BANNER: Key Performance Metrics */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-20 p-6 bg-slate-900 text-white rounded-2xl border border-slate-800">
+          {stats.map((s, idx) => (
+            <div key={idx} className="p-4 border-l-2 border-blue-600">
+              <p className="text-3xl md:text-4xl font-black tracking-tight text-blue-500">{s.value}</p>
+              <p className="text-xs uppercase font-bold tracking-widest text-slate-400 mt-1">{s.label}</p>
+            </div>
+          ))}
         </div>
 
         {/* Team List: High Density / No Bento */}
@@ -112,8 +142,13 @@ const TeamPage = () => {
                 <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter mb-4 group-hover:text-blue-600 transition-colors">
                   {member.name}
                 </h2>
-                <div className="inline-block px-3 py-1 bg-slate-900 text-white text-[9px] font-black uppercase tracking-widest rounded-sm">
-                  {member.specialty}
+                <div className="flex flex-wrap items-center gap-2">
+                  <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-blue-50 text-blue-700 border border-blue-200/60 text-[9px] font-black uppercase tracking-widest rounded-sm">
+                    <Briefcase size={11} /> {member.experience}
+                  </span>
+                  <div className="inline-block px-3 py-1 bg-slate-900 text-white text-[9px] font-black uppercase tracking-widest rounded-sm">
+                    {member.specialty}
+                  </div>
                 </div>
               </div>
 
@@ -157,6 +192,27 @@ const TeamPage = () => {
             </div>
           ))}
         </div>
+
+        {/* TRUST GUARANTEES SECTION */}
+        <section className="mt-28 py-16 border-t border-slate-200">
+          <div className="mb-12">
+            <span className="text-blue-600 font-mono text-xs font-black uppercase tracking-[0.3em] block mb-2">
+              Engineering Commitment
+            </span>
+            <h3 className="text-3xl md:text-4xl font-black uppercase tracking-tighter">
+              Why clients trust ThinkSync.
+            </h3>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            {guarantees.map((item, idx) => (
+              <div key={idx} className="p-8 bg-slate-50 rounded-2xl border border-slate-100">
+                <CheckCircle2 className="text-blue-600 mb-4" size={28} />
+                <h4 className="text-lg font-bold uppercase tracking-tight mb-2">{item.title}</h4>
+                <p className="text-sm text-slate-500 leading-relaxed">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </section>
 
         {/* Join the Team Section */}
         {/* <section className="mt-40 grid md:grid-cols-2 gap-px bg-slate-200 border-2 border-slate-200 rounded-[2rem] overflow-hidden">
