@@ -1,11 +1,7 @@
 "use client";
 import React from "react";
 import Link from "next/link";
-import {
-  ArrowUpRight,
-  Linkedin,
-  Instagram,
-} from "lucide-react";
+import { ArrowUpRight, Linkedin, Instagram } from "lucide-react";
 
 const Footer = () => {
   const socialLinks = [
@@ -28,7 +24,6 @@ const Footer = () => {
 
       <div className="max-w-full mx-auto relative z-10">
         <div className="flex flex-col lg:flex-row justify-between items-start gap-16 mb-6">
-          
           {/* CTA Section */}
           <div className="max-w-2xl">
             <h2 className="text-5xl lg:text-7xl font-black mb-8 leading-[0.85] tracking-tighter uppercase">
@@ -74,16 +69,39 @@ const Footer = () => {
 
         {/* Navigation Grid (Updated with Insights/Blog Column) */}
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-14 border-t border-white/5 pt-8">
-          
           {/* Expertise */}
           <div>
             <h4 className="text-[10px] font-black uppercase tracking-[0.3em] text-blue-500 mb-4">
               Expertise
             </h4>
             <ul className="space-y-2 text-slate-400 font-bold text-sm">
-              <li><Link href="/services" aria-label="View our SaaS Development services" className="hover:text-white transition-colors">SaaS Development</Link></li>
-              <li><Link href="/services" aria-label="View our Mobile Solutions services" className="hover:text-white transition-colors">Mobile Solutions</Link></li>
-              <li><Link href="/services" aria-label="View our Cloud Architecture services" className="hover:text-white transition-colors">Cloud Architecture</Link></li>
+              <li>
+                <Link
+                  href="/services"
+                  aria-label="View our SaaS Development services"
+                  className="hover:text-white transition-colors"
+                >
+                  SaaS Development
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/services"
+                  aria-label="View our Mobile Solutions services"
+                  className="hover:text-white transition-colors"
+                >
+                  Mobile Solutions
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/services"
+                  aria-label="View our Cloud Architecture services"
+                  className="hover:text-white transition-colors"
+                >
+                  Cloud Architecture
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -94,13 +112,36 @@ const Footer = () => {
             </h4>
             <ul className="space-y-2 text-slate-400 font-bold text-sm">
               <li>
-                <Link href="/blog" aria-label="Read ThinkSync Engineering Blog" className="hover:text-white transition-colors flex items-center gap-1 group">
+                <Link
+                  href="/blog"
+                  aria-label="Read ThinkSync Engineering Blog"
+                  className="hover:text-white transition-colors flex items-center gap-1 group"
+                >
                   Engineering Blog
-                  <ArrowUpRight size={12} className="group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-transform text-blue-500" />
+                  <ArrowUpRight
+                    size={12}
+                    className="group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-transform text-blue-500"
+                  />
                 </Link>
               </li>
-              <li><Link href="/blog" aria-label="Read Architecture Guides" className="hover:text-white transition-colors">Architecture Guides</Link></li>
-              <li><Link href="/blog" aria-label="Read ERP Cost Breakdowns" className="hover:text-white transition-colors">Cost & ROI Calculators</Link></li>
+              <li>
+                <Link
+                  href="/blog"
+                  aria-label="Read Architecture Guides"
+                  className="hover:text-white transition-colors"
+                >
+                  Architecture Guides
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/blog"
+                  aria-label="Read ERP Cost Breakdowns"
+                  className="hover:text-white transition-colors"
+                >
+                  Cost & ROI Calculators
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -110,8 +151,24 @@ const Footer = () => {
               Company
             </h4>
             <ul className="space-y-2 text-slate-400 font-bold text-sm">
-              <li><Link href="#process" aria-label="Learn about our process" className="hover:text-white transition-colors">Our Process</Link></li>
-              <li><Link href="#testimonials" aria-label="View client testimonials" className="hover:text-white transition-colors">Client Voices</Link></li>
+              <li>
+                <Link
+                  href="#process"
+                  aria-label="Learn about our process"
+                  className="hover:text-white transition-colors"
+                >
+                  Our Process
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#testimonials"
+                  aria-label="View client testimonials"
+                  className="hover:text-white transition-colors"
+                >
+                  Client Voices
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -143,12 +200,20 @@ const Footer = () => {
               </h4>
               <ul className="space-y-2 text-slate-400 font-bold text-sm">
                 <li>
-                  <Link href="/privacy-policy" aria-label="View our privacy policy" className="hover:text-white transition-colors">
+                  <Link
+                    href="/privacy-policy"
+                    aria-label="View our privacy policy"
+                    className="hover:text-white transition-colors"
+                  >
                     Privacy Policy
                   </Link>
                 </li>
                 <li>
-                  <Link href="/terms-of-service" aria-label="View our terms of service" className="hover:text-white transition-colors">
+                  <Link
+                    href="/terms-of-service"
+                    aria-label="View our terms of service"
+                    className="hover:text-white transition-colors"
+                  >
                     Terms of Service
                   </Link>
                 </li>

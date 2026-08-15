@@ -1,5 +1,6 @@
 // app/sitemap.js
 import { projects } from "@/data/projects";
+import { posts } from "@/data/posts";
 
 export default function sitemap() {
   const baseUrl = "https://thinksync.in";
