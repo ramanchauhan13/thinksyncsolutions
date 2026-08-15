@@ -143,35 +143,55 @@ const AboutPage = () => {
         </div>
 
         {/* Section 4: What We Do (SEO & Intent Optimization) */}
-        <div className="grid lg:grid-cols-12 gap-12 mb-14 items-start border-t border-slate-100 pt-20">
-          <div className="lg:col-span-5 sticky top-6">
-            <div className="flex items-center gap-3 mb-4">
-              <Layers className="text-blue-600" size={24} />
-              <span className="text-xs font-black uppercase tracking-[0.3em] text-slate-400">
-                Capabilities
-              </span>
-            </div>
-            <h2 className="text-5xl md:text-6xl font-black uppercase tracking-tight leading-none">
-              WHAT <br />WE DO.
-            </h2>
-          </div>
-          <div className="lg:col-span-7 space-y-6">
-            <p className="text-slate-700 text-xl md:text-2xl font-bold leading-relaxed tracking-tight">
-              ThinkSync Solutions is a premier software development company
-              specializing in high-performance digital architectures for startups
-              and enterprises across India.
-            </p>
-            <p className="text-slate-500 text-lg leading-relaxed">
-              We engineer custom applications from the ground up, utilizing
-              production-grade framework stacks like **Next.js** and the **MERN
-              ecosystem** to deliver elite **ERP software**, **AI-powered
-              platforms**, robust **SaaS products**, and targeted business automation systems.
-            </p>
-            <p className="text-slate-500 text-lg leading-relaxed">
-              Whether you need to deploy enterprise cloud infrastructure, build cross-platform native mobile applications, or orchestrate highly synchronized internal management setups, we transition concepts into ultra-scalable production environments.
-            </p>
-          </div>
-        </div>
+        <div className="grid lg:grid-cols-12 gap-8 lg:gap-16 mb-16 items-start border-t border-slate-200/60 pt-20">
+  {/* Left Column: Sticky Header */}
+  <div className="lg:col-span-5 sticky top-12">
+    <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-blue-50/80 border border-blue-100 backdrop-blur-sm mb-6">
+      <Layers className="text-blue-600 animate-pulse" size={18} />
+      <span className="text-[11px] font-black uppercase tracking-[0.25em] text-blue-700">
+        Capabilities
+      </span>
+    </div>
+    <h2 className="text-5xl lg:text-7xl font-black uppercase tracking-tight leading-[0.9] text-slate-900">
+      WHAT <br />
+      <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
+        WE DO.
+      </span>
+    </h2>
+  </div>
+
+  {/* Right Column: Content Cards */}
+  <div className="lg:col-span-7 space-y-6">
+    <div className="p-8 rounded-3xl bg-gradient-to-r from-blue-700 to-blue-600 text-white shadow-xl shadow-slate-900/10 border border-slate-800 transition-all duration-300 hover:shadow-2xl">
+      <p className="text-xl md:text-2xl font-bold leading-relaxed tracking-tight text-slate-100">
+        ThinkSync Solutions is a premier software development company
+        specializing in high-performance digital architectures for startups
+        and enterprises across India.
+      </p>
+    </div>
+
+    <div className="p-8 rounded-3xl bg-slate-50 border border-slate-200/80 space-y-4 hover:border-blue-200 transition-colors duration-300">
+      <p className="text-slate-600 text-lg leading-relaxed">
+        We engineer custom applications from the ground up, utilizing
+        production-grade framework stacks like{" "}
+        <span className="font-semibold text-slate-900 bg-white px-2 py-0.5 rounded border border-slate-200 shadow-sm">
+          Next.js
+        </span>{" "}
+        and the{" "}
+        <span className="font-semibold text-slate-900 bg-white px-2 py-0.5 rounded border border-slate-200 shadow-sm">
+          MERN ecosystem
+        </span>{" "}
+        to deliver elite <strong className="text-slate-800">ERP software</strong>,{" "}
+        <strong className="text-slate-800">AI-powered platforms</strong>, robust{" "}
+        <strong className="text-slate-800">SaaS products</strong>, and targeted business automation systems.
+      </p>
+
+      <p className="text-slate-600 text-lg leading-relaxed pt-2 border-t border-slate-200/60">
+        Whether you need to deploy enterprise cloud infrastructure, build cross-platform native mobile applications, or orchestrate highly synchronized internal management setups, we transition concepts into ultra-scalable production environments.
+      </p>
+    </div>
+  </div>
+</div>
 
         {/* Section 4.5: Trust & Client Guarantees */}
         <div className="mb-20 pt-16 border-t border-slate-100">

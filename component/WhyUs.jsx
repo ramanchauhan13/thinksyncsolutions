@@ -1,14 +1,11 @@
 import React from "react";
-import {
-  Globe,
-  ShieldCheck,
-} from "lucide-react";
+import { Globe, ShieldCheck } from "lucide-react";
 
 const WhyUs = () => {
   return (
     <section 
       id="why" 
-      className="relative min-h-screen w-full flex items-center justify-center py-8 lg:py-12 px-6 bg-white overflow-hidden"
+      className="relative w-full py-12 md:py-16 lg:py-20 px-10 bg-white overflow-hidden"
     >
       <div className="max-w-full mx-auto w-full grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
         
@@ -54,10 +51,8 @@ const WhyUs = () => {
 
             {/* Velocity/Tech Depth Card (Full Width) */}
             <div className="mt-8 md:mt-10 col-span-2 bg-slate-900 rounded-[2rem] md:rounded-[2.5rem] p-6 md:p-8 overflow-hidden relative group border border-slate-800 shadow-2xl">
-              {/* Flex Container */}
               <div className="relative z-10 flex items-center justify-between">
                 <div className="flex items-center gap-3 md:gap-4">
-                  {/* Icon Container */}
                   <div className="w-14 h-14 md:w-16 md:h-16 shrink-0 rounded-xl md:rounded-2xl p-2 bg-white flex items-center justify-center group-hover:rotate-12 transition-transform duration-500">
                     <img
                       src="/gifs/fast.gif"
@@ -66,7 +61,6 @@ const WhyUs = () => {
                     />
                   </div>
 
-                  {/* Text Wrapper */}
                   <div>
                     <div className="text-[9px] md:text-[10px] font-bold text-blue-400 uppercase tracking-[0.2em] md:tracking-[0.3em] mb-1">
                       Production Velocity
@@ -77,7 +71,6 @@ const WhyUs = () => {
                   </div>
                 </div>
 
-                {/* Visual "Speed" Lines */}
                 <div className="flex gap-1 md:gap-1.5 h-8 md:h-12 items-end shrink-0 ml-4">
                   {[30, 60, 45, 90, 100, 70].map((h, i) => (
                     <div
@@ -92,7 +85,6 @@ const WhyUs = () => {
                 </div>
               </div>
 
-              {/* Subtle Background Accent */}
               <div className="absolute top-0 right-0 w-32 h-32 bg-blue-600/10 blur-[60px] pointer-events-none" />
             </div>
           </div>
@@ -139,7 +131,6 @@ const WhyUs = () => {
                 key={i}
                 className="group flex flex-col sm:flex-row gap-5 p-4 rounded-3xl transition-all duration-300 hover:bg-slate-50 border border-transparent hover:border-slate-100"
               >
-                {/* Dynamic Stat Node */}
                 <div className="shrink-0 w-20 h-20 sm:w-24 sm:h-24 bg-blue-50 rounded-2xl sm:rounded-3xl flex flex-col items-center justify-center border border-blue-100 group-hover:bg-blue-600 group-hover:border-blue-600 transition-all duration-500">
                   <span className="text-xl sm:text-2xl font-black text-blue-600 group-hover:text-white transition-colors">
                     {item.stat}

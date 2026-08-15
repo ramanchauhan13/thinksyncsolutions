@@ -34,7 +34,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed w-[92%] max-w-7xl left-1/2 -translate-x-1/2 top-4 z-50 transition-all duration-500 rounded-2xl border border-white/20 ${
+      className={`fixed w-[96%] max-w-full left-1/2 -translate-x-1/2 top-2 z-50 transition-all duration-500 rounded-2xl border border-white/20 ${
         scrolled
           ? "bg-white/60 backdrop-blur-2xl shadow-[0_8px_32px_0_rgba(31,38,135,0.08)]"
           : "bg-white/30 backdrop-blur-md"

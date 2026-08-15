@@ -1,60 +1,67 @@
 // app/sitemap.js
 import { projects } from "@/data/projects";
+
 export default function sitemap() {
   const baseUrl = "https://thinksync.in";
+  const now = new Date().toISOString();
 
-   // Dynamic project URLs
+  // Dynamic project URLs
   const projectUrls = projects.map((project) => ({
     url: `${baseUrl}/projects/${project.slug}`,
-    lastModified: new Date(),
+    lastModified: now,
     changeFrequency: "weekly",
     priority: 0.8,
   }));
 
-
   return [
     {
       url: baseUrl,
-      lastModified: new Date(),
+      lastModified: now,
       changeFrequency: "weekly",
       priority: 1,
     },
-
     {
       url: `${baseUrl}/about`,
-      lastModified: new Date(),
+      lastModified: now,
       changeFrequency: "monthly",
       priority: 0.8,
     },
-
     {
       url: `${baseUrl}/services`,
-      lastModified: new Date(),
+      lastModified: now,
       changeFrequency: "weekly",
       priority: 0.9,
     },
-
     {
       url: `${baseUrl}/projects`,
-      lastModified: new Date(),
+      lastModified: now,
       changeFrequency: "weekly",
       priority: 0.9,
     },
-
-      ...projectUrls,
-
+    ...projectUrls,
     {
       url: `${baseUrl}/team`,
-      lastModified: new Date(),
+      lastModified: now,
       changeFrequency: "monthly",
       priority: 0.7,
     },
-
     {
       url: `${baseUrl}/contact`,
-      lastModified: new Date(),
+      lastModified: now,
       changeFrequency: "monthly",
-      priority: 0.6,
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/privacy-policy`,
+      lastModified: now,
+      changeFrequency: "yearly",
+      priority: 0.3,
+    },
+    {
+      url: `${baseUrl}/terms-of-service`,
+      lastModified: now,
+      changeFrequency: "yearly",
+      priority: 0.3,
     },
   ];
 }

@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen w-full flex items-center justify-center pt-20 lg:pt-0 px-6 overflow-hidden">
+    <section className="relative min-h-screen w-full flex items-center justify-center pt-10 lg:pt-0 px-10 overflow-hidden">
       <div className="max-w-full mx-auto grid lg:grid-cols-2 gap-12 items-center w-full">
         {/* LEFT COLUMN: TEXT */}
         <div className="z-10">
@@ -20,14 +20,16 @@ const Hero = () => {
               <span className="absolute -bottom-1 left-0 w-0 h-px bg-blue-600 transition-all duration-700 group-hover:w-full"></span>
             </span>
           </div>
-          <h1 className="text-6xl lg:text-8xl font-black leading-[0.9] mb-8 text-slate-900">
+          <h1 className="text-6xl lg:text-8xl font-black leading-[0.9] mb-10 text-slate-900">
             WE BUILD <br />
             <span className="text-blue-600 italic">THE FUTURE</span> <br />
             OF SYNC.
           </h1>
           <p className="lg:text-xl text-lg text-slate-500 lg:mb-10 mb-6 max-w-lg leading-relaxed font-medium">
-            Enterprise-grade development for startups that mean business. We
-            transform complex logic into seamless digital experiences.
+            Whether you're launching a new platform or scaling up, we build
+            high-performance digital solutions tailored to your goals. We break
+            down complex tech hurdles into clean, reliable, and user-friendly
+            software that drives real results.
           </p>
           <div className="flex flex-wrap items-center gap-5">
             <Link

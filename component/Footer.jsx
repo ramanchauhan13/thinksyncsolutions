@@ -139,7 +139,7 @@ const Footer = () => {
                 </Link>
               </p>
               <p className="text-[10px] text-slate-500 font-bold uppercase tracking-widest">
-                <Link href="/terms" className="hover:text-white">
+                <Link href="/terms-of-service" className="hover:text-white">
                   Terms of Service
                 </Link>
               </p>
@@ -151,7 +151,7 @@ const Footer = () => {
         <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-[10px] font-black uppercase tracking-[0.3em] text-slate-600">
           <div className="flex items-center gap-3">
             <div className="w-2 h-2 rounded-full bg-blue-600" />
-            <span>© 2025 THINKSYNC SOLUTIONS</span>
+            <span>© {new Date().getFullYear()} THINKSYNC SOLUTIONS</span>
           </div>
 
           <div className="italic">Built with precision & code.</div>

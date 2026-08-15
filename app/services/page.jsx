@@ -113,7 +113,7 @@ const ServicesPage = () => {
         "App Store & Play Store Deployment",
         "Real-Time Data Sync",
       ],
-      icon: "/gifs/mobile.gif",
+      icon: "/gifs/smartphone-coding.gif",
     },
   ];
 
