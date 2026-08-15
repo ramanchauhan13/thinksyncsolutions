@@ -11,6 +11,7 @@ const NAV_LINKS = [
   { name: "Services", href: "/services", ariaLabel: "View our services" },
   { name: "Our Work", href: "/work", ariaLabel: "View our portfolio of work" },
   { name: "Team", href: "/team", ariaLabel: "Meet our team" },
+  { name: "Blog", href: "/blog", ariaLabel: "Read our latest insights" },
   { name: "Contact Us", href: "/contact", ariaLabel: "Contact ThinkSync Solutions" },
 ];
 

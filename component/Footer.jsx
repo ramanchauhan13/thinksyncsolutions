@@ -20,7 +20,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-[#0f172a] px-12 py-12 text-white rounded-t-[3rem] md:rounded-t-[5rem] relative overflow-hidden">
+    <footer className="bg-[#0f172a] px-6 sm:px-12 py-12 text-white rounded-t-[3rem] md:rounded-t-[5rem] relative overflow-hidden">
       {/* Background Brand Text */}
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/3 text-[16vw] font-black text-white/2 select-none pointer-events-none whitespace-nowrap">
         THINKSYNC
@@ -51,71 +51,76 @@ const Footer = () => {
                   className="group-hover:-translate-y-1 group-hover:translate-x-1 transition-transform"
                 />
               </a>
-              <div className="flex justify-around">
-              <a
-                href="tel:+918979937257"
-                aria-label="Call ThinkSync Solutions at +91 89799 37257"
-                className="text-slate-400 hover:text-blue-500 transition-colors"
-              >
-                +91 8979937257
-              </a>
-              <span className="text-slate-600">|</span>
-              <a
-                href="tel:+919759862839"
-                aria-label="Call ThinkSync Solutions at +91 97598 62839"
-                className="text-slate-400 hover:text-blue-500 transition-colors"
-              >
-                +91 9759862839
-              </a>
+              <div className="flex justify-start gap-4">
+                <a
+                  href="tel:+918979937257"
+                  aria-label="Call ThinkSync Solutions at +91 89799 37257"
+                  className="text-slate-400 hover:text-blue-500 transition-colors"
+                >
+                  +91 8979937257
+                </a>
+                <span className="text-slate-600">|</span>
+                <a
+                  href="tel:+919759862839"
+                  aria-label="Call ThinkSync Solutions at +91 97598 62839"
+                  className="text-slate-400 hover:text-blue-500 transition-colors"
+                >
+                  +91 9759862839
+                </a>
               </div>
             </div>
           </div>
-
-          {/* Hire Us Button */}
-          {/* <div className="relative group self-center lg:self-start">
-            <div className="absolute inset-0 bg-blue-600 blur-2xl opacity-20 group-hover:opacity-40 transition-opacity rounded-full" />
-            <Link href="/contact">
-              <button className="relative w-48 h-48 md:w-56 md:h-56 bg-white hover:cursor-pointer text-slate-900 rounded-full font-black text-xl hover:bg-blue-600 hover:text-white transition-all duration-500 flex flex-col items-center justify-center shadow-2xl uppercase tracking-tighter overflow-hidden">
-                <span className="relative z-10">Hire Us</span>
-                <span className="text-[12px] opacity-60 mt-2">Right Now</span>
-              </button>
-            </Link>
-          </div> */}
         </div>
 
-        {/* Navigation Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-12 mb-14 border-t border-white/5 pt-8">
+        {/* Navigation Grid (Updated with Insights/Blog Column) */}
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-14 border-t border-white/5 pt-8">
           
           {/* Expertise */}
           <div>
-            <h4 className="text-[10px] font-black uppercase tracking-[0.3em] text-blue-500 mb-2">
+            <h4 className="text-[10px] font-black uppercase tracking-[0.3em] text-blue-500 mb-4">
               Expertise
             </h4>
             <ul className="space-y-2 text-slate-400 font-bold text-sm">
-              <li><Link href="/services" aria-label="View our SaaS Development services" className="hover:text-white">SaaS Development</Link></li>
-              <li><Link href="/services" aria-label="View our Mobile Solutions services" className="hover:text-white">Mobile Solutions</Link></li>
-              <li><Link href="/services" aria-label="View our Cloud Architecture services" className="hover:text-white">Cloud Architecture</Link></li>
+              <li><Link href="/services" aria-label="View our SaaS Development services" className="hover:text-white transition-colors">SaaS Development</Link></li>
+              <li><Link href="/services" aria-label="View our Mobile Solutions services" className="hover:text-white transition-colors">Mobile Solutions</Link></li>
+              <li><Link href="/services" aria-label="View our Cloud Architecture services" className="hover:text-white transition-colors">Cloud Architecture</Link></li>
+            </ul>
+          </div>
+
+          {/* Insights & Blog */}
+          <div>
+            <h4 className="text-[10px] font-black uppercase tracking-[0.3em] text-blue-500 mb-4">
+              Insights
+            </h4>
+            <ul className="space-y-2 text-slate-400 font-bold text-sm">
+              <li>
+                <Link href="/blog" aria-label="Read ThinkSync Engineering Blog" className="hover:text-white transition-colors flex items-center gap-1 group">
+                  Engineering Blog
+                  <ArrowUpRight size={12} className="group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-transform text-blue-500" />
+                </Link>
+              </li>
+              <li><Link href="/blog" aria-label="Read Architecture Guides" className="hover:text-white transition-colors">Architecture Guides</Link></li>
+              <li><Link href="/blog" aria-label="Read ERP Cost Breakdowns" className="hover:text-white transition-colors">Cost & ROI Calculators</Link></li>
             </ul>
           </div>
 
           {/* Company */}
           <div>
-            <h4 className="text-[10px] font-black uppercase tracking-[0.3em] text-blue-500 mb-2">
+            <h4 className="text-[10px] font-black uppercase tracking-[0.3em] text-blue-500 mb-4">
               Company
             </h4>
             <ul className="space-y-2 text-slate-400 font-bold text-sm">
-              <li><Link href="#process" aria-label="Learn about our process" className="hover:text-white">Our Process</Link></li>
-              <li><Link href="#testimonials" aria-label="View client testimonials" className="hover:text-white">Client Voices</Link></li>
-              {/* <li><Link href="/careers" aria-label="View career opportunities" className="hover:text-white">Global Careers</Link></li> */}
+              <li><Link href="#process" aria-label="Learn about our process" className="hover:text-white transition-colors">Our Process</Link></li>
+              <li><Link href="#testimonials" aria-label="View client testimonials" className="hover:text-white transition-colors">Client Voices</Link></li>
             </ul>
           </div>
 
           {/* Socials */}
           <div>
-            <h4 className="text-[10px] font-black uppercase tracking-[0.3em] text-blue-500 mb-6">
+            <h4 className="text-[10px] font-black uppercase tracking-[0.3em] text-blue-500 mb-4">
               Socials
             </h4>
-            <div className="flex gap-4">
+            <div className="flex gap-3">
               {socialLinks.map((item, i) => (
                 <a
                   key={i}
@@ -131,21 +136,23 @@ const Footer = () => {
           </div>
 
           {/* Legal */}
-          <div className="flex flex-col justify-end items-end">
-            <div className="text-right">
-              <div className="text-xs font-black uppercase tracking-widest text-white mb-2 underline decoration-blue-600 decoration-2 underline-offset-4">
+          <div className="flex flex-col justify-start md:items-end">
+            <div>
+              <h4 className="text-[10px] font-black uppercase tracking-[0.3em] text-blue-500 mb-4">
                 Legal
-              </div>
-              <p className="text-[10px] text-slate-500 font-bold uppercase tracking-widest">
-                <Link href="/privacy-policy" aria-label="View our privacy policy" className="hover:text-white">
-                  Privacy Policy
-                </Link>
-              </p>
-              <p className="text-[10px] text-slate-500 font-bold uppercase tracking-widest">
-                <Link href="/terms-of-service" aria-label="View our terms of service" className="hover:text-white">
-                  Terms of Service
-                </Link>
-              </p>
+              </h4>
+              <ul className="space-y-2 text-slate-400 font-bold text-sm">
+                <li>
+                  <Link href="/privacy-policy" aria-label="View our privacy policy" className="hover:text-white transition-colors">
+                    Privacy Policy
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/terms-of-service" aria-label="View our terms of service" className="hover:text-white transition-colors">
+                    Terms of Service
+                  </Link>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -153,7 +160,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-[10px] font-black uppercase tracking-[0.3em] text-slate-600">
           <div className="flex items-center gap-3">
-            <div className="w-2 h-2 rounded-full bg-blue-600" />
+            <div className="w-2 h-2 rounded-full bg-blue-600 animate-pulse" />
             <span>© {new Date().getFullYear()} THINKSYNC SOLUTIONS</span>
           </div>
 
@@ -165,7 +172,7 @@ const Footer = () => {
               aria-label="View ThinkSync Solutions location on Google Maps"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-slate-400 hover:text-white"
+              className="text-slate-400 hover:text-white transition-colors"
             >
               Moradabad, IN
             </a>

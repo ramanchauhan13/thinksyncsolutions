@@ -13,6 +13,13 @@ export default function sitemap() {
     priority: 0.8,
   }));
 
+  const blogUrls = posts.map((post) => ({
+    url: `${baseUrl}/blog/${post.slug}`,
+    lastModified: post.publishedAt || now,
+    changeFrequency: "monthly",
+    priority: 0.8,
+  }));
+
   return [
     {
       url: baseUrl,
@@ -39,6 +46,13 @@ export default function sitemap() {
       priority: 0.9,
     },
     ...projectUrls,
+    {
+      url: `${baseUrl}/blog`,
+      lastModified: now,
+      changeFrequency: "daily",
+      priority: 0.9,
+    },
+    ...blogUrls,
     {
       url: `${baseUrl}/team`,
       lastModified: now,
