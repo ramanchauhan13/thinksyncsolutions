@@ -61,6 +61,7 @@ export default async function ProjectPage({ params }) {
         <div className="mb-10">
           <Link
             href="/work"
+            aria-label="Return to ThinkSync Solutions Work Page"
             className="inline-flex items-center gap-2.5 text-xs font-mono font-bold uppercase tracking-widest text-slate-500 hover:text-blue-600 transition-colors group"
           >
             <ArrowLeft
@@ -99,6 +100,7 @@ export default async function ProjectPage({ params }) {
             <div className="lg:col-span-4 flex lg:justify-end">
               <a
                 href={project.link || "#"}
+                aria-label={`Visit the live deployment of ${project.title}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group whitespace-nowrap bg-blue-600 text-white px-8 py-5 rounded-2xl font-black text-xs tracking-[0.3em] uppercase hover:bg-slate-900 transition-all duration-300 shadow-xl shadow-blue-500/20 inline-flex items-center gap-3 w-full sm:w-auto justify-center"
@@ -249,6 +251,7 @@ export default async function ProjectPage({ params }) {
               </span>
               <a
                 href={project.link || "#"}
+                aria-label={`Visit the live deployment of ${project.title}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-400 hover:underline font-bold truncate max-w-[180px]"
@@ -266,12 +269,14 @@ export default async function ProjectPage({ params }) {
         <div className="mt-20 pt-8 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between gap-4">
           <Link
             href="/work"
+            aria-label="Return to ThinkSync Solutions Work Page"
             className="inline-flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-widest text-slate-500 hover:text-blue-600 transition-colors"
           >
             ← Return to Selected Projects
           </Link>
           <a
             href={project.link || "#"}
+            aria-label={`Launch the live deployment of ${project.title}`}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-widest text-blue-600 hover:text-slate-900 transition-colors"

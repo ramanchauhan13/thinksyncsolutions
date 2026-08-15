@@ -42,6 +42,7 @@ const Footer = () => {
             <div className="flex flex-col gap-y-2 text-sm font-bold uppercase tracking-widest">
               <a
                 href="mailto:team.thinksync.solutions@gmail.com"
+                aria-label="Send an email to ThinkSync Solutions"
                 className="text-slate-400 hover:text-blue-500 transition-colors flex items-center gap-2 group"
               >
                 team.thinksync.solutions@gmail.com
@@ -53,6 +54,7 @@ const Footer = () => {
               <div className="flex justify-around">
               <a
                 href="tel:+918979937257"
+                aria-label="Call ThinkSync Solutions at +91 89799 37257"
                 className="text-slate-400 hover:text-blue-500 transition-colors"
               >
                 +91 8979937257
@@ -60,6 +62,7 @@ const Footer = () => {
               <span className="text-slate-600">|</span>
               <a
                 href="tel:+919759862839"
+                aria-label="Call ThinkSync Solutions at +91 97598 62839"
                 className="text-slate-400 hover:text-blue-500 transition-colors"
               >
                 +91 9759862839
@@ -89,9 +92,9 @@ const Footer = () => {
               Expertise
             </h4>
             <ul className="space-y-2 text-slate-400 font-bold text-sm">
-              <li><Link href="/services" className="hover:text-white">SaaS Development</Link></li>
-              <li><Link href="/services" className="hover:text-white">Mobile Solutions</Link></li>
-              <li><Link href="/services" className="hover:text-white">Cloud Architecture</Link></li>
+              <li><Link href="/services" aria-label="View our SaaS Development services" className="hover:text-white">SaaS Development</Link></li>
+              <li><Link href="/services" aria-label="View our Mobile Solutions services" className="hover:text-white">Mobile Solutions</Link></li>
+              <li><Link href="/services" aria-label="View our Cloud Architecture services" className="hover:text-white">Cloud Architecture</Link></li>
             </ul>
           </div>
 
@@ -101,9 +104,9 @@ const Footer = () => {
               Company
             </h4>
             <ul className="space-y-2 text-slate-400 font-bold text-sm">
-              <li><Link href="#process" className="hover:text-white">Our Process</Link></li>
-              <li><Link href="#testimonials" className="hover:text-white">Client Voices</Link></li>
-              {/* <li><Link href="/careers" className="hover:text-white">Global Careers</Link></li> */}
+              <li><Link href="#process" aria-label="Learn about our process" className="hover:text-white">Our Process</Link></li>
+              <li><Link href="#testimonials" aria-label="View client testimonials" className="hover:text-white">Client Voices</Link></li>
+              {/* <li><Link href="/careers" aria-label="View career opportunities" className="hover:text-white">Global Careers</Link></li> */}
             </ul>
           </div>
 
@@ -134,12 +137,12 @@ const Footer = () => {
                 Legal
               </div>
               <p className="text-[10px] text-slate-500 font-bold uppercase tracking-widest">
-                <Link href="/privacy-policy" className="hover:text-white">
+                <Link href="/privacy-policy" aria-label="View our privacy policy" className="hover:text-white">
                   Privacy Policy
                 </Link>
               </p>
               <p className="text-[10px] text-slate-500 font-bold uppercase tracking-widest">
-                <Link href="/terms-of-service" className="hover:text-white">
+                <Link href="/terms-of-service" aria-label="View our terms of service" className="hover:text-white">
                   Terms of Service
                 </Link>
               </p>
@@ -159,6 +162,7 @@ const Footer = () => {
           <div className="flex gap-4">
             <a
               href="https://www.google.com/maps/search/Moradabad+India"
+              aria-label="View ThinkSync Solutions location on Google Maps"
               target="_blank"
               rel="noopener noreferrer"
               className="text-slate-400 hover:text-white"

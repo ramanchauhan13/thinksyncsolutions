@@ -83,7 +83,7 @@ const Services = () => {
         {/* Services Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((s, i) => (
-            <Link key={i} href="/services" className="group">
+            <Link key={i} href="/services" aria-label={`Learn more about ${s.title}`} className="group">
               <div className="relative h-full bg-white p-8 rounded-3xl border border-slate-200/60 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 overflow-hidden">
                 
                 {/* Background Accent Blur */}

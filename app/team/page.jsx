@@ -161,6 +161,7 @@ const TeamPage = () => {
                   <div className="flex gap-6 items-center">
                     <a
                       href={member.github}
+                      aria-label={`Visit ${member.name}'s GitHub profile`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-slate-300 hover:text-blue-600 transition-colors"
@@ -170,6 +171,7 @@ const TeamPage = () => {
 
                     <a
                       href={member.linkedIn}
+                      aria-label={`Visit ${member.name}'s LinkedIn profile`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-slate-300 hover:text-blue-600 transition-colors"
@@ -180,6 +182,7 @@ const TeamPage = () => {
                   <div className="ml-auto">
                     <a
                       href={member.bioLink}
+                      aria-label={`View full bio of ${member.name}`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="ml-auto flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest bg-black text-white px-6 py-3 rounded-full group-hover:bg-blue-600 group-hover:text-white transition-all"

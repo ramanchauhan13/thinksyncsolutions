@@ -105,6 +105,7 @@ const ContactPage = () => {
                 </p>
                 <a
                   href="mailto:team.thinksync.solutions@gmail.com"
+                  aria-label="Email ThinkSync Solutions"
                   className="text-xl font-black hover:text-blue-600 transition-colors"
                 >
                   team.thinksync.solutions@gmail.com
@@ -116,6 +117,7 @@ const ContactPage = () => {
                 </p>
                 <a
                   href="tel:+918979937257"
+                  aria-label="Call ThinkSync Solutions"
                   className="text-xl font-black hover:text-blue-600 transition-colors"
                 >
                   +91 8979937257

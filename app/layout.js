@@ -11,11 +11,11 @@ const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"]
 export const metadata = {
   metadataBase: new URL("https://thinksync.solutions"),
   title: {
-    default: "ThinkSync Solutions | Enterprise Custom Software & Web Development",
+    default: "ThinkSync Solutions | Custom Software & Web Apps",
     template: "%s | ThinkSync Solutions",
   },
   description:
-    "ThinkSync Solutions is a premier custom software and full-stack web development agency. Specializing in high-performance MERN applications, custom ERP systems, SaaS platforms, and digital transformation.",
+    "ThinkSync Solutions crafts custom web apps, ERP systems, and SaaS platforms. Transform your business with full-stack software development.",
   keywords: [
     "Full Stack Web Development",
     "Custom ERP Software Solutions",
@@ -54,7 +54,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "ThinkSync Solutions | Enterprise Custom Software & Web Development",
+    title: "ThinkSync Solutions | Custom Software & Web Apps",
     description: "Building scalable web platforms, SaaS apps, and tailored ERP solutions.",
     images: ["/logo1.png"],
   },
@@ -67,8 +67,8 @@ export default function RootLayout({ children }) {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication", // Switched primary schema type to focus on software services nationwide
     "name": "ThinkSync Solutions",
-    "image": "https://thinksync.solutions/logo1.png",
-    "url": "https://thinksync.solutions",
+    "image": "https://thinksync.in/logo1.png",
+    "url": "https://thinksync.in",
     "telephone": ["+91-8979937257", "+91-9759862839"],
     "applicationCategory": "BusinessApplication",
     "operatingSystem": "All",

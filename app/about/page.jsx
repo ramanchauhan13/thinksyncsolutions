@@ -278,6 +278,7 @@ const AboutPage = () => {
           </div>
           <Link
             href="/contact"
+            aria-label="Contact ThinkSync Solutions"
             className="whitespace-nowrap bg-blue-600 text-white px-10 py-5 rounded-2xl font-black text-xs tracking-[0.3em] uppercase hover:bg-white hover:text-blue-600 transition-all z-10 shadow-xl shadow-blue-500/20 inline-block text-center"
           >
             Let’s Talk Shop

@@ -211,6 +211,7 @@ const ServicesPage = () => {
               </h2>
               <Link
                 href="/contact"
+                aria-label="Contact ThinkSync Solutions"
                 className="bg-white text-blue-600 px-12 py-6 rounded-2xl font-black text-sm tracking-[0.3em] uppercase hover:bg-slate-900 hover:text-white transition-all"
               >
                 Consult with us

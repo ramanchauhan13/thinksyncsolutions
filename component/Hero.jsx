@@ -34,6 +34,7 @@ const Hero = () => {
           <div className="flex flex-wrap items-center gap-5">
             <Link
               href="/work"
+              aria-label="View our portfolio of work at ThinkSync Solutions"
               className="bg-slate-100 hover:bg-slate-200 text-slate-800 px-8 py-4 rounded-2xl font-black flex items-center gap-3 transition-all"
             >
               OUR WORK
@@ -41,6 +42,7 @@ const Hero = () => {
 
             <Link
               href="/contact"
+              aria-label="Contact ThinkSync Solutions to get started on your project"
               className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-2xl font-black flex items-center gap-3 transition-all group shadow-lg shadow-blue-500/20"
             >
               GET STARTED

@@ -207,6 +207,7 @@ const Testimonials = () => {
 
           <a
             href="#contact"
+            aria-label="Start a project with ThinkSync Solutions"
             className="shrink-0 inline-flex items-center gap-2 bg-white text-blue-600 px-6 py-3.5 rounded-2xl font-black uppercase text-xs tracking-wider hover:bg-slate-100 transition-colors shadow-md"
           >
             <span>Start A Project</span>

@@ -32,6 +32,7 @@ export default function NotFound() {
 
         <Link
           href="/"
+          aria-label="Return to ThinkSync Solutions Home"
           className="inline-flex items-center gap-3 bg-slate-900 text-white px-8 py-4 rounded-full font-black text-xs tracking-[0.2em] uppercase hover:bg-blue-600 transition-colors shadow-lg"
         >
           <ArrowLeft size={16} /> Return to Engine

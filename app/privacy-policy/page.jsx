@@ -52,6 +52,7 @@ const PrivacyPolicy = () => {
         <div className="mb-10">
           <Link
             href="/"
+            aria-label="Back to ThinkSync Solutions Home"
             className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-blue-600 transition-colors"
           >
             <ArrowLeft size={14} /> Back to Home
@@ -108,6 +109,7 @@ const PrivacyPolicy = () => {
                 If you have questions regarding this Privacy Policy or wish to exercise data privacy rights for your organization, reach out directly to our security officer at{" "}
                 <a
                   href="mailto:privacy@thinksync.solutions"
+                  aria-label="Email ThinkSync Solutions Privacy Team"
                   className="text-blue-600 font-bold underline hover:text-slate-900 transition-colors"
                 >
                   privacy@thinksync.solutions

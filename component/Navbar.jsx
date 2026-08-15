@@ -6,12 +6,12 @@ import Image from "next/image";
 import { Menu, X } from "lucide-react";
 
 const NAV_LINKS = [
-  { name: "Home", href: "/" },
-  { name: "About Us", href: "/about" },
-  { name: "Services", href: "/services" },
-  { name: "Our Work", href: "/work" },
-  { name: "Team", href: "/team" },
-  { name: "Contact Us", href: "/contact" },
+  { name: "Home", href: "/", ariaLabel: "Return to ThinkSync Solutions Home" },
+  { name: "About Us", href: "/about", ariaLabel: "Learn more about ThinkSync Solutions" },
+  { name: "Services", href: "/services", ariaLabel: "View our services" },
+  { name: "Our Work", href: "/work", ariaLabel: "View our portfolio of work" },
+  { name: "Team", href: "/team", ariaLabel: "Meet our team" },
+  { name: "Contact Us", href: "/contact", ariaLabel: "Contact ThinkSync Solutions" },
 ];
 
 const Navbar = () => {
@@ -44,6 +44,7 @@ const Navbar = () => {
         {/* LOGO */}
         <Link
           href="/"
+          aria-label="Return to ThinkSync Solutions Home"
           className="flex items-center gap-2 font-black text-2xl tracking-wider text-[#0c2f55] group"
         >
           <div className="transition-transform duration-300 group-hover:rotate-12">
@@ -69,6 +70,7 @@ const Navbar = () => {
             <Link
               key={link.href}
               href={link.href}
+              aria-label={link.ariaLabel}
               className={getLinkStyle(link.href)}
             >
               {link.name}
@@ -96,6 +98,7 @@ const Navbar = () => {
             <Link
               key={link.href}
               href={link.href}
+              aria-label={link.ariaLabel}
               className={`${getLinkStyle(link.href)} text-sm`}
               onClick={() => setIsOpen(false)}
             >
