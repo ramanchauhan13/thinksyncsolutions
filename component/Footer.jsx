@@ -20,18 +20,18 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-[#0f172a] pt-14 pb-10 px-6 text-white rounded-t-[3rem] md:rounded-t-[5rem] relative overflow-hidden">
+    <footer className="bg-[#0f172a] px-12 py-12 text-white rounded-t-[3rem] md:rounded-t-[5rem] relative overflow-hidden">
       {/* Background Brand Text */}
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/3 text-[20vw] font-black text-white/2 select-none pointer-events-none whitespace-nowrap">
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/3 text-[16vw] font-black text-white/2 select-none pointer-events-none whitespace-nowrap">
         THINKSYNC
       </div>
 
-      <div className="max-w-7xl mx-auto relative z-10">
-        <div className="flex flex-col lg:flex-row justify-between items-start gap-16 mb-10">
+      <div className="max-w-full mx-auto relative z-10">
+        <div className="flex flex-col lg:flex-row justify-between items-start gap-16 mb-6">
           
           {/* CTA Section */}
           <div className="max-w-2xl">
-            <h2 className="text-5xl lg:text-7xl font-black mb-10 leading-[0.85] tracking-tighter uppercase">
+            <h2 className="text-5xl lg:text-7xl font-black mb-8 leading-[0.85] tracking-tighter uppercase">
               READY TO
               <br />
               <span className="text-transparent pr-2 bg-clip-text bg-linear-to-r from-blue-500 to-indigo-400 italic">
@@ -81,14 +81,14 @@ const Footer = () => {
         </div>
 
         {/* Navigation Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-12 mb-14 border-t border-white/5 pt-10">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-12 mb-14 border-t border-white/5 pt-8">
           
           {/* Expertise */}
           <div>
-            <h4 className="text-[10px] font-black uppercase tracking-[0.3em] text-blue-500 mb-6">
+            <h4 className="text-[10px] font-black uppercase tracking-[0.3em] text-blue-500 mb-2">
               Expertise
             </h4>
-            <ul className="space-y-4 text-slate-400 font-bold text-sm">
+            <ul className="space-y-2 text-slate-400 font-bold text-sm">
               <li><Link href="/services" className="hover:text-white">SaaS Development</Link></li>
               <li><Link href="/services" className="hover:text-white">Mobile Solutions</Link></li>
               <li><Link href="/services" className="hover:text-white">Cloud Architecture</Link></li>
@@ -97,10 +97,10 @@ const Footer = () => {
 
           {/* Company */}
           <div>
-            <h4 className="text-[10px] font-black uppercase tracking-[0.3em] text-blue-500 mb-6">
+            <h4 className="text-[10px] font-black uppercase tracking-[0.3em] text-blue-500 mb-2">
               Company
             </h4>
-            <ul className="space-y-4 text-slate-400 font-bold text-sm">
+            <ul className="space-y-2 text-slate-400 font-bold text-sm">
               <li><Link href="#process" className="hover:text-white">Our Process</Link></li>
               <li><Link href="#testimonials" className="hover:text-white">Client Voices</Link></li>
               {/* <li><Link href="/careers" className="hover:text-white">Global Careers</Link></li> */}
