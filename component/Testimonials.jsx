@@ -68,10 +68,10 @@ const Testimonials = () => {
   return (
     <section
       id="testimonials"
-      className="relative py-20 bg-slate-50/50 overflow-hidden"
+      className="relative py-20 bg-slate-50/50 dark:bg-[#090d16] overflow-hidden transition-colors duration-300"
     >
       {/* Background Graphic Watermark */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[18vw] font-black text-slate-200/40 select-none pointer-events-none -z-10 leading-none tracking-tighter">
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[18vw] font-black text-slate-200/40 dark:text-slate-900/50 select-none pointer-events-none -z-10 leading-none tracking-tighter">
         VOICES
       </div>
 
@@ -84,12 +84,12 @@ const Testimonials = () => {
                 <span className="h-1 w-10 bg-blue-600 rounded-full" />
                 <span className="h-1 w-5 bg-blue-600/30 rounded-full" />
               </div>
-              <span className="text-slate-900 font-black tracking-[0.25em] text-xs uppercase">
+              <span className="text-slate-900 dark:text-slate-200 font-black tracking-[0.25em] text-xs uppercase">
                 Testimonials
               </span>
             </div>
 
-            <h2 className="text-4xl sm:text-5xl lg:text-7xl font-black text-slate-900 tracking-tighter leading-[0.88] uppercase">
+            <h2 className="text-4xl sm:text-5xl lg:text-7xl font-black text-slate-900 dark:text-white tracking-tighter leading-[0.88] uppercase">
               Client <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 italic">
                 Feedback.
@@ -97,9 +97,9 @@ const Testimonials = () => {
             </h2>
           </div>
 
-          <div className="flex items-center gap-2 bg-white px-4 py-2.5 rounded-2xl border border-slate-200/80 shadow-sm self-start md:self-auto">
-            <Sparkles className="text-blue-600" size={18} />
-            <span className="text-xs font-extrabold uppercase tracking-wider text-slate-700">
+          <div className="flex items-center gap-2 bg-white dark:bg-slate-900 px-4 py-2.5 rounded-2xl border border-slate-200/80 dark:border-slate-800 shadow-sm self-start md:self-auto">
+            <Sparkles className="text-blue-600 dark:text-blue-400" size={18} />
+            <span className="text-xs font-extrabold uppercase tracking-wider text-slate-700 dark:text-slate-300">
               100% Satisfaction Rate
             </span>
           </div>
@@ -117,7 +117,7 @@ const Testimonials = () => {
                 className={`group cursor-pointer relative p-8 rounded-[2rem] transition-all duration-500 flex flex-col justify-between border ${
                   isActive
                     ? "bg-slate-950 text-white border-slate-800 shadow-2xl shadow-blue-900/20 md:-translate-y-2"
-                    : "bg-white text-slate-900 border-slate-200/80 hover:border-blue-200 hover:shadow-xl hover:shadow-slate-200/50"
+                    : "bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100 border-slate-200/80 dark:border-slate-800 hover:border-blue-200 dark:hover:border-blue-600 hover:shadow-xl"
                 }`}
               >
                 {/* Background Glow Effect for Active Card */}
@@ -143,7 +143,7 @@ const Testimonials = () => {
                       className={`transition-colors ${
                         isActive
                           ? "text-blue-500 opacity-80"
-                          : "text-slate-300 group-hover:text-blue-500"
+                          : "text-slate-300 dark:text-slate-600 group-hover:text-blue-500"
                       }`}
                     />
                   </div>
@@ -151,7 +151,7 @@ const Testimonials = () => {
                   {/* Review Text */}
                   <p
                     className={`text-sm sm:text-base font-semibold leading-relaxed mb-8 ${
-                      isActive ? "text-slate-200" : "text-slate-600"
+                      isActive ? "text-slate-200" : "text-slate-600 dark:text-slate-300"
                     }`}
                   >
                     "{review.quote}"
@@ -159,18 +159,18 @@ const Testimonials = () => {
                 </div>
 
                 {/* Footer Section */}
-                <div className="pt-6 border-t border-slate-100 dark:border-slate-800/80 flex items-end justify-between">
+                <div className="pt-6 border-t border-slate-100 dark:border-slate-800 flex items-end justify-between">
                   <div>
                     <h4
                       className={`font-black text-base uppercase tracking-tight ${
-                        isActive ? "text-white" : "text-slate-900"
+                        isActive ? "text-white" : "text-slate-900 dark:text-slate-100"
                       }`}
                     >
                       {review.client}
                     </h4>
                     <p
                       className={`text-xs font-bold uppercase tracking-wider ${
-                        isActive ? "text-blue-400" : "text-blue-600"
+                        isActive ? "text-blue-400" : "text-blue-600 dark:text-blue-400"
                       }`}
                     >
                       {review.position}
@@ -182,7 +182,7 @@ const Testimonials = () => {
                     className={`px-3 py-1.5 rounded-xl text-[10px] font-black uppercase tracking-wider flex items-center gap-1.5 ${
                       isActive
                         ? "bg-blue-600 text-white"
-                        : "bg-slate-100 text-slate-700 group-hover:bg-blue-50 group-hover:text-blue-600"
+                        : "bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 group-hover:bg-blue-50 dark:group-hover:bg-slate-700 group-hover:text-blue-600 dark:group-hover:text-blue-400"
                     }`}
                   >
                     <CheckCircle2 size={12} />

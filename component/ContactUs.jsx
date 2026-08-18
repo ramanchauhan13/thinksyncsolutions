@@ -13,13 +13,13 @@ const ContactUs = () => {
   return (
     <section
       id="contact"
-      className="py-12 md:py-16 px-4 bg-white overflow-hidden"
+      className="py-12 md:py-16 px-4 bg-white dark:bg-[#0b0f19] overflow-hidden transition-colors duration-300"
     >
       <div className="max-w-7xl mx-auto">
         {" "}
         {/* Tightened from 7xl to 6xl */}
         {/* The "Main Frame" - Added max-height for large screens */}
-        <div className="bg-[#0f172a] rounded-[2rem] md:rounded-[3rem] overflow-hidden shadow-2xl relative border border-white/5 group min-h-[500px]">
+        <div className="bg-[#0f172a] dark:bg-slate-950 rounded-[2rem] md:rounded-[3rem] overflow-hidden shadow-2xl relative border border-white/5 dark:border-slate-800 group min-h-[500px]">
           {/* Background Glows - Reduced intensity for laptop screens */}
           <div className="absolute top-[-20%] right-[-10%] w-[50%] h-[100%] bg-blue-600/10 blur-[100px] rounded-full group-hover:bg-blue-600/20 transition-all duration-1000 pointer-events-none" />
 

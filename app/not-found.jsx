@@ -8,7 +8,7 @@ export const metadata = {
 
 export default function NotFound() {
   return (
-    <div className="min-h-screen bg-white text-slate-900 font-sans selection:bg-blue-600 selection:text-white relative flex items-center justify-center">
+    <div className="min-h-screen bg-white dark:bg-[#0b0f19] text-slate-900 dark:text-slate-100 font-sans selection:bg-blue-600 selection:text-white relative flex items-center justify-center transition-colors duration-300">
       {/* Texture Layer */}
       <div
         className="fixed inset-0 pointer-events-none opacity-[0.02] z-0"
@@ -18,22 +18,22 @@ export default function NotFound() {
       />
 
       <div className="relative z-10 max-w-4xl mx-auto px-6 py-20 text-center">
-        <div className="inline-flex items-center gap-2 px-4 py-2 bg-slate-900 text-white rounded-full text-xs font-mono font-bold uppercase tracking-widest mb-8">
+        <div className="inline-flex items-center gap-2 px-4 py-2 bg-slate-900 dark:bg-slate-900 text-white rounded-full text-xs font-mono font-bold uppercase tracking-widest mb-8 border border-transparent dark:border-slate-800">
           <Terminal size={14} className="text-blue-400" /> Error Code: 404_ROUTE_NOT_FOUND
         </div>
 
-        <h1 className="text-7xl sm:text-9xl font-black uppercase tracking-tight text-slate-900 mb-6">
+        <h1 className="text-7xl sm:text-9xl font-black uppercase tracking-tight text-slate-900 dark:text-white mb-6">
           OUT OF <br /><span className="text-blue-600">SYNC.</span>
         </h1>
 
-        <p className="text-lg sm:text-xl text-slate-500 font-medium leading-relaxed max-w-xl mx-auto mb-10">
+        <p className="text-lg sm:text-xl text-slate-500 dark:text-slate-400 font-medium leading-relaxed max-w-xl mx-auto mb-10">
           The endpoint or page you are trying to reach does not exist or has been relocated to another service path.
         </p>
 
         <Link
           href="/"
           aria-label="Return to ThinkSync Solutions Home"
-          className="inline-flex items-center gap-3 bg-slate-900 text-white px-8 py-4 rounded-full font-black text-xs tracking-[0.2em] uppercase hover:bg-blue-600 transition-colors shadow-lg"
+          className="inline-flex items-center gap-3 bg-slate-900 dark:bg-blue-600 text-white px-8 py-4 rounded-full font-black text-xs tracking-[0.2em] uppercase hover:bg-blue-600 dark:hover:bg-blue-500 transition-colors shadow-lg"
         >
           <ArrowLeft size={16} /> Return to Engine
         </Link>

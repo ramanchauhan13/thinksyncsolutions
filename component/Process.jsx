@@ -34,21 +34,21 @@ const Process = () => {
   ];
 
   return (
-    <section id="process" className="py-20 px-10 bg-white overflow-hidden">
+    <section id="process" className="py-20 px-10 bg-white dark:bg-[#0b0f19] overflow-hidden transition-colors duration-300">
       <div className="max-w-full mx-auto">
         {/* Header with Background Text */}
         <div className="relative mb-24 flex flex-col items-center">
-          <span className="absolute -top-10 text-[10rem] font-black text-slate-100 select-none z-0">
+          <span className="absolute -top-10 text-[10rem] font-black text-slate-100 dark:text-slate-900/60 select-none z-0">
             WORK
           </span>
-          <h2 className="relative z-10 text-5xl md:text-6xl font-black text-slate-900 uppercase tracking-tighter text-center">
+          <h2 className="relative z-10 text-5xl md:text-6xl font-black text-slate-900 dark:text-white uppercase tracking-tighter text-center">
             The{" "}
             <span className="text-blue-600 italic underline decoration-wavy underline-offset-8">
               Sync
             </span>{" "}
             Workflow
           </h2>
-          <p className="mt-22 text-slate-500 font-medium text-center max-w-md">
+          <p className="mt-22 text-slate-500 dark:text-slate-400 font-medium text-center max-w-md">
             A battle-tested methodology designed for speed, clarity, and
             results.
           </p>
@@ -57,29 +57,29 @@ const Process = () => {
         {/* Process Path */}
         <div className="grid md:grid-cols-4 gap-8 relative">
           {/* Connecting Line (Hidden on Mobile) */}
-          <div className="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-slate-100 -translate-y-12 z-0" />
+          <div className="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-slate-100 dark:bg-slate-800 -translate-y-12 z-0" />
 
           {steps.map((item, idx) => (
             <div key={idx} className="group relative z-10">
               {/* Step Number Badge */}
               <div className="flex items-center justify-center mb-8">
                 <div
-                  className={`w-14 h-14 rounded-full ${item.color} text-white flex items-center justify-center shadow-xl shadow-blue-200 group-hover:scale-110 group-hover:rotate-360 transition-all duration-700 relative`}
+                  className={`w-14 h-14 rounded-full ${item.color} text-white flex items-center justify-center shadow-xl shadow-blue-200 dark:shadow-none group-hover:scale-110 group-hover:rotate-360 transition-all duration-700 relative`}
                 >
                   {item.icon}
                   {/* Floating Number */}
-                  <span className="absolute -top-2 -right-2 bg-white text-slate-900 text-xs font-black w-6 h-6 rounded-full flex items-center justify-center border-2 border-slate-100">
+                  <span className="absolute -top-2 -right-2 bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100 text-xs font-black w-6 h-6 rounded-full flex items-center justify-center border-2 border-slate-100 dark:border-slate-800">
                     {item.step}
                   </span>
                 </div>
               </div>
 
               {/* Content Card */}
-              <div className="bg-slate-50 p-8 rounded-3xl border border-transparent group-hover:border-blue-100 group-hover:bg-white group-hover:shadow-2xl transition-all duration-500 text-center">
-                <h4 className="font-black text-xl mb-3 uppercase tracking-tight text-slate-900">
+              <div className="bg-slate-50 dark:bg-slate-900 p-8 rounded-3xl border border-transparent group-hover:border-blue-100 dark:group-hover:border-slate-700 group-hover:bg-white dark:group-hover:bg-slate-800/90 group-hover:shadow-2xl transition-all duration-500 text-center">
+                <h4 className="font-black text-xl mb-3 uppercase tracking-tight text-slate-900 dark:text-slate-100">
                   {item.title}
                 </h4>
-                <p className="text-slate-500 text-sm leading-relaxed font-medium">
+                <p className="text-slate-500 dark:text-slate-400 text-sm leading-relaxed font-medium">
                   {item.desc}
                 </p>
 
@@ -88,7 +88,7 @@ const Process = () => {
                   {[...Array(4)].map((_, i) => (
                     <div
                       key={i}
-                      className={`h-1 w-4 rounded-full ${i <= idx ? item.color : "bg-slate-300"}`}
+                      className={`h-1 w-4 rounded-full ${i <= idx ? item.color : "bg-slate-300 dark:bg-slate-700"}`}
                     />
                   ))}
                 </div>
@@ -97,7 +97,7 @@ const Process = () => {
               {/* Mobile Arrow (Visible only on small screens) */}
               {idx !== steps.length - 1 && (
                 <div className="md:hidden flex justify-center py-4">
-                  <div className="h-8 w-0.5 bg-slate-200" />
+                  <div className="h-8 w-0.5 bg-slate-200 dark:bg-slate-800" />
                 </div>
               )}
             </div>

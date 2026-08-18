@@ -51,7 +51,7 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-20 px-10 bg-[#f8fafc] overflow-hidden">
+    <section id="services" className="py-20 px-10 bg-[#f8fafc] dark:bg-[#0d1322] overflow-hidden transition-colors duration-300">
       <div className="max-w-full mx-auto">
         {/* Header Section */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8">
@@ -62,21 +62,21 @@ const Services = () => {
     <span className="h-1 w-6 bg-blue-600/30 rounded-full"></span>
   </div>
   
-  <span className="text-slate-900 font-black tracking-[0.3em] text-xs uppercase relative">
+  <span className="text-slate-900 dark:text-slate-200 font-black tracking-[0.3em] text-xs uppercase relative">
     What We Do
     <span className="absolute -bottom-1 left-0 w-0 h-px bg-blue-600 transition-all duration-700 group-hover:w-full"></span>
   </span>
 </div>
-            <h2 className="text-5xl lg:text-6xl font-black text-slate-900 leading-none tracking-tighter">
+            <h2 className="text-5xl lg:text-6xl font-black text-slate-900 dark:text-white leading-none tracking-tighter">
               SPECIALIZED <br />{" "}
               <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-600 to-indigo-500">
                 SOLUTIONS.
               </span>
             </h2>
           </div>
-          <p className="text-slate-500 font-medium max-w-xs text-lg border-l-2 border-blue-600 pl-6">
+          <p className="text-slate-500 dark:text-slate-400 font-medium max-w-xs text-lg border-l-2 border-blue-600 pl-6">
             We don't do everything. We do the high-impact things{" "}
-            <span className="text-slate-900 font-bold">perfectly.</span>
+            <span className="text-slate-900 dark:text-slate-200 font-bold">perfectly.</span>
           </p>
         </div>
 
@@ -84,38 +84,38 @@ const Services = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((s, i) => (
             <Link key={i} href="/services" aria-label={`Learn more about ${s.title}`} className="group">
-              <div className="relative h-full bg-white p-8 rounded-3xl border border-slate-200/60 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 overflow-hidden">
+              <div className="relative h-full bg-white dark:bg-slate-900 p-8 rounded-3xl border border-slate-200/60 dark:border-slate-800 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 overflow-hidden">
                 
                 {/* Background Accent Blur */}
-                <div className="absolute -right-10 -top-10 w-32 h-32 bg-blue-50 rounded-full blur-3xl duration-500" />
+                <div className="absolute -right-10 -top-10 w-32 h-32 bg-blue-50 dark:bg-blue-900/20 rounded-full blur-3xl duration-500" />
 
                 {/* GIF Icon & Arrow */}
                 <div className="flex justify-between items-start mb-4">
-                  <div className="relative w-20 h-20 bg-blue-50 rounded-2xl flex items-center justify-center duration-500 p-1 overflow-hidden">
+                  <div className="relative w-20 h-20 bg-blue-50 dark:bg-slate-800 rounded-2xl flex items-center justify-center duration-500 p-1 overflow-hidden">
                     <img 
                       src={s.gif} 
                       alt={s.title} 
-                      className="w-full h-full object-contain mix-blend-multiply rounded-full transition-transform duration-500 ease-out group-hover:scale-115"
+                      className="w-full h-full object-contain mix-blend-multiply dark:mix-blend-normal rounded-full transition-transform duration-500 ease-out group-hover:scale-115"
                     />
                   </div>
                   <ArrowUpRight
-                    className="text-slate-300 group-hover:text-blue-600 transition-colors"
+                    className="text-slate-300 dark:text-slate-600 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors"
                     size={24}
                   />
                 </div>
 
                 {/* Content */}
                 <div className="relative z-10">
-                  <h3 className="text-2xl font-bold mb-1 text-slate-800 tracking-tight transition-colors group-hover:text-blue-700">
+                  <h3 className="text-2xl font-bold mb-1 text-slate-800 dark:text-slate-100 tracking-tight transition-colors group-hover:text-blue-700 dark:group-hover:text-blue-400">
                     {s.title}
                   </h3>
-                  <p className="text-slate-500 leading-relaxed font-medium mb-6">
+                  <p className="text-slate-500 dark:text-slate-400 leading-relaxed font-medium mb-6">
                     {s.desc}
                   </p>
                 </div>
 
                 {/* Decorative Progress Bar */}
-                <div className="relative h-1 w-full bg-slate-100 rounded-full overflow-hidden">
+                <div className="relative h-1 w-full bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
                   <div className="absolute top-0 left-0 h-full w-0 bg-linear-to-r from-blue-600 to-indigo-400 group-hover:w-full transition-all duration-700 ease-out" />
                 </div>
               </div>

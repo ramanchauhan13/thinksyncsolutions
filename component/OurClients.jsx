@@ -14,7 +14,7 @@ const OurClients = () => {
   ];
 
   return (
-    <section id="clients" className="bg-white overflow-hidden">
+    <section id="clients" className="bg-white dark:bg-[#0b0f19] overflow-hidden transition-colors duration-300">
       <div className="max-w-fullmx-auto px-10">
         {/* Header Section */}
         <div className="mb-10">
@@ -24,31 +24,31 @@ const OurClients = () => {
     <span className="h-1 w-6 bg-blue-600/30 rounded-full"></span>
   </div>
   
-  <span className="text-slate-900 font-black tracking-[0.3em] text-xs uppercase relative">
+  <span className="text-slate-900 dark:text-slate-200 font-black tracking-[0.3em] text-xs uppercase relative">
     Our Clients
     <span className="absolute -bottom-1 left-0 w-0 h-px bg-blue-600 transition-all duration-700 group-hover:w-full"></span>
   </span>
 </div>
-          <h2 className="text-5xl lg:text-6xl font-black tracking-tighter uppercase leading-[0.85]">
+          <h2 className="text-5xl lg:text-6xl font-black tracking-tighter uppercase leading-[0.85] text-slate-900 dark:text-white">
             TRUSTED BY <br /> <span className="text-blue-600">THE BEST.</span>
           </h2>
         </div>
 
         {/* Endless Logo Marquee - Visual Density */}
-        <div className="relative flex overflow-x-hidden border-y border-slate-300 py-16 group">
+        <div className="relative flex overflow-x-hidden border-y border-slate-300 dark:border-slate-800 py-16 group">
           <div className="flex animate-marquee whitespace-nowrap gap-20 items-center">
             {[...logos, ...logos].map((logo, i) => (
               <span
                 key={i}
-                className="text-6xl lg:text-6xl font-black uppercase tracking-tighter text-slate-300 group-hover:text-blue-600 transition-colors duration-700 select-none px-4"
+                className="text-6xl lg:text-6xl font-black uppercase tracking-tighter text-slate-300 dark:text-slate-700 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-700 select-none px-4"
               >
                 {logo}
               </span>
             ))}
           </div>
           {/* Subtle gradients to fade edges */}
-          <div className="absolute inset-y-0 left-0 w-40 bg-linear-to-r from-white to-transparent z-10" />
-          <div className="absolute inset-y-0 right-0 w-40 bg-linear-to-l from-white to-transparent z-10" />
+          <div className="absolute inset-y-0 left-0 w-40 bg-gradient-to-r from-white dark:from-[#0b0f19] to-transparent z-10" />
+          <div className="absolute inset-y-0 right-0 w-40 bg-gradient-to-l from-white dark:from-[#0b0f19] to-transparent z-10" />
         </div>
       </div>
 

@@ -4,6 +4,7 @@ import Navbar from "@/component/Navbar";
 import Footer from "@/component/Footer";
 import Script from "next/script";
 import LiveLocationTracker from "@/component/LiveLocationTracker";
+import { ThemeProvider } from "@/component/ThemeProvider";
 
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
@@ -97,7 +98,7 @@ export default function RootLayout({ children }) {
   };
 
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         {/* ORGANIZATION / SOFTWARE SCHEMA */}
         <Script
@@ -124,10 +125,12 @@ export default function RootLayout({ children }) {
         </Script>
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <LiveLocationTracker />
-        <Navbar />
-        <main className="py-6">{children}</main>
-        <Footer />
+        <ThemeProvider>
+          <LiveLocationTracker />
+          <Navbar />
+          <main className="py-6">{children}</main>
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );

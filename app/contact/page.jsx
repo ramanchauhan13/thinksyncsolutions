@@ -66,7 +66,7 @@ const ContactPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-white text-slate-900 font-sans selection:bg-blue-600 selection:text-white overflow-x-hidden">
+    <div className="min-h-screen bg-white dark:bg-[#0b0f19] text-slate-900 dark:text-slate-100 font-sans selection:bg-blue-600 selection:text-white overflow-x-hidden transition-colors duration-300">
       {/* Texture Layer */}
       <div
         className="fixed inset-0 pointer-events-none opacity-[0.03] z-0"
@@ -85,40 +85,40 @@ const ContactPage = () => {
                 <span className="h-1 w-6 bg-blue-600/30 rounded-full"></span>
               </div>
 
-              <span className="text-slate-900 font-black tracking-[0.3em] text-xs uppercase relative">
+              <span className="text-slate-900 dark:text-slate-200 font-black tracking-[0.3em] text-xs uppercase relative">
                 Contact Us
                 <span className="absolute -bottom-1 left-0 w-0 h-px bg-blue-600 transition-all duration-700 group-hover:w-full"></span>
               </span>
             </div>
-            <h1 className="text-6xl md:text-8xl font-black leading-[0.8] tracking-tighter uppercase mb-12">
+            <h1 className="text-6xl md:text-8xl font-black leading-[0.8] tracking-tighter uppercase mb-12 text-slate-900 dark:text-white">
               LET’S <br /> <span className="text-blue-600">SYNC.</span>
             </h1>
-            <p className="text-2xl font-bold text-slate-400 leading-tight mb-10 max-w-md italic">
+            <p className="text-2xl font-bold text-slate-400 dark:text-slate-400 leading-tight mb-10 max-w-md italic">
               "We transform technical debt into digital equity. Tell us what
               you're building."
             </p>
 
-            <div className="grid grid-cols-1 gap-10 border-t border-slate-100 pt-6">
+            <div className="grid grid-cols-1 gap-10 border-t border-slate-100 dark:border-slate-800 pt-6">
               <div>
-                <p className="text-slate-400 font-black uppercase tracking-widest text-[10px] mb-2">
+                <p className="text-slate-400 dark:text-slate-500 font-black uppercase tracking-widest text-[10px] mb-2">
                   Direct Email
                 </p>
                 <a
                   href="mailto:team.thinksync.solutions@gmail.com"
                   aria-label="Email ThinkSync Solutions"
-                  className="text-xl font-black hover:text-blue-600 transition-colors"
+                  className="text-xl font-black text-slate-900 dark:text-slate-100 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
                 >
                   team.thinksync.solutions@gmail.com
                 </a>
               </div>
               <div>
-                <p className="text-slate-400 font-black uppercase tracking-widest text-[10px] mb-2">
+                <p className="text-slate-400 dark:text-slate-500 font-black uppercase tracking-widest text-[10px] mb-2">
                   Urgent Call
                 </p>
                 <a
                   href="tel:+918979937257"
                   aria-label="Call ThinkSync Solutions"
-                  className="text-xl font-black hover:text-blue-600 transition-colors"
+                  className="text-xl font-black text-slate-900 dark:text-slate-100 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
                 >
                   +91 8979937257
                 </a>
@@ -129,13 +129,13 @@ const ContactPage = () => {
           {/* Right Side: The Premium Form */}
           <div className="relative">
             {/* Subtle glow behind the form */}
-            <div className="absolute -top-20 -right-20 w-64 h-64 bg-blue-100 rounded-full blur-[100px] opacity-40 -z-10" />
+            <div className="absolute -top-20 -right-20 w-64 h-64 bg-blue-100 dark:bg-blue-950/40 rounded-full blur-[100px] opacity-40 -z-10" />
 
-            <div className="bg-white p-8 md:p-10 rounded-[3.5rem] border border-slate-100 shadow-[0_32px_64px_-16px_rgba(0,0,0,0.05)]">
+            <div className="bg-white dark:bg-slate-900 p-8 md:p-10 rounded-[3.5rem] border border-slate-100 dark:border-slate-800 shadow-[0_32px_64px_-16px_rgba(0,0,0,0.05)]">
               <form onSubmit={handleSubmit} className="space-y-8">
                 {/* 1. Project Type Selector (The "Modern" touch) */}
                 <div>
-                  <label className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-6 block">
+                  <label className="text-[10px] font-black uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-6 block">
                     What are we building?
                   </label>
                   <div className="flex flex-wrap gap-3">
@@ -150,8 +150,8 @@ const ContactPage = () => {
                           }}
                           className={`px-6 py-3 rounded-xl text-[10px] font-black uppercase tracking-widest transition-all ${
                             activeType === type
-                              ? "bg-blue-600 text-white shadow-lg shadow-blue-200 scale-105"
-                              : "bg-slate-50 text-slate-400 hover:bg-slate-100"
+                              ? "bg-blue-600 text-white shadow-lg shadow-blue-200 dark:shadow-none scale-105"
+                              : "bg-slate-50 dark:bg-slate-800 text-slate-400 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700"
                           }`}
                         >
                           {type}
@@ -166,7 +166,7 @@ const ContactPage = () => {
                   <input
                     type="text"
                     required
-                    className="peer w-full bg-transparent border-b-2 border-slate-100 py-3 focus:outline-none focus:border-blue-600 transition-all font-bold text-xl placeholder-transparent"
+                    className="peer w-full bg-transparent border-b-2 border-slate-100 dark:border-slate-800 py-3 focus:outline-none focus:border-blue-600 dark:focus:border-blue-400 transition-all font-bold text-xl text-slate-900 dark:text-slate-100 placeholder-transparent"
                     placeholder="Full Name"
                     value={formData.name}
                     onChange={(e) =>
@@ -176,7 +176,7 @@ const ContactPage = () => {
                   />
                   <label
                     htmlFor="name"
-                    className="absolute left-0 -top-4 text-[10px] font-black uppercase tracking-widest text-slate-400 transition-all peer-placeholder-shown:text-xl peer-placeholder-shown:top-4 peer-focus:-top-4 peer-focus:text-[10px] peer-focus:text-blue-600 pointer-events-none"
+                    className="absolute left-0 -top-4 text-[10px] font-black uppercase tracking-widest text-slate-400 dark:text-slate-500 transition-all peer-placeholder-shown:text-xl peer-placeholder-shown:top-4 peer-focus:-top-4 peer-focus:text-[10px] peer-focus:text-blue-600 dark:peer-focus:text-blue-400 pointer-events-none"
                   >
                     Full Name
                   </label>
@@ -187,7 +187,7 @@ const ContactPage = () => {
                   <input
                     type="email"
                     required
-                    className="peer w-full bg-transparent border-b-2 border-slate-100 py-3 focus:outline-none focus:border-blue-600 transition-all font-bold text-xl placeholder-transparent"
+                    className="peer w-full bg-transparent border-b-2 border-slate-100 dark:border-slate-800 py-3 focus:outline-none focus:border-blue-600 dark:focus:border-blue-400 transition-all font-bold text-xl text-slate-900 dark:text-slate-100 placeholder-transparent"
                     placeholder="Email"
                     value={formData.email}
                     onChange={(e) =>
@@ -197,7 +197,7 @@ const ContactPage = () => {
                   />
                   <label
                     htmlFor="email"
-                    className="absolute left-0 -top-4 text-[10px] font-black uppercase tracking-widest text-slate-400 transition-all peer-placeholder-shown:text-xl peer-placeholder-shown:top-4 peer-focus:-top-4 peer-focus:text-[10px] peer-focus:text-blue-600 pointer-events-none"
+                    className="absolute left-0 -top-4 text-[10px] font-black uppercase tracking-widest text-slate-400 dark:text-slate-500 transition-all peer-placeholder-shown:text-xl peer-placeholder-shown:top-4 peer-focus:-top-4 peer-focus:text-[10px] peer-focus:text-blue-600 dark:peer-focus:text-blue-400 pointer-events-none"
                   >
                     Email Address
                   </label>
@@ -208,7 +208,7 @@ const ContactPage = () => {
                   <input
                     type="tel"
                     required
-                    className="peer w-full bg-transparent border-b-2 border-slate-100 py-3 focus:outline-none focus:border-blue-600 transition-all font-bold text-xl placeholder-transparent"
+                    className="peer w-full bg-transparent border-b-2 border-slate-100 dark:border-slate-800 py-3 focus:outline-none focus:border-blue-600 dark:focus:border-blue-400 transition-all font-bold text-xl text-slate-900 dark:text-slate-100 placeholder-transparent"
                     placeholder="Phone Number"
                     value={formData.phone}
                     onChange={(e) =>
@@ -218,7 +218,7 @@ const ContactPage = () => {
                   />
                   <label
                     htmlFor="phone"
-                    className="absolute left-0 -top-4 text-[10px] font-black uppercase tracking-widest text-slate-400 transition-all peer-placeholder-shown:text-xl peer-placeholder-shown:top-4 peer-focus:-top-4 peer-focus:text-[10px] peer-focus:text-blue-600 pointer-events-none"
+                    className="absolute left-0 -top-4 text-[10px] font-black uppercase tracking-widest text-slate-400 dark:text-slate-500 transition-all peer-placeholder-shown:text-xl peer-placeholder-shown:top-4 peer-focus:-top-4 peer-focus:text-[10px] peer-focus:text-blue-600 dark:peer-focus:text-blue-400 pointer-events-none"
                   >
                     Phone Number
                   </label>
@@ -229,7 +229,7 @@ const ContactPage = () => {
                   <textarea
                     rows={3}
                     required
-                    className="peer w-full bg-transparent border-b-2 border-slate-100 py-3 focus:outline-none focus:border-blue-600 transition-all font-bold text-xl placeholder-transparent resize-none"
+                    className="peer w-full bg-transparent border-b-2 border-slate-100 dark:border-slate-800 py-3 focus:outline-none focus:border-blue-600 dark:focus:border-blue-400 transition-all font-bold text-xl text-slate-900 dark:text-slate-100 placeholder-transparent resize-none"
                     placeholder="Brief"
                     value={formData.brief}
                     onChange={(e) =>
@@ -239,7 +239,7 @@ const ContactPage = () => {
                   />
                   <label
                     htmlFor="brief"
-                    className="absolute left-0 -top-4 text-[10px] font-black uppercase tracking-widest text-slate-400 transition-all peer-placeholder-shown:text-xl peer-placeholder-shown:top-4 peer-focus:-top-4 peer-focus:text-[10px] peer-focus:text-blue-600 pointer-events-none"
+                    className="absolute left-0 -top-4 text-[10px] font-black uppercase tracking-widest text-slate-400 dark:text-slate-500 transition-all peer-placeholder-shown:text-xl peer-placeholder-shown:top-4 peer-focus:-top-4 peer-focus:text-[10px] peer-focus:text-blue-600 dark:peer-focus:text-blue-400 pointer-events-none"
                   >
                     Brief description
                   </label>
@@ -248,7 +248,7 @@ const ContactPage = () => {
                 {/* 5. Submit Button */}
                 <button
                   disabled={isSubmitting}
-                  className="group w-full bg-slate-900 text-white py-6 rounded-2xl font-black text-xs tracking-[0.3em] uppercase hover:bg-blue-600 transition-all flex items-center justify-center gap-4 relative overflow-hidden shadow-2xl"
+                  className="group w-full bg-slate-900 dark:bg-blue-600 text-white py-6 rounded-2xl font-black text-xs tracking-[0.3em] uppercase hover:bg-blue-600 dark:hover:bg-blue-500 transition-all flex items-center justify-center gap-4 relative overflow-hidden shadow-2xl cursor-pointer"
                 >
                   <span className="relative z-10">
                     {isSubmitting ? "Initializing Sync..." : "Initialize Sync"}
@@ -259,26 +259,22 @@ const ContactPage = () => {
                   />
 
                   {/* Subtle hover effect light */}
-                  <div className="absolute top-0 -left-full w-full h-full bg-linear-to-r from-transparent via-white/10 to-transparent group-hover:left-full transition-all duration-700" />
+                  <div className="absolute top-0 -left-full w-full h-full bg-gradient-to-r from-transparent via-white/10 to-transparent group-hover:left-full transition-all duration-700" />
                 </button>
-
-                {/* <p className="text-center text-[10px] font-black text-slate-300 uppercase tracking-widest">
-                  Secure transmission // AES-256 Encrypted
-                </p> */}
               </form>
             </div>
           </div>
         </div>
 
         {/* Footer Marquee */}
-        <div className="mt-14 border-t border-slate-100 flex flex-wrap justify-between items-center gap-12 grayscale opacity-30">
-          <span className="font-black text-2xl tracking-tighter">
+        <div className="mt-14 border-t border-slate-100 dark:border-slate-800 flex flex-wrap justify-between items-center gap-12 grayscale opacity-30">
+          <span className="font-black text-2xl tracking-tighter text-slate-900 dark:text-white">
             THINKSYNC SOLUTIONS.
           </span>
           <span className="font-black text-2xl tracking-tighter italic text-blue-600">
             READY TO BUILD.
           </span>
-          <span className="font-black text-2xl tracking-tighter">© 2026</span>
+          <span className="font-black text-2xl tracking-tighter text-slate-900 dark:text-white">© 2026</span>
         </div>
       </main>
     </div>

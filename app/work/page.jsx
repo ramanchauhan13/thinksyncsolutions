@@ -11,7 +11,7 @@ export const metadata = {
 
 const WorkPage = () => {
   return (
-    <div className="min-h-screen bg-white text-slate-900 font-sans selection:bg-blue-600 selection:text-white">
+    <div className="min-h-screen bg-white dark:bg-[#0b0f19] text-slate-900 dark:text-slate-100 font-sans selection:bg-blue-600 selection:text-white transition-colors duration-300">
       {/* Subtle Grain Overlay */}
       <div
         className="fixed inset-0 pointer-events-none opacity-[0.02] z-0"
@@ -28,15 +28,15 @@ const WorkPage = () => {
               <span className="h-1 w-12 bg-blue-600 rounded-full" />
               <span className="h-1 w-6 bg-blue-600/30 rounded-full" />
             </div>
-            <span className="text-slate-900 font-black tracking-[0.3em] text-xs uppercase">
+            <span className="text-slate-900 dark:text-slate-200 font-black tracking-[0.3em] text-xs uppercase">
               Selected Projects
             </span>
           </div>
-          <h1 className="text-6xl md:text-8xl font-black leading-[0.85] tracking-tighter uppercase mb-6">
+          <h1 className="text-6xl md:text-8xl font-black leading-[0.85] tracking-tighter uppercase mb-6 text-slate-900 dark:text-white">
             CRAFTED WITH <br />
             <span className="text-blue-600 italic">PRECISION.</span>
           </h1>
-          <p className="text-slate-500 text-lg md:text-xl font-medium leading-relaxed">
+          <p className="text-slate-500 dark:text-slate-400 text-lg md:text-xl font-medium leading-relaxed">
             From high-concurrency SaaS applications to custom enterprise backends, 
             here is a glimpse into how we transform ideas into production-ready software.
           </p>
@@ -64,8 +64,8 @@ const WorkPage = () => {
                 key={project.id || idx}
                 className={`group ${
                   project.color || "bg-slate-900 text-white"
-                } rounded-[2.5rem] p-8 md:p-12 border ${
-                  isLight ? "border-slate-200/80 hover:border-slate-300" : "border-slate-800 hover:border-slate-700"
+                } ${isLight ? "dark:bg-slate-900 dark:text-slate-100" : ""} rounded-[2.5rem] p-8 md:p-12 border ${
+                  isLight ? "border-slate-200/80 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700" : "border-slate-800 hover:border-slate-700"
                 } transition-all duration-500 grid lg:grid-cols-12 gap-8 items-center relative overflow-hidden shadow-2xl`}
               >
                 {/* Left Info Column */}
@@ -74,7 +74,7 @@ const WorkPage = () => {
                     <span
                       className={`px-4 py-1.5 rounded-full ${
                         isLight
-                          ? "bg-blue-600/10 text-blue-600 border border-blue-600/20"
+                          ? "bg-blue-600/10 text-blue-600 dark:bg-blue-950/60 dark:text-blue-400 border border-blue-600/20 dark:border-blue-800"
                           : "bg-blue-600/20 text-blue-400 border border-blue-500/30"
                       } text-xs font-mono font-bold tracking-widest uppercase`}
                     >
@@ -83,19 +83,19 @@ const WorkPage = () => {
                   </div>
 
                   <div>
-                    <h2 className="text-3xl md:text-5xl font-black tracking-tight mb-2 group-hover:text-blue-600 transition-colors">
+                    <h2 className="text-3xl md:text-5xl font-black tracking-tight mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
                       <Link href={`/work/${project.slug}`}>
                         {project.title}
                       </Link>
                     </h2>
                     {project.tagline && (
-                      <p className={isLight ? "text-slate-600 font-semibold text-lg" : "text-slate-400 font-semibold text-lg"}>
+                      <p className={isLight ? "text-slate-600 dark:text-slate-300 font-semibold text-lg" : "text-slate-400 font-semibold text-lg"}>
                         {project.tagline}
                       </p>
                     )}
                   </div>
 
-                  <p className={isLight ? "text-slate-700 text-sm md:text-base leading-relaxed font-medium" : "text-slate-300 text-sm md:text-base leading-relaxed"}>
+                  <p className={isLight ? "text-slate-700 dark:text-slate-300 text-sm md:text-base leading-relaxed font-medium" : "text-slate-300 text-sm md:text-base leading-relaxed"}>
                     {project.desc || project.description}
                   </p>
 
@@ -107,7 +107,7 @@ const WorkPage = () => {
                           key={tIdx}
                           className={`px-3 py-1.5 rounded-xl ${
                             isLight
-                              ? "bg-white text-slate-800 border border-slate-200"
+                              ? "bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-slate-700"
                               : "bg-slate-800 text-slate-300 border border-slate-700"
                           } text-xs font-mono font-bold`}
                         >
@@ -121,14 +121,14 @@ const WorkPage = () => {
                   {projectMetrics.length > 0 && (
                     <div
                       className={`grid grid-cols-2 md:grid-cols-3 gap-4 pt-4 border-t ${
-                        isLight ? "border-slate-200" : "border-slate-800/80"
+                        isLight ? "border-slate-200 dark:border-slate-800" : "border-slate-800/80"
                       }`}
                     >
                       {projectMetrics.map((metric, mIdx) => (
                         <div key={mIdx}>
                           <span
                             className={`${
-                              isLight ? "text-emerald-600" : "text-emerald-400"
+                              isLight ? "text-emerald-600 dark:text-emerald-400" : "text-emerald-400"
                             } font-mono text-xs md:text-sm font-bold block`}
                           >
                             ✓ {metric}
@@ -143,7 +143,7 @@ const WorkPage = () => {
                 <div
                   className={`lg:col-span-5 z-10 flex flex-col justify-between h-full relative overflow-hidden ${
                     isLight
-                      ? "bg-slate-100 border-slate-200"
+                      ? "bg-slate-100 dark:bg-slate-950 border-slate-200 dark:border-slate-800"
                       : "bg-slate-900 border-slate-800"
                   } rounded-[2rem] p-5 border min-h-[340px] group/card transition-all duration-500`}
                 >
@@ -159,7 +159,7 @@ const WorkPage = () => {
                     <div
                       className={`absolute inset-0 ${
                         isLight
-                          ? "bg-gradient-to-t from-white/95 via-white/20 to-transparent"
+                          ? "bg-gradient-to-t from-white/95 dark:from-slate-950/95 via-white/20 dark:via-slate-950/20 to-transparent"
                           : "bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent"
                       }`}
                     />
@@ -182,34 +182,30 @@ const WorkPage = () => {
                   <div
                     className={`relative z-10 space-y-2.5 font-mono text-xs ${
                       isLight
-                        ? "text-slate-800 bg-white/95 border-slate-200"
+                        ? "text-slate-800 dark:text-slate-200 bg-white/95 dark:bg-slate-900/90 border-slate-200 dark:border-slate-800"
                         : "text-slate-200 bg-slate-950/90 border-slate-800"
                     } mt-12 p-3.5 rounded-xl border shadow-xl`}
                   >
                     <div
                       className={`flex items-center gap-2 ${
-                        isLight ? "text-slate-500 border-slate-200" : "text-slate-400 border-slate-800"
+                        isLight ? "text-slate-500 dark:text-slate-400 border-slate-200 dark:border-slate-800" : "text-slate-400 border-slate-800"
                       } text-[10px] uppercase tracking-widest border-b pb-2`}
                     >
                       <Sparkles size={12} className="text-blue-500" /> Live Deployment
                     </div>
                     <div className="flex justify-between">
                       <span>Status:</span>
-                      <span className={isLight ? "text-emerald-600 font-bold" : "text-emerald-400 font-bold"}>
+                      <span className={isLight ? "text-emerald-600 dark:text-emerald-400 font-bold" : "text-emerald-400 font-bold"}>
                         {project.status || "Production"}
                       </span>
                     </div>
-                    {/* <div className="flex justify-between">
-                      <span>Architecture:</span>
-                      <span className="text-blue-500 font-bold">Modular</span>
-                    </div> */}
                   </div>
                 </div>
 
                 {/* Background Graphic ID Number */}
                 <div
                   className={`absolute -bottom-10 -left-6 text-[16rem] md:text-[20rem] font-black ${
-                    isLight ? "text-slate-900 opacity-[0.04]" : "text-white opacity-[0.03]"
+                    isLight ? "text-slate-900 dark:text-white opacity-[0.04] dark:opacity-[0.03]" : "text-white opacity-[0.03]"
                   } select-none pointer-events-none group-hover:opacity-[0.08] transition-opacity leading-none z-0`}
                 >
                   {displayId}
@@ -223,7 +219,7 @@ const WorkPage = () => {
         </div>
 
         {/* CTA Banner */}
-        <div className="flex flex-col md:flex-row justify-between items-center gap-12 bg-slate-900 p-16 rounded-[4rem] text-white overflow-hidden relative">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-12 bg-slate-900 dark:bg-slate-950 p-16 rounded-[4rem] text-white overflow-hidden relative border border-transparent dark:border-slate-800">
           <div className="max-w-xl z-10">
             <h2 className="text-5xl font-black uppercase tracking-tighter mb-6 leading-none">
               HAVE A PROJECT <br /> IN MIND?

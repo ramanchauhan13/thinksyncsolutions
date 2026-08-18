@@ -119,7 +119,7 @@ const ServicesPage = () => {
 
   return (
     <div>
-      <div className="min-h-screen bg-white text-slate-900 font-sans selection:bg-blue-600 selection:text-white">
+      <div className="min-h-screen bg-white dark:bg-[#0b0f19] text-slate-900 dark:text-slate-100 font-sans selection:bg-blue-600 selection:text-white transition-colors duration-300">
         {/* Texture Layer */}
         <div
           className="fixed inset-0 pointer-events-none opacity-[0.02] z-0"
@@ -137,16 +137,16 @@ const ServicesPage = () => {
                 <span className="h-1 w-6 bg-blue-600/30 rounded-full"></span>
               </div>
 
-              <span className="text-slate-900 font-black tracking-[0.3em] text-xs uppercase relative">
+              <span className="text-slate-900 dark:text-slate-200 font-black tracking-[0.3em] text-xs uppercase relative">
                 Our Services
                 <span className="absolute -bottom-1 left-0 w-0 h-px bg-blue-600 transition-all duration-700 group-hover:w-full"></span>
               </span>
             </div>
 
-            <h1 className="text-6xl md:text-8xl font-black leading-[0.8] tracking-tighter uppercase mb-10">
+            <h1 className="text-6xl md:text-8xl font-black leading-[0.8] tracking-tighter uppercase mb-10 text-slate-900 dark:text-white">
               WHAT WE <br /> <span className="text-blue-600">SOLVE.</span>
             </h1>
-            <p className="text-2xl md:text-3xl font-medium text-slate-400 leading-tight">
+            <p className="text-2xl md:text-3xl font-medium text-slate-400 dark:text-slate-400 leading-tight">
               We architect, develop, and synchronize digital products for the
               next generation of industry leaders.
             </p>
@@ -155,33 +155,33 @@ const ServicesPage = () => {
           {/* Detailed Service Sections */}
           <div className="space-y-10">
             {serviceCategories.map((service, i) => (
-              <div key={i} className="group border-t border-slate-300 pt-10">
+              <div key={i} className="group border-t border-slate-300 dark:border-slate-800 pt-10">
                 <div className="grid lg:grid-cols-12 gap-12">
                   {/* ID & Basic Info */}
                   <div className="lg:col-span-4">
-                    <span className="text-6xl font-black text-slate-100 group-hover:text-blue-600 transition-colors duration-500 italic">
+                    <span className="text-6xl font-black text-slate-100 dark:text-slate-800 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-500 italic">
                       {service.id}
                     </span>
-                    <h2 className="text-4xl font-black uppercase tracking-tighter mt-4 mb-4">
+                    <h2 className="text-4xl font-black uppercase tracking-tighter mt-4 mb-4 text-slate-900 dark:text-slate-100">
                       {service.title}
                     </h2>
-                    <p className="text-blue-600 font-black uppercase tracking-widest text-[10px]">
+                    <p className="text-blue-600 dark:text-blue-400 font-black uppercase tracking-widest text-[10px]">
                       {service.highlight}
                     </p>
                   </div>
 
                   {/* Description & List */}
                   <div className="lg:col-span-5">
-                    <p className="text-xl text-slate-500 font-medium leading-relaxed mb-10">
+                    <p className="text-xl text-slate-500 dark:text-slate-400 font-medium leading-relaxed mb-10">
                       {service.description}
                     </p>
                     <ul className="grid grid-cols-1 md:grid-cols-2 gap-y-4">
                       {service.features.map((feature, idx) => (
                         <li
                           key={idx}
-                          className="flex items-center gap-3 text-xs font-black uppercase tracking-widest text-slate-400 hover:text-slate-900 transition-colors cursor-default"
+                          className="flex items-center gap-3 text-xs font-black uppercase tracking-widest text-slate-400 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-colors cursor-default"
                         >
-                          <div className="w-1.5 h-1.5 bg-blue-600 rounded-full" />
+                          <div className="w-1.5 h-1.5 bg-blue-600 dark:bg-blue-400 rounded-full" />
                           {feature}
                         </li>
                       ))}
@@ -190,11 +190,11 @@ const ServicesPage = () => {
 
                   {/* Icon/Visual Anchor */}
                   <div className="lg:col-span-3 flex justify-end items-start pt-2">
-                    <div className="w-24 h-24 border border-slate-100 rounded-full flex items-center justify-center p-3 transition-all duration-500">
+                    <div className="w-24 h-24 border border-slate-100 dark:border-slate-800 bg-blue-50/50 dark:bg-slate-800/80 rounded-full flex items-center justify-center p-3 transition-all duration-500">
                       <img
                         src={service.icon}
                         alt={service.title}
-                        className="w-full h-full object-contain rounded-full transition-transform duration-500 ease-out group-hover:scale-125"
+                        className="w-full h-full object-contain rounded-full mix-blend-multiply dark:mix-blend-normal transition-transform duration-500 ease-out group-hover:scale-125"
                       />
                     </div>
                   </div>
@@ -204,7 +204,7 @@ const ServicesPage = () => {
           </div>
 
           {/* Bottom CTA Hook */}
-          <div className="mt-20 bg-blue-600 p-20 rounded-[4rem] text-white overflow-hidden relative group">
+          <div className="mt-20 bg-blue-600 dark:bg-blue-700 p-20 rounded-[4rem] text-white overflow-hidden relative group">
             <div className="relative z-10 flex flex-col items-center text-center">
               <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tighter mb-8 leading-none">
                 READY TO <br /> ENGINEER GROWTH?
@@ -212,7 +212,7 @@ const ServicesPage = () => {
               <Link
                 href="/contact"
                 aria-label="Contact ThinkSync Solutions"
-                className="bg-white text-blue-600 px-12 py-6 rounded-2xl font-black text-sm tracking-[0.3em] uppercase hover:bg-slate-900 hover:text-white transition-all"
+                className="bg-white text-blue-600 dark:text-blue-700 px-12 py-6 rounded-2xl font-black text-sm tracking-[0.3em] uppercase hover:bg-slate-900 hover:text-white dark:hover:bg-slate-950 transition-all"
               >
                 Consult with us
               </Link>

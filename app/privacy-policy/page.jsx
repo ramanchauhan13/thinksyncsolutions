@@ -38,7 +38,7 @@ const sections = [
 
 const PrivacyPolicy = () => {
   return (
-    <div className="min-h-screen bg-white text-slate-900 font-sans selection:bg-blue-600 selection:text-white relative">
+    <div className="min-h-screen bg-white dark:bg-[#0b0f19] text-slate-900 dark:text-slate-100 font-sans selection:bg-blue-600 selection:text-white relative transition-colors duration-300">
       {/* Texture Layer */}
       <div
         className="fixed inset-0 pointer-events-none opacity-[0.02] z-0"
@@ -53,30 +53,30 @@ const PrivacyPolicy = () => {
           <Link
             href="/"
             aria-label="Back to ThinkSync Solutions Home"
-            className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-blue-600 transition-colors"
+            className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-slate-400 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
           >
             <ArrowLeft size={14} /> Back to Home
           </Link>
         </div>
 
         {/* Header */}
-        <header className="mb-20 max-w-4xl border-b border-slate-200/80 pb-16">
+        <header className="mb-20 max-w-4xl border-b border-slate-200/80 dark:border-slate-800 pb-16">
           <div className="flex items-center gap-3 mb-4">
             <div className="flex flex-col gap-1">
               <span className="h-1 w-10 bg-blue-600 rounded-full" />
               <span className="h-1 w-5 bg-blue-600/30 rounded-full" />
             </div>
 
-            <span className="text-slate-900 font-black tracking-[0.25em] text-xs uppercase">
+            <span className="text-slate-900 dark:text-slate-200 font-black tracking-[0.25em] text-xs uppercase">
               Legal & Compliance
             </span>
           </div>
 
-          <h1 className="text-5xl sm:text-7xl font-black leading-[0.85] tracking-tight uppercase mb-8 text-slate-900">
+          <h1 className="text-5xl sm:text-7xl font-black leading-[0.85] tracking-tight uppercase mb-8 text-slate-900 dark:text-white">
             PRIVACY <br /> <span className="text-blue-600">POLICY.</span>
           </h1>
 
-          <p className="text-lg sm:text-xl text-slate-500 font-medium leading-relaxed italic">
+          <p className="text-lg sm:text-xl text-slate-500 dark:text-slate-400 font-medium leading-relaxed italic">
             Effective Date: August 15, 2026 • Last Updated: August 2026
           </p>
         </header>
@@ -87,14 +87,14 @@ const PrivacyPolicy = () => {
             {sections.map((item, idx) => {
               const IconComp = item.icon;
               return (
-                <div key={idx} className="group border-b border-slate-200/80 pb-10">
-                  <div className="flex items-center gap-3 text-blue-600 mb-4">
+                <div key={idx} className="group border-b border-slate-200/80 dark:border-slate-800 pb-10">
+                  <div className="flex items-center gap-3 text-blue-600 dark:text-blue-400 mb-4">
                     <IconComp size={24} />
-                    <h2 className="text-2xl font-black uppercase tracking-tight text-slate-900 group-hover:text-blue-600 transition-colors">
+                    <h2 className="text-2xl font-black uppercase tracking-tight text-slate-900 dark:text-slate-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
                       {item.title}
                     </h2>
                   </div>
-                  <p className="text-slate-600 font-medium leading-relaxed text-base sm:text-lg pl-9">
+                  <p className="text-slate-600 dark:text-slate-300 font-medium leading-relaxed text-base sm:text-lg pl-9">
                     {item.content}
                   </p>
                 </div>
@@ -102,15 +102,15 @@ const PrivacyPolicy = () => {
             })}
 
             <div className="pt-4">
-              <h2 className="text-2xl font-black uppercase tracking-tight text-slate-900 mb-4">
+              <h2 className="text-2xl font-black uppercase tracking-tight text-slate-900 dark:text-slate-100 mb-4">
                 6. Contact Privacy Team
               </h2>
-              <p className="text-slate-600 font-medium leading-relaxed text-base sm:text-lg pl-9">
+              <p className="text-slate-600 dark:text-slate-300 font-medium leading-relaxed text-base sm:text-lg pl-9">
                 If you have questions regarding this Privacy Policy or wish to exercise data privacy rights for your organization, reach out directly to our security officer at{" "}
                 <a
                   href="mailto:privacy@thinksync.solutions"
                   aria-label="Email ThinkSync Solutions Privacy Team"
-                  className="text-blue-600 font-bold underline hover:text-slate-900 transition-colors"
+                  className="text-blue-600 dark:text-blue-400 font-bold underline hover:text-slate-900 dark:hover:text-white transition-colors"
                 >
                   privacy@thinksync.solutions
                 </a>
@@ -120,7 +120,7 @@ const PrivacyPolicy = () => {
           </div>
 
           {/* Sticky Quick Summary Sidebar */}
-          <aside className="lg:col-span-4 lg:sticky lg:top-12 bg-slate-900 text-white p-8 rounded-3xl border border-slate-800 shadow-xl space-y-6">
+          <aside className="lg:col-span-4 lg:sticky lg:top-12 bg-slate-900 dark:bg-slate-950 text-white p-8 rounded-3xl border border-slate-800 shadow-xl space-y-6">
             <div className="flex items-center gap-2 text-blue-400 font-mono text-xs uppercase font-bold tracking-widest">
               <ShieldCheck size={18} /> Direct Guarantee
             </div>

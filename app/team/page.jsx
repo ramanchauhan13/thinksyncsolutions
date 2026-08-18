@@ -78,7 +78,7 @@ const TeamPage = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-white text-slate-900 font-sans selection:bg-blue-600 selection:text-white">
+    <div className="min-h-screen bg-white dark:bg-[#0b0f19] text-slate-900 dark:text-slate-100 font-sans selection:bg-blue-600 selection:text-white transition-colors duration-300">
       {/* Texture Layer */}
       <div
         className="fixed inset-0 pointer-events-none opacity-[0.02] z-0"
@@ -96,57 +96,57 @@ const TeamPage = () => {
               <span className="h-1 w-6 bg-blue-600/30 rounded-full"></span>
             </div>
 
-            <span className="text-slate-900 font-black tracking-[0.3em] text-xs uppercase relative">
+            <span className="text-slate-900 dark:text-slate-200 font-black tracking-[0.3em] text-xs uppercase relative">
               The Collective
               <span className="absolute -bottom-1 left-0 w-0 h-px bg-blue-600 transition-all duration-700 group-hover:w-full"></span>
             </span>
           </div>
-          <h1 className="text-6xl md:text-8xl font-black leading-[0.8] tracking-tighter uppercase mb-12">
+          <h1 className="text-6xl md:text-8xl font-black leading-[0.8] tracking-tighter uppercase mb-12 text-slate-900 dark:text-white">
             HUMAN <br /> <span className="text-blue-600">ENGINE.</span>
           </h1>
-          <p className="text-2xl text-slate-400 font-medium max-w-2xl leading-tight italic">
+          <p className="text-2xl text-slate-400 dark:text-slate-400 font-medium max-w-2xl leading-tight italic">
             "A technical team synchronized by a single goal: building software
             that defines the future of your industry."
           </p>
         </div>
 
         {/* TRUST BANNER: Key Performance Metrics */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-20 p-6 bg-slate-900 text-white rounded-2xl border border-slate-800">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-20 p-6 bg-slate-900 dark:bg-slate-950 text-white rounded-2xl border border-slate-800">
           {stats.map((s, idx) => (
             <div key={idx} className="p-4 border-l-2 border-blue-600">
-              <p className="text-3xl md:text-4xl font-black tracking-tight text-blue-500">{s.value}</p>
+              <p className="text-3xl md:text-4xl font-black tracking-tight text-blue-500 dark:text-blue-400">{s.value}</p>
               <p className="text-xs uppercase font-bold tracking-widest text-slate-400 mt-1">{s.label}</p>
             </div>
           ))}
         </div>
 
         {/* Team List: High Density / No Bento */}
-        <div className="border-t border-slate-100">
+        <div className="border-t border-slate-100 dark:border-slate-800">
           {team.map((member, i) => (
             <div
               key={i}
-              className="group border-b border-slate-100 py-16 flex flex-col md:grid md:grid-cols-12 gap-8 transition-all duration-500 hover:bg-blue-50/30 px-4 md:px-8"
+              className="group border-b border-slate-100 dark:border-slate-800 py-16 flex flex-col md:grid md:grid-cols-12 gap-8 transition-all duration-500 hover:bg-blue-50/30 dark:hover:bg-slate-900/60 px-4 md:px-8"
             >
               {/* Role & Index */}
               <div className="md:col-span-3">
-                <span className="block text-blue-600 font-mono text-xs font-black mb-4 uppercase tracking-[0.3em]">
+                <span className="block text-blue-600 dark:text-blue-400 font-mono text-xs font-black mb-4 uppercase tracking-[0.3em]">
                   Personnel // 0{i + 1}
                 </span>
-                <p className="text-slate-400 font-black uppercase tracking-widest text-[10px]">
+                <p className="text-slate-400 dark:text-slate-500 font-black uppercase tracking-widest text-[10px]">
                   {member.role}
                 </p>
               </div>
 
               {/* Name & Specialty */}
               <div className="md:col-span-5">
-                <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter mb-4 group-hover:text-blue-600 transition-colors">
+                <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter mb-4 text-slate-900 dark:text-slate-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
                   {member.name}
                 </h2>
                 <div className="flex flex-wrap items-center gap-2">
-                  <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-blue-50 text-blue-700 border border-blue-200/60 text-[9px] font-black uppercase tracking-widest rounded-sm">
+                  <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-blue-50 dark:bg-blue-950/60 text-blue-700 dark:text-blue-300 border border-blue-200/60 dark:border-blue-800 text-[9px] font-black uppercase tracking-widest rounded-sm">
                     <Briefcase size={11} /> {member.experience}
                   </span>
-                  <div className="inline-block px-3 py-1 bg-slate-900 text-white text-[9px] font-black uppercase tracking-widest rounded-sm">
+                  <div className="inline-block px-3 py-1 bg-slate-900 dark:bg-slate-800 text-white text-[9px] font-black uppercase tracking-widest rounded-sm">
                     {member.specialty}
                   </div>
                 </div>
@@ -154,7 +154,7 @@ const TeamPage = () => {
 
               {/* Bio & Socials */}
               <div className="md:col-span-4 flex flex-col justify-between">
-                <p className="text-slate-500 font-medium leading-relaxed mb-8">
+                <p className="text-slate-500 dark:text-slate-400 font-medium leading-relaxed mb-8">
                   {member.bio}
                 </p>
                 <div className="flex gap-6 items-center">
@@ -164,7 +164,7 @@ const TeamPage = () => {
                       aria-label={`Visit ${member.name}'s GitHub profile`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-slate-300 hover:text-blue-600 transition-colors"
+                      className="text-slate-400 dark:text-slate-500 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
                     >
                       <Github size={18} />
                     </a>
@@ -174,7 +174,7 @@ const TeamPage = () => {
                       aria-label={`Visit ${member.name}'s LinkedIn profile`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-slate-300 hover:text-blue-600 transition-colors"
+                      className="text-slate-400 dark:text-slate-500 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
                     >
                       <Linkedin size={18} />
                     </a>
@@ -185,7 +185,7 @@ const TeamPage = () => {
                       aria-label={`View full bio of ${member.name}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="ml-auto flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest bg-black text-white px-6 py-3 rounded-full group-hover:bg-blue-600 group-hover:text-white transition-all"
+                      className="ml-auto flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest bg-black dark:bg-slate-800 text-white px-6 py-3 rounded-full group-hover:bg-blue-600 dark:group-hover:bg-blue-600 group-hover:text-white transition-all"
                     >
                       Full Bio <ArrowUpRight size={14} />
                     </a>
@@ -197,21 +197,21 @@ const TeamPage = () => {
         </div>
 
         {/* TRUST GUARANTEES SECTION */}
-        <section className="mt-28 py-16 border-t border-slate-200">
+        <section className="mt-28 py-16 border-t border-slate-200 dark:border-slate-800">
           <div className="mb-12">
-            <span className="text-blue-600 font-mono text-xs font-black uppercase tracking-[0.3em] block mb-2">
+            <span className="text-blue-600 dark:text-blue-400 font-mono text-xs font-black uppercase tracking-[0.3em] block mb-2">
               Engineering Commitment
             </span>
-            <h3 className="text-3xl md:text-4xl font-black uppercase tracking-tighter">
+            <h3 className="text-3xl md:text-4xl font-black uppercase tracking-tighter text-slate-900 dark:text-white">
               Why clients trust ThinkSync.
             </h3>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {guarantees.map((item, idx) => (
-              <div key={idx} className="p-8 bg-slate-50 rounded-2xl border border-slate-100">
-                <CheckCircle2 className="text-blue-600 mb-4" size={28} />
-                <h4 className="text-lg font-bold uppercase tracking-tight mb-2">{item.title}</h4>
-                <p className="text-sm text-slate-500 leading-relaxed">{item.desc}</p>
+              <div key={idx} className="p-8 bg-slate-50 dark:bg-slate-900 rounded-2xl border border-slate-100 dark:border-slate-800">
+                <CheckCircle2 className="text-blue-600 dark:text-blue-400 mb-4" size={28} />
+                <h4 className="text-lg font-bold uppercase tracking-tight mb-2 text-slate-900 dark:text-slate-100">{item.title}</h4>
+                <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </div>

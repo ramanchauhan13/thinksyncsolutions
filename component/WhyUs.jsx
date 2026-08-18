@@ -5,27 +5,27 @@ const WhyUs = () => {
   return (
     <section 
       id="why" 
-      className="relative w-full py-12 md:py-16 lg:py-20 px-10 bg-white overflow-hidden"
+      className="relative w-full py-12 md:py-16 lg:py-20 px-10 bg-white dark:bg-[#0b0f19] overflow-hidden transition-colors duration-300"
     >
       <div className="max-w-full mx-auto w-full grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
         
         {/* Left Side: Creative Visual Grid */}
         <div className="relative">
           {/* Decorative background element */}
-          <div className="absolute -top-20 -left-20 w-64 h-64 bg-blue-100 rounded-full blur-3xl opacity-40 animate-pulse pointer-events-none" />
+          <div className="absolute -top-20 -left-20 w-64 h-64 bg-blue-100 dark:bg-blue-950/40 rounded-full blur-3xl opacity-40 animate-pulse pointer-events-none" />
 
           <div className="grid grid-cols-2 gap-6 relative z-10">
             {/* Card 1: Growth Driven */}
-            <div className="group bg-slate-100 rounded-[2.5rem] h-72 flex flex-col justify-between p-8 border border-slate-100 transition-all duration-500 hover:shadow-2xl hover:bg-white hover:-translate-y-2">
-              <div className="w-20 h-20 bg-blue-50 rounded-2xl flex items-center justify-center shadow-sm transition-all overflow-hidden p-2">
+            <div className="group bg-slate-100 dark:bg-slate-900 rounded-[2.5rem] h-72 flex flex-col justify-between p-8 border border-slate-100 dark:border-slate-800 transition-all duration-500 hover:shadow-2xl hover:bg-white dark:hover:bg-slate-800/90 hover:-translate-y-2">
+              <div className="w-20 h-20 bg-blue-50 dark:bg-slate-800 rounded-2xl flex items-center justify-center shadow-sm transition-all overflow-hidden p-2">
                 <img
                   src="/gifs/growth.gif"
                   alt="Growth"
-                  className="w-full h-full object-contain mix-blend-multiply transition-all duration-500"
+                  className="w-full h-full object-contain mix-blend-multiply dark:mix-blend-normal transition-all duration-500"
                 />
               </div>
               <div>
-                <h3 className="text-2xl font-black text-slate-900 tracking-tighter uppercase mb-1 leading-none">
+                <h3 className="text-2xl font-black text-slate-900 dark:text-slate-100 tracking-tighter uppercase mb-1 leading-none">
                   Growth <br /> Driven
                 </h3>
                 <div className="h-1.5 w-8 bg-blue-600 group-hover:w-full transition-all duration-500 rounded-full" />
@@ -33,7 +33,7 @@ const WhyUs = () => {
             </div>
 
             {/* Card 2: User Focused */}
-            <div className="group bg-blue-600 rounded-[2.5rem] h-72 translate-y-8 lg:translate-y-12 flex flex-col justify-between p-8 text-white shadow-xl shadow-blue-200 transition-all duration-500 hover:shadow-blue-400 hover:translate-y-6">
+            <div className="group bg-blue-600 rounded-[2.5rem] h-72 translate-y-8 lg:translate-y-12 flex flex-col justify-between p-8 text-white shadow-xl shadow-blue-200 dark:shadow-none transition-all duration-500 hover:shadow-blue-400 dark:hover:shadow-blue-600/30 hover:translate-y-6">
               <div className="w-20 h-20 bg-white backdrop-blur-md rounded-2xl flex items-center justify-center border border-white/20 transition-all overflow-hidden p-2">
                 <img
                   src="/gifs/no-focus.gif" 
@@ -50,7 +50,7 @@ const WhyUs = () => {
             </div>
 
             {/* Velocity/Tech Depth Card (Full Width) */}
-            <div className="mt-8 md:mt-10 col-span-2 bg-slate-900 rounded-[2rem] md:rounded-[2.5rem] p-6 md:p-8 overflow-hidden relative group border border-slate-800 shadow-2xl">
+            <div className="mt-8 md:mt-10 col-span-2 bg-slate-900 dark:bg-slate-950 rounded-[2rem] md:rounded-[2.5rem] p-6 md:p-8 overflow-hidden relative group border border-slate-800 shadow-2xl">
               <div className="relative z-10 flex items-center justify-between">
                 <div className="flex items-center gap-3 md:gap-4">
                   <div className="w-14 h-14 md:w-16 md:h-16 shrink-0 rounded-xl md:rounded-2xl p-2 bg-white flex items-center justify-center group-hover:rotate-12 transition-transform duration-500">
@@ -98,12 +98,12 @@ const WhyUs = () => {
               <span className="h-1 w-6 bg-blue-600/30 rounded-full" />
             </div>
             
-            <span className="text-slate-900 font-black tracking-[0.3em] text-xs uppercase relative">
+            <span className="text-slate-900 dark:text-slate-200 font-black tracking-[0.3em] text-xs uppercase relative">
               Why Choose Us
             </span>
           </div>
 
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-black mb-8 leading-[0.9] text-slate-900 uppercase tracking-tighter">
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-black mb-8 leading-[0.9] text-slate-900 dark:text-white uppercase tracking-tighter">
             Why we are the <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 italic">
               right choice.
@@ -129,22 +129,22 @@ const WhyUs = () => {
             ].map((item, i) => (
               <div
                 key={i}
-                className="group flex flex-col sm:flex-row gap-5 p-4 rounded-3xl transition-all duration-300 hover:bg-slate-50 border border-transparent hover:border-slate-100"
+                className="group flex flex-col sm:flex-row gap-5 p-4 rounded-3xl transition-all duration-300 hover:bg-slate-50 dark:hover:bg-slate-900/60 border border-transparent hover:border-slate-100 dark:hover:border-slate-800"
               >
-                <div className="shrink-0 w-20 h-20 sm:w-24 sm:h-24 bg-blue-50 rounded-2xl sm:rounded-3xl flex flex-col items-center justify-center border border-blue-100 group-hover:bg-blue-600 group-hover:border-blue-600 transition-all duration-500">
-                  <span className="text-xl sm:text-2xl font-black text-blue-600 group-hover:text-white transition-colors">
+                <div className="shrink-0 w-20 h-20 sm:w-24 sm:h-24 bg-blue-50 dark:bg-slate-800 rounded-2xl sm:rounded-3xl flex flex-col items-center justify-center border border-blue-100 dark:border-slate-700 group-hover:bg-blue-600 group-hover:border-blue-600 transition-all duration-500">
+                  <span className="text-xl sm:text-2xl font-black text-blue-600 dark:text-blue-400 group-hover:text-white transition-colors">
                     {item.stat}
                   </span>
-                  <span className="text-[8px] font-black uppercase text-blue-400 group-hover:text-blue-200 transition-colors tracking-widest">
+                  <span className="text-[8px] font-black uppercase text-blue-400 dark:text-blue-300 group-hover:text-blue-200 transition-colors tracking-widest">
                     {item.label}
                   </span>
                 </div>
 
                 <div className="flex flex-col justify-center">
-                  <h4 className="font-black text-xl sm:text-2xl mb-1 uppercase tracking-tight text-slate-900 flex items-center gap-3">
+                  <h4 className="font-black text-xl sm:text-2xl mb-1 uppercase tracking-tight text-slate-900 dark:text-slate-100 flex items-center gap-3">
                     {item.title}
                   </h4>
-                  <p className="text-slate-500 text-sm sm:text-base font-medium leading-relaxed max-w-md">
+                  <p className="text-slate-500 dark:text-slate-400 text-sm sm:text-base font-medium leading-relaxed max-w-md">
                     {item.desc}
                   </p>
                 </div>

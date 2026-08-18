@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
+import ThemeToggle from "@/component/ThemeToggle";
 
 const NAV_LINKS = [
   { name: "Home", href: "/", ariaLabel: "Return to ThinkSync Solutions Home" },
@@ -29,16 +30,16 @@ const Navbar = () => {
   const getLinkStyle = (path) =>
     `relative transition-all duration-300 font-bold uppercase tracking-[0.15em] text-[12px] py-2 ${
       pathname === path
-        ? "text-blue-600 after:w-full"
-        : "text-slate-700 hover:text-blue-600 after:w-0 hover:after:w-full"
-    } after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:bg-blue-600 after:transition-all after:duration-300`;
+        ? "text-blue-600 dark:text-blue-400 after:w-full"
+        : "text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 after:w-0 hover:after:w-full"
+    } after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:bg-blue-600 dark:after:bg-blue-400 after:transition-all after:duration-300`;
 
   return (
     <nav
-      className={`fixed w-[96%] max-w-full left-1/2 -translate-x-1/2 top-2 z-50 transition-all duration-500 rounded-2xl border border-white/20 ${
+      className={`fixed w-[96%] max-w-full left-1/2 -translate-x-1/2 top-2 z-50 transition-all duration-500 rounded-2xl border border-white/20 dark:border-slate-800/80 ${
         scrolled
-          ? "bg-white/60 backdrop-blur-2xl shadow-[0_8px_32px_0_rgba(31,38,135,0.08)]"
-          : "bg-white/30 backdrop-blur-md"
+          ? "bg-white/60 dark:bg-slate-900/75 backdrop-blur-2xl shadow-[0_8px_32px_0_rgba(31,38,135,0.08)] dark:shadow-[0_8px_32px_0_rgba(0,0,0,0.37)]"
+          : "bg-white/30 dark:bg-slate-900/40 backdrop-blur-md"
       }`}
     >
       <div className="max-w-full mx-auto px-6 h-16 flex items-center justify-between">
@@ -46,7 +47,7 @@ const Navbar = () => {
         <Link
           href="/"
           aria-label="Return to ThinkSync Solutions Home"
-          className="flex items-center gap-2 font-black text-2xl tracking-wider text-[#0c2f55] group"
+          className="flex items-center gap-2 font-black text-2xl tracking-wider text-[#0c2f55] dark:text-slate-100 group"
         >
           <div className="transition-transform duration-300 group-hover:rotate-12">
             <Image
@@ -57,9 +58,9 @@ const Navbar = () => {
               className="w-auto h-auto"
             />
           </div>
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#0c2f55] to-blue-600">
+          <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#0c2f55] to-blue-600 dark:from-slate-100 dark:to-blue-400">
             THINK
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-blue-600">
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-blue-600 dark:from-blue-400 dark:to-blue-500">
               SYNC
             </span>
           </span>
@@ -77,15 +78,20 @@ const Navbar = () => {
               {link.name}
             </Link>
           ))}
+          <ThemeToggle />
         </div>
 
-        {/* MOBILE TOGGLE */}
-        <button
-          className="lg:hidden p-2 text-slate-600 hover:bg-blue-50/50 rounded-xl transition-colors"
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          {isOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        {/* MOBILE CONTROLS */}
+        <div className="flex items-center gap-3 lg:hidden">
+          <ThemeToggle />
+          <button
+            aria-label="Toggle navigation menu"
+            className="p-2 text-slate-600 dark:text-slate-300 hover:bg-blue-50/50 dark:hover:bg-slate-800/50 rounded-xl transition-colors"
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            {isOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
       </div>
 
       {/* MOBILE MENU */}
@@ -94,7 +100,7 @@ const Navbar = () => {
           isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-        <div className="px-6 py-6 flex flex-col gap-4 bg-white/90 backdrop-blur-3xl rounded-b-2xl border-t border-white/20">
+        <div className="px-6 py-6 flex flex-col gap-4 bg-white/90 dark:bg-slate-900/95 backdrop-blur-3xl rounded-b-2xl border-t border-white/20 dark:border-slate-800/80">
           {NAV_LINKS.map((link) => (
             <Link
               key={link.href}

@@ -54,7 +54,7 @@ const AboutPage = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-white text-slate-900 font-sans selection:bg-blue-600 selection:text-white">
+    <div className="min-h-screen bg-white dark:bg-[#0b0f19] text-slate-900 dark:text-slate-100 font-sans selection:bg-blue-600 selection:text-white transition-colors duration-300">
       {/* Subtle Grain Overlay */}
       <div
         className="fixed inset-0 pointer-events-none opacity-[0.02] z-0"
@@ -73,21 +73,21 @@ const AboutPage = () => {
                 <span className="h-1 w-6 bg-blue-600/30 rounded-full"></span>
               </div>
 
-              <span className="text-slate-900 font-black tracking-[0.3em] text-xs uppercase relative">
+              <span className="text-slate-900 dark:text-slate-200 font-black tracking-[0.3em] text-xs uppercase relative">
                 Who We Are
               </span>
             </div>
-            <h1 className="text-6xl md:text-8xl font-black leading-[0.8] tracking-tighter uppercase">
+            <h1 className="text-6xl md:text-8xl font-black leading-[0.8] tracking-tighter uppercase text-slate-900 dark:text-white">
               WE BUILD <br /> <span className="text-blue-600 italic">TECH</span>{" "}
               THAT <br /> WORKS.
             </h1>
           </div>
           <div className="lg:pt-6">
-            <p className="text-2xl md:text-4xl font-bold leading-tight mb-8 tracking-tight">
+            <p className="text-2xl md:text-4xl font-bold leading-tight mb-8 tracking-tight text-slate-900 dark:text-slate-100">
               ThinkSync Solutions was founded on a simple premise: Software
               should be a catalyst, not a bottleneck.
             </p>
-            <p className="text-slate-500 text-lg leading-relaxed max-w-md">
+            <p className="text-slate-500 dark:text-slate-400 text-lg leading-relaxed max-w-md">
               We are a collective of senior engineers and designers who believe
               in the power of synchronization. By aligning deep technical
               expertise with your unique business goals, we create digital
@@ -97,7 +97,7 @@ const AboutPage = () => {
         </div>
 
         {/* Section 2: Numbers that Matter */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 mb-10 border-y border-slate-100 py-20">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 mb-10 border-y border-slate-100 dark:border-slate-800 py-20">
           {[
             { label: "Products Shipped", val: "100+" },
             { label: "Lines of Code", val: "4.2M" },
@@ -105,10 +105,10 @@ const AboutPage = () => {
             { label: "Expert Developers", val: "5+" },
           ].map((stat, i) => (
             <div key={i} className="text-center lg:text-left">
-              <div className="text-5xl md:text-7xl font-black text-blue-600 mb-2 tracking-tighter">
+              <div className="text-5xl md:text-7xl font-black text-blue-600 dark:text-blue-400 mb-2 tracking-tighter">
                 {stat.val}
               </div>
-              <div className="text-[10px] font-black uppercase tracking-[0.3em] text-slate-400">
+              <div className="text-[10px] font-black uppercase tracking-[0.3em] text-slate-400 dark:text-slate-500">
                 {stat.label}
               </div>
             </div>
@@ -117,24 +117,24 @@ const AboutPage = () => {
 
         {/* Section 3: Core Values */}
         <div className="mb-10">
-          <h2 className="text-5xl font-black uppercase tracking-tighter mb-10 text-center">
+          <h2 className="text-5xl font-black uppercase tracking-tighter mb-10 text-center text-slate-900 dark:text-white">
             The{" "}
             <span className="text-blue-600 italic underline">ThinkSync</span>{" "}
             Way.
           </h2>
-          <div className="grid lg:grid-cols-3 gap-1px bg-slate-100 border border-slate-100 overflow-hidden rounded-[3rem]">
+          <div className="grid lg:grid-cols-3 gap-1px bg-slate-100 dark:bg-slate-800 border border-slate-100 dark:border-slate-800 overflow-hidden rounded-[3rem]">
             {values.map((v, i) => (
               <div
                 key={i}
-                className="bg-white p-12 flex flex-col items-center text-center group hover:bg-blue-600 transition-all duration-500"
+                className="bg-white dark:bg-slate-900 p-12 flex flex-col items-center text-center group hover:bg-blue-600 dark:hover:bg-blue-600 transition-all duration-500"
               >
-                <div className="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center text-blue-600 mb-8 group-hover:bg-white/20 group-hover:text-white transition-all">
+                <div className="w-16 h-16 bg-blue-50 dark:bg-slate-800 rounded-2xl flex items-center justify-center text-blue-600 dark:text-blue-400 mb-8 group-hover:bg-white/20 group-hover:text-white transition-all">
                   <CheckCircle2 size={32} />
                 </div>
-                <h3 className="text-2xl font-black uppercase mb-4 group-hover:text-white">
+                <h3 className="text-2xl font-black uppercase mb-4 text-slate-900 dark:text-slate-100 group-hover:text-white">
                   {v.title}
                 </h3>
-                <p className="text-slate-500 text-sm leading-relaxed group-hover:text-blue-100 transition-colors">
+                <p className="text-slate-500 dark:text-slate-400 text-sm leading-relaxed group-hover:text-blue-100 transition-colors">
                   {v.desc}
                 </p>
               </div>
@@ -143,16 +143,16 @@ const AboutPage = () => {
         </div>
 
         {/* Section 4: What We Do (SEO & Intent Optimization) */}
-        <div className="grid lg:grid-cols-12 gap-8 lg:gap-16 mb-16 items-start border-t border-slate-200/60 pt-20">
+        <div className="grid lg:grid-cols-12 gap-8 lg:gap-16 mb-16 items-start border-t border-slate-200/60 dark:border-slate-800 pt-20">
   {/* Left Column: Sticky Header */}
   <div className="lg:col-span-5 sticky top-12">
-    <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-blue-50/80 border border-blue-100 backdrop-blur-sm mb-6">
-      <Layers className="text-blue-600 animate-pulse" size={18} />
-      <span className="text-[11px] font-black uppercase tracking-[0.25em] text-blue-700">
+    <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-blue-50/80 dark:bg-blue-950/50 border border-blue-100 dark:border-blue-900/50 backdrop-blur-sm mb-6">
+      <Layers className="text-blue-600 dark:text-blue-400 animate-pulse" size={18} />
+      <span className="text-[11px] font-black uppercase tracking-[0.25em] text-blue-700 dark:text-blue-300">
         Capabilities
       </span>
     </div>
-    <h2 className="text-5xl lg:text-7xl font-black uppercase tracking-tight leading-[0.9] text-slate-900">
+    <h2 className="text-5xl lg:text-7xl font-black uppercase tracking-tight leading-[0.9] text-slate-900 dark:text-white">
       WHAT <br />
       <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
         WE DO.
@@ -170,23 +170,23 @@ const AboutPage = () => {
       </p>
     </div>
 
-    <div className="p-8 rounded-3xl bg-slate-50 border border-slate-200/80 space-y-4 hover:border-blue-200 transition-colors duration-300">
-      <p className="text-slate-600 text-lg leading-relaxed">
+    <div className="p-8 rounded-3xl bg-slate-50 dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 space-y-4 hover:border-blue-200 dark:hover:border-blue-700 transition-colors duration-300">
+      <p className="text-slate-600 dark:text-slate-300 text-lg leading-relaxed">
         We engineer custom applications from the ground up, utilizing
         production-grade framework stacks like{" "}
-        <span className="font-semibold text-slate-900 bg-white px-2 py-0.5 rounded border border-slate-200 shadow-sm">
+        <span className="font-semibold text-slate-900 dark:text-slate-100 bg-white dark:bg-slate-800 px-2 py-0.5 rounded border border-slate-200 dark:border-slate-700 shadow-sm">
           Next.js
         </span>{" "}
         and the{" "}
-        <span className="font-semibold text-slate-900 bg-white px-2 py-0.5 rounded border border-slate-200 shadow-sm">
+        <span className="font-semibold text-slate-900 dark:text-slate-100 bg-white dark:bg-slate-800 px-2 py-0.5 rounded border border-slate-200 dark:border-slate-700 shadow-sm">
           MERN ecosystem
         </span>{" "}
-        to deliver elite <strong className="text-slate-800">ERP software</strong>,{" "}
-        <strong className="text-slate-800">AI-powered platforms</strong>, robust{" "}
-        <strong className="text-slate-800">SaaS products</strong>, and targeted business automation systems.
+        to deliver elite <strong className="text-slate-800 dark:text-slate-100">ERP software</strong>,{" "}
+        <strong className="text-slate-800 dark:text-slate-100">AI-powered platforms</strong>, robust{" "}
+        <strong className="text-slate-800 dark:text-slate-100">SaaS products</strong>, and targeted business automation systems.
       </p>
 
-      <p className="text-slate-600 text-lg leading-relaxed pt-2 border-t border-slate-200/60">
+      <p className="text-slate-600 dark:text-slate-300 text-lg leading-relaxed pt-2 border-t border-slate-200/60 dark:border-slate-800">
         Whether you need to deploy enterprise cloud infrastructure, build cross-platform native mobile applications, or orchestrate highly synchronized internal management setups, we transition concepts into ultra-scalable production environments.
       </p>
     </div>
@@ -194,12 +194,12 @@ const AboutPage = () => {
 </div>
 
         {/* Section 4.5: Trust & Client Guarantees */}
-        <div className="mb-20 pt-16 border-t border-slate-100">
+        <div className="mb-20 pt-16 border-t border-slate-100 dark:border-slate-800">
           <div className="mb-12 text-center md:text-left">
-            <span className="text-blue-600 font-mono text-xs font-black uppercase tracking-[0.3em] block mb-2">
+            <span className="text-blue-600 dark:text-blue-400 font-mono text-xs font-black uppercase tracking-[0.3em] block mb-2">
               Engineering Commitments
             </span>
-            <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter">
+            <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter text-slate-900 dark:text-white">
               WHY CLIENTS TRUST THINKSYNC.
             </h2>
           </div>
@@ -209,15 +209,15 @@ const AboutPage = () => {
               return (
                 <div
                   key={idx}
-                  className="p-10 bg-slate-50 rounded-[2.5rem] border border-slate-100 hover:border-blue-600/30 transition-all duration-300"
+                  className="p-10 bg-slate-50 dark:bg-slate-900 rounded-[2.5rem] border border-slate-100 dark:border-slate-800 hover:border-blue-600/30 transition-all duration-300"
                 >
-                  <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center text-blue-600 mb-6 shadow-sm">
+                  <div className="w-12 h-12 bg-white dark:bg-slate-800 rounded-xl flex items-center justify-center text-blue-600 dark:text-blue-400 mb-6 shadow-sm">
                     <IconComp size={24} />
                   </div>
-                  <h3 className="text-xl font-black uppercase tracking-tight mb-3">
+                  <h3 className="text-xl font-black uppercase tracking-tight mb-3 text-slate-900 dark:text-slate-100">
                     {item.title}
                   </h3>
-                  <p className="text-slate-500 text-sm leading-relaxed">
+                  <p className="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
                     {item.desc}
                   </p>
                 </div>
@@ -227,20 +227,20 @@ const AboutPage = () => {
         </div>
 
         {/* Section 5: Technologies We Use */}
-        <div className="mb-24 bg-slate-50 rounded-[3rem] p-12 md:p-16 border border-slate-100">
+        <div className="mb-24 bg-slate-50 dark:bg-slate-900 rounded-[3rem] p-12 md:p-16 border border-slate-100 dark:border-slate-800">
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-10">
             <div>
               <div className="flex items-center gap-3 mb-2">
-                <Cpu className="text-blue-600" size={20} />
-                <span className="text-xs font-black uppercase tracking-[0.3em] text-slate-400">
+                <Cpu className="text-blue-600 dark:text-blue-400" size={20} />
+                <span className="text-xs font-black uppercase tracking-[0.3em] text-slate-400 dark:text-slate-500">
                   Engine Room
                 </span>
               </div>
-              <h2 className="text-4xl font-black uppercase tracking-tight">
+              <h2 className="text-4xl font-black uppercase tracking-tight text-slate-900 dark:text-white">
                 TECHNOLOGIES WE USE
               </h2>
             </div>
-            <p className="text-slate-500 text-sm font-medium max-w-xs md:text-right">
+            <p className="text-slate-500 dark:text-slate-400 text-sm font-medium max-w-xs md:text-right">
               Modern, fast, and secure primitives selected to optimize core web vitals and long-term codebase scale.
             </p>
           </div>
@@ -258,7 +258,7 @@ const AboutPage = () => {
             ].map((tech) => (
               <span
                 key={tech}
-                className="px-6 py-4 rounded-2xl bg-white border border-slate-200/60 font-black text-sm text-slate-800 tracking-wide transition-all duration-300 hover:border-blue-600 hover:text-blue-600 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-blue-500/[0.03]"
+                className="px-6 py-4 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200/60 dark:border-slate-700 font-black text-sm text-slate-800 dark:text-slate-200 tracking-wide transition-all duration-300 hover:border-blue-600 dark:hover:border-blue-500 hover:text-blue-600 dark:hover:text-blue-400 hover:-translate-y-0.5 hover:shadow-lg"
               >
                 {tech}
               </span>
@@ -267,7 +267,7 @@ const AboutPage = () => {
         </div>
 
         {/* Section 6: Final Hook */}
-        <div className="flex flex-col md:flex-row justify-between items-center gap-12 bg-slate-900 p-16 rounded-[4rem] text-white overflow-hidden relative">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-12 bg-slate-900 dark:bg-slate-950 p-16 rounded-[4rem] text-white overflow-hidden relative border border-transparent dark:border-slate-800">
           <div className="max-w-xl z-10">
             <h2 className="text-5xl font-black uppercase tracking-tighter mb-6 leading-none">
               READY TO SYNC YOUR <br /> VISION WITH REALITY?

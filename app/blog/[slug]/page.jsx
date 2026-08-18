@@ -67,7 +67,7 @@ export default async function BlogPostPage({ params }) {
   };
 
   return (
-    <article className="min-h-screen bg-slate-950 text-white font-sans -my-6 py-20 px-10">
+    <article className="min-h-screen bg-white dark:bg-slate-950 text-slate-900 dark:text-white font-sans -my-6 py-20 px-10 transition-colors duration-300">
       {/* Inject Schema JSON-LD */}
       <script
         type="application/ld+json"
@@ -77,42 +77,42 @@ export default async function BlogPostPage({ params }) {
       <div className="max-w-7xl mx-auto">
         <Link
           href="/blog"
-          className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-slate-400 hover:text-blue-400 mb-8 transition-colors"
+          className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 mb-8 transition-colors"
         >
           <ArrowLeft size={14} /> Back to Insights
         </Link>
 
         {/* Article Meta */}
         <div className="mb-8">
-          <span className="px-3 py-1 bg-blue-950/80 text-blue-400 border border-blue-500/30 rounded-full text-xs font-mono uppercase tracking-widest">
+          <span className="px-3 py-1 bg-blue-50 dark:bg-blue-950/80 text-blue-700 dark:text-blue-400 border border-blue-200 dark:border-blue-500/30 rounded-full text-xs font-mono uppercase tracking-widest">
             {post.category}
           </span>
-          <h1 className="text-3xl sm:text-5xl font-black uppercase tracking-tight text-white my-6 leading-tight">
+          <h1 className="text-3xl sm:text-5xl font-black uppercase tracking-tight text-slate-900 dark:text-white my-6 leading-tight">
             {post.title}
           </h1>
 
-          <div className="flex flex-wrap items-center gap-6 text-xs font-mono text-slate-400 border-b border-slate-800 pb-6">
+          <div className="flex flex-wrap items-center gap-6 text-xs font-mono text-slate-500 dark:text-slate-400 border-b border-slate-200 dark:border-slate-800 pb-6">
             <span className="flex items-center gap-2">
-              <User size={14} className="text-blue-400" /> {post.author}
+              <User size={14} className="text-blue-600 dark:text-blue-400" /> {post.author}
             </span>
             <span className="flex items-center gap-2">
-              <Calendar size={14} className="text-blue-400" /> {post.publishedAt}
+              <Calendar size={14} className="text-blue-600 dark:text-blue-400" /> {post.publishedAt}
             </span>
             <span className="flex items-center gap-2">
-              <Clock size={14} className="text-blue-400" /> {post.readTime}
+              <Clock size={14} className="text-blue-600 dark:text-blue-400" /> {post.readTime}
             </span>
           </div>
         </div>
 
         {/* Article Body */}
-        <div className="prose prose-invert prose-blue max-w-none text-slate-300 leading-relaxed font-normal whitespace-pre-line">
+        <div className="prose dark:prose-invert prose-blue max-w-none text-slate-700 dark:text-slate-300 leading-relaxed font-normal whitespace-pre-line">
           {post.content}
         </div>
 
         {/* CTA Footer */}
-        <div className="mt-16 p-8 bg-slate-900 border border-slate-800 rounded-2xl text-center">
-          <h3 className="text-xl font-bold text-white mb-2">Need a custom software solution built?</h3>
-          <p className="text-slate-400 text-sm mb-6">
+        <div className="mt-16 p-8 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl text-center">
+          <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2">Need a custom software solution built?</h3>
+          <p className="text-slate-500 dark:text-slate-400 text-sm mb-6">
             Let's discuss your architectural requirements, timelines, and budget expectations.
           </p>
           <Link

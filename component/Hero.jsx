@@ -15,17 +15,17 @@ const Hero = () => {
               <span className="h-1 w-6 bg-blue-600/30 rounded-full"></span>
             </div>
 
-            <span className="text-slate-900 font-black tracking-[0.3em] text-xs uppercase relative">
+            <span className="text-slate-900 dark:text-slate-200 font-black tracking-[0.3em] text-xs uppercase relative">
               Elite Software Partner
               <span className="absolute -bottom-1 left-0 w-0 h-px bg-blue-600 transition-all duration-700 group-hover:w-full"></span>
             </span>
           </div>
-          <h1 className="text-6xl lg:text-8xl font-black leading-[0.9] mb-10 text-slate-900">
+          <h1 className="text-6xl lg:text-8xl font-black leading-[0.9] mb-10 text-slate-900 dark:text-white">
             WE BUILD <br />
             <span className="text-blue-600 italic">THE FUTURE</span> <br />
             OF SYNC.
           </h1>
-          <p className="lg:text-xl text-lg text-slate-500 lg:mb-10 mb-6 max-w-lg leading-relaxed font-medium">
+          <p className="lg:text-xl text-lg text-slate-500 dark:text-slate-400 lg:mb-10 mb-6 max-w-lg leading-relaxed font-medium">
             Whether you're launching a new platform or scaling up, we build
             high-performance digital solutions tailored to your goals. We break
             down complex tech hurdles into clean, reliable, and user-friendly
@@ -35,7 +35,7 @@ const Hero = () => {
             <Link
               href="/work"
               aria-label="View our portfolio of work at ThinkSync Solutions"
-              className="bg-slate-100 hover:bg-slate-200 text-slate-800 px-8 py-4 rounded-2xl font-black flex items-center gap-3 transition-all"
+              className="bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-200 px-8 py-4 rounded-2xl font-black flex items-center gap-3 transition-all"
             >
               OUR WORK
             </Link>
@@ -150,18 +150,18 @@ const Hero = () => {
           </div>
 
           {/* The "Mobile Result" */}
-          <div className="absolute -bottom-10 -right-4 w-36 h-64 lg:w-40 lg:h-72 bg-white rounded-[2.5rem] border-[6px] md:border-8 border-slate-900 shadow-2xl hidden md:block transform lg:rotate-6 hover:rotate-0 transition-all duration-500">
-            <div className="w-10 h-1 bg-slate-200 mx-auto mt-3 rounded-full" />
+          <div className="absolute -bottom-10 -right-4 w-36 h-64 lg:w-40 lg:h-72 bg-white dark:bg-slate-900 rounded-[2.5rem] border-[6px] md:border-8 border-slate-900 dark:border-slate-800 shadow-2xl hidden md:block transform lg:rotate-6 hover:rotate-0 transition-all duration-500">
+            <div className="w-10 h-1 bg-slate-200 dark:bg-slate-700 mx-auto mt-3 rounded-full" />
             <div className="p-4 mt-4">
-              <div className="w-full h-24 lg:h-32 bg-slate-100 rounded-2xl mb-4 overflow-hidden relative flex items-center justify-center">
+              <div className="w-full h-24 lg:h-32 bg-slate-100 dark:bg-slate-800 rounded-2xl mb-4 overflow-hidden relative flex items-center justify-center">
                 <div className="absolute inset-0 bg-gradient-to-tr from-blue-600 to-indigo-600 opacity-10" />
-                <Zap className="text-blue-600 w-6 h-6 lg:w-8 lg:h-8" />
+                <Zap className="text-blue-600 dark:text-blue-400 w-6 h-6 lg:w-8 lg:h-8" />
               </div>
               <div className="space-y-2">
-                <div className="h-1.5 w-full bg-slate-100 rounded-full" />
-                <div className="h-1.5 w-2/3 bg-slate-100 rounded-full" />
+                <div className="h-1.5 w-full bg-slate-100 dark:bg-slate-800 rounded-full" />
+                <div className="h-1.5 w-2/3 bg-slate-100 dark:bg-slate-800 rounded-full" />
                 <div className="pt-4">
-                  <div className="h-7 lg:h-8 w-full bg-blue-600 rounded-lg shadow-lg shadow-blue-200" />
+                  <div className="h-7 lg:h-8 w-full bg-blue-600 rounded-lg shadow-lg shadow-blue-200 dark:shadow-none" />
                 </div>
               </div>
             </div>
