@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import {
   ArrowUpRight,
@@ -8,34 +10,25 @@ import {
   Zap,
 } from "lucide-react";
 import Link from "next/link";
+import {Container} from "@/component/Container"; // 1. Imported Container
 
 const ContactUs = () => {
   return (
     <section
       id="contact"
-      className="py-12 md:py-16 px-4 bg-white dark:bg-[#0b0f19] overflow-hidden transition-colors duration-300"
+      className="bg-white dark:bg-[#0b0f19] overflow-hidden transition-colors duration-300"
     >
-      <div className="max-w-7xl mx-auto">
-        {" "}
-        {/* Tightened from 7xl to 6xl */}
-        {/* The "Main Frame" - Added max-height for large screens */}
+      {/* 2. Replaced <div className="max-w-7xl mx-auto"> with Container */}
+      <Container>
+        {/* The "Main Frame" */}
         <div className="bg-[#0f172a] dark:bg-slate-950 rounded-[2rem] md:rounded-[3rem] overflow-hidden shadow-2xl relative border border-white/5 dark:border-slate-800 group min-h-[500px]">
-          {/* Background Glows - Reduced intensity for laptop screens */}
+          {/* Background Glows */}
           <div className="absolute top-[-20%] right-[-10%] w-[50%] h-[100%] bg-blue-600/10 blur-[100px] rounded-full group-hover:bg-blue-600/20 transition-all duration-1000 pointer-events-none" />
 
           <div className="grid grid-cols-1 lg:grid-cols-12 relative z-10 h-full">
             {/* Left Side: Branding & Info */}
             <div className="lg:col-span-7 p-8 md:p-12 lg:p-14 border-b lg:border-b-0 lg:border-r border-white/10 flex flex-col justify-between">
               <div>
-                {/* <div className="flex items-center gap-3 mb-8">
-                  <div className="w-9 h-9 rounded-lg bg-blue-600/10 border border-blue-500/20 flex items-center justify-center">
-                    <Zap className="text-blue-500 fill-blue-500/20" size={16} />
-                  </div>
-                  <span className="text-blue-500 font-black uppercase tracking-[0.3em] text-[9px]">
-                    Start the Sync
-                  </span>
-                </div> */}
-
                 <h2 className="text-4xl sm:text-5xl md:text-6xl font-black text-white leading-[0.95] tracking-tighter uppercase mb-10">
                   Let’s build <br />
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-indigo-400 italic">
@@ -66,10 +59,8 @@ const ContactUs = () => {
                   </a>
 
                   {/* Phone */}
-                  {/* Phone Item with 2 Numbers */}
                   <div className="group/item block max-w-fit">
                     <div className="flex items-center gap-4">
-                      {/* Icon remains static or links to the primary number */}
                       <div className="shrink-0 w-11 h-11 rounded-xl p-3 bg-white/5 border border-white/10 flex items-center justify-center group-hover/item:border-blue-500 transition-all">
                         <Phone className="text-white" size={18} />
                       </div>
@@ -102,7 +93,7 @@ const ContactUs = () => {
                 </div>
               </div>
 
-              {/* Verified Badges - Scaled down for laptop */}
+              {/* Verified Badges */}
               <div className="mt-12 flex flex-wrap gap-4 items-center opacity-30 grayscale group-hover:opacity-80 transition-all duration-700">
                 <span className="text-white font-black text-xs tracking-tighter uppercase">
                   Clutch
@@ -118,13 +109,13 @@ const ContactUs = () => {
               </div>
             </div>
 
-            {/* Right Side: Action Cards - Tightened padding */}
+            {/* Right Side: Action Cards */}
             <div className="lg:col-span-5 p-6 md:p-10 flex flex-col justify-center gap-4 bg-white/[0.01] backdrop-blur-xl">
               <h4 className="text-white/40 font-black uppercase tracking-[0.2em] text-[9px] px-1 mb-1">
                 Choose your entry point
               </h4>
 
-              {/* Project Inquiry Card - More compact */}
+              {/* Project Inquiry Card */}
               <Link
                 href="/contact"
                 aria-label="Submit a project brief to ThinkSync Solutions"
@@ -172,7 +163,7 @@ const ContactUs = () => {
             </div>
           </div>
         </div>
-      </div>
+      </Container>
     </section>
   );
 };

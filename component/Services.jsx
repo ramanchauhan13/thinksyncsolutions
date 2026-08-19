@@ -9,6 +9,7 @@ import {
   ArrowUpRight,
 } from "lucide-react";
 import Link from "next/link";
+import { Container } from "@/component/Container";
 
 const Services = () => {
   const services = [
@@ -51,8 +52,8 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-20 px-10 bg-[#f8fafc] dark:bg-[#0d1322] overflow-hidden transition-colors duration-300">
-      <div className="max-w-full mx-auto">
+    <section id="services" className="bg-[#f8fafc] dark:bg-[#0d1322] overflow-hidden transition-colors duration-300">
+      <Container>
         {/* Header Section */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8">
           <div className="space-y-4">
@@ -122,7 +123,7 @@ const Services = () => {
             </Link>
           ))}
         </div>
-      </div>
+      </Container>
     </section>
   );
 };

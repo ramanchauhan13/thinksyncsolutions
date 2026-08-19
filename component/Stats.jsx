@@ -1,4 +1,5 @@
 import React from "react";
+import { Container } from "@/component/Container";
 
 const Stats = () => {
   const stats = [
@@ -8,8 +9,8 @@ const Stats = () => {
   ];
 
   return (
-    <section className="py-12 bg-blue-600 text-white overflow-hidden relative">
-      <div className="max-w-full mx-auto px-6 relative z-10">
+    <section className="bg-blue-600 text-white overflow-hidden relative">
+      <Container className="relative z-10">
         <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
           {stats.map((item, idx) => (
             <div key={idx} className="group relative">
@@ -43,7 +44,7 @@ const Stats = () => {
             </div>
           ))}
         </div>
-      </div>
+      </Container>
 
       {/* Background Decorative Text - Kept your original logic */}
       <div className="absolute -bottom-10 right-0 text-[15vw] font-black opacity-10 pointer-events-none select-none tracking-tighter">

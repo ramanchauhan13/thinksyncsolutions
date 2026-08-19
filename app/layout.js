@@ -128,7 +128,7 @@ export default function RootLayout({ children }) {
         <ThemeProvider>
           <LiveLocationTracker />
           <Navbar />
-          <main className="py-6">{children}</main>
+          <main className="min-h-screen flex flex-col">{children}</main>
           <Footer />
         </ThemeProvider>
       </body>

@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { Quote, Star, Sparkles, CheckCircle2, ArrowRight } from "lucide-react";
+import {Container} from "@/component/Container"; // 1. Imported Container
 
 const REVIEWS = [
   {
@@ -68,14 +69,15 @@ const Testimonials = () => {
   return (
     <section
       id="testimonials"
-      className="relative py-20 bg-slate-50/50 dark:bg-[#090d16] overflow-hidden transition-colors duration-300"
+      className="relative bg-slate-50/50 dark:bg-[#090d16] overflow-hidden transition-colors duration-300"
     >
       {/* Background Graphic Watermark */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[18vw] font-black text-slate-200/40 dark:text-slate-900/50 select-none pointer-events-none -z-10 leading-none tracking-tighter">
         VOICES
       </div>
 
-      <div className="max-w-full mx-auto px-10">
+      {/* 2. Replaced max-w-full div wrapper with Container */}
+      <Container>
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <div className="max-w-2xl">
@@ -214,7 +216,7 @@ const Testimonials = () => {
             <ArrowRight size={16} />
           </a>
         </div>
-      </div>
+      </Container>
     </section>
   );
 };

@@ -1,14 +1,16 @@
 import React from "react";
 import { Globe, ShieldCheck } from "lucide-react";
+import { Container } from "@/component/Container"; // 1. Imported Container
 
 const WhyUs = () => {
   return (
-    <section 
-      id="why" 
-      className="relative w-full py-12 md:py-16 lg:py-20 px-10 bg-white dark:bg-[#0b0f19] overflow-hidden transition-colors duration-300"
+    /* 2. Removed px-10 from <section> to allow section background to span full edge-to-edge */
+    <section
+      id="why"
+      className="relative w-full bg-white dark:bg-[#0b0f19] overflow-hidden transition-colors duration-300"
     >
-      <div className="max-w-full mx-auto w-full grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-        
+      {/* 3. Replaced max-w-full div wrapper with Container */}
+      <Container className="w-full grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
         {/* Left Side: Creative Visual Grid */}
         <div className="relative">
           {/* Decorative background element */}
@@ -36,7 +38,7 @@ const WhyUs = () => {
             <div className="group bg-blue-600 rounded-[2.5rem] h-72 translate-y-8 lg:translate-y-12 flex flex-col justify-between p-8 text-white shadow-xl shadow-blue-200 dark:shadow-none transition-all duration-500 hover:shadow-blue-400 dark:hover:shadow-blue-600/30 hover:translate-y-6">
               <div className="w-20 h-20 bg-white backdrop-blur-md rounded-2xl flex items-center justify-center border border-white/20 transition-all overflow-hidden p-2">
                 <img
-                  src="/gifs/no-focus.gif" 
+                  src="/gifs/no-focus.gif"
                   alt="Users"
                   className="w-full h-full object-contain transition-all"
                 />
@@ -76,9 +78,9 @@ const WhyUs = () => {
                     <div
                       key={i}
                       className="w-1 md:w-1.5 bg-blue-500 md:bg-slate-700 rounded-full group-hover:bg-blue-500 transition-all duration-700"
-                      style={{ 
-                        height: `${h}%`, 
-                        transitionDelay: `${i * 50}ms` 
+                      style={{
+                        height: `${h}%`,
+                        transitionDelay: `${i * 50}ms`,
                       }}
                     />
                   ))}
@@ -97,7 +99,7 @@ const WhyUs = () => {
               <span className="h-1 w-12 bg-blue-600 rounded-full" />
               <span className="h-1 w-6 bg-blue-600/30 rounded-full" />
             </div>
-            
+
             <span className="text-slate-900 dark:text-slate-200 font-black tracking-[0.3em] text-xs uppercase relative">
               Why Choose Us
             </span>
@@ -152,8 +154,7 @@ const WhyUs = () => {
             ))}
           </div>
         </div>
-
-      </div>
+      </Container>
     </section>
   );
 };

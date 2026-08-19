@@ -1,5 +1,6 @@
 import React from "react";
 import { Search, PenTool, Terminal, Rocket } from "lucide-react";
+import { Container } from "@/component/Container";
 
 const Process = () => {
   const steps = [
@@ -34,8 +35,8 @@ const Process = () => {
   ];
 
   return (
-    <section id="process" className="py-20 px-10 bg-white dark:bg-[#0b0f19] overflow-hidden transition-colors duration-300">
-      <div className="max-w-full mx-auto">
+    <section id="process" className="bg-white dark:bg-[#0b0f19] overflow-hidden transition-colors duration-300">
+      <Container>
         {/* Header with Background Text */}
         <div className="relative mb-24 flex flex-col items-center">
           <span className="absolute -top-10 text-[10rem] font-black text-slate-100 dark:text-slate-900/60 select-none z-0">
@@ -103,7 +104,7 @@ const Process = () => {
             </div>
           ))}
         </div>
-      </div>
+      </Container>
     </section>
   );
 };

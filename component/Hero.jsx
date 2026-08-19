@@ -2,11 +2,12 @@
 import React from "react";
 import { ArrowRight, Zap } from "lucide-react";
 import Link from "next/link";
+import {Container} from "@/component/Container";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen w-full flex items-center justify-center pt-10 lg:pt-0 px-10 overflow-hidden">
-      <div className="max-w-full mx-auto grid lg:grid-cols-2 gap-12 items-center w-full">
+    <section className="relative min-h-screen w-full flex items-center justify-center overflow-hidden">
+      <Container className="grid lg:grid-cols-2 gap-12 items-center w-full">
         {/* LEFT COLUMN: TEXT */}
         <div className="z-10">
           <div className="flex items-center gap-4 mb-6">
@@ -170,7 +171,7 @@ const Hero = () => {
           {/* Background Glow */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 md:w-64 h-48 md:h-64 bg-blue-500/20 blur-[80px] md:blur-[100px] -z-10" />
         </div>
-      </div>
+      </Container>
     </section>
   );
 };
